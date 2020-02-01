@@ -27,4 +27,9 @@
 * Controllers
 	* Controller
 	* PatientQueue
-	* 
+	* OnsiteDoctors
+
+* Views
+	* CreateView
+	* DoctorView
+	* (DEBUG) QueueView
