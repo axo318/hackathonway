@@ -1,6 +1,9 @@
 # Imports
 import os
 
+# Custom imports
+from lib.controller import Controller
+
 # Web imports
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 from werkzeug.utils import secure_filename
@@ -9,6 +12,8 @@ PORT = 5000
 
 # Begin Serving
 app = Flask(__name__)
+controller = Controller()
+controller.run()
 
 
 ## ROUTES ##
@@ -21,6 +26,12 @@ def index():
     Renders the initial page with the options for actions on the website.
     :return: initial html page
     """
+
+    '''
+    DEBUG
+    '''
+    reply = controller.dealWithRequest('login','van')
+    print(reply)
     return render_template('index.html')
 
 
