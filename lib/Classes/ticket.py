@@ -1,58 +1,48 @@
 class Ticket(object):
 
-    # Variables
-    #
-    # patient: (Patient) the patient
-    # doctor: (Doctor) the doctor assigned to patient
-    # symptoms: (Set) Set of Symptom
-    # specialist: (SpecialDoctor) special doctor if needed
-    # diagnosis: (Diagnosis) the diagnosis given by the doctor
-
-
-
-    def __init__(self, patient, doctor, symptoms, queue):
-        self._initialise_variables(patient, doctor, symptoms, queue)
-
-    def _initialise_variables(self, patient, doctor, symptoms, queue):
-        self.PATIENT = patient
-        self.DOCTOR = doctor
+    def __init__(self, id=None, username=None, symptoms=None, diagnosis=None, doctor=None, speciality=None):
+        self.ID = id
+        self.USERNAME = username
         self.SYMPTOMS = symptoms
-        self.QUEUE = queue
+        self.DIAGNOSIS = diagnosis
+        self.DOCTOR = doctor
+        self.SPECIALITY = speciality
         # ----------------------
-        self.SPECIALIST = None
-        self.DIAGNOSIS = None
-    
+        self.QUEUE = None
+
     def close(self):
-        # update model and database 
+        # update model and database
         return
 
     # -- Update/add variables --
-    def update_diagnosis(self, diagnosis):
+    def set_diagnosis(self, diagnosis):
         self.DIAGNOSIS = diagnosis
 
-    def add_specialist(self, specialist):
-        self.SPECIALIST = specialist
+    def set_speciality(self, speciality):
+        self.SPECIALITY = speciality
 
-    def add_symptoms(self, symptoms):
-        self.symptoms = self.symptoms
+    def set_symptoms(self, symptoms):
+        self.SYMPTOMS = self.SYMPTOMS
     # -- Update/add variables --
 
     # -- Getters --
-    def get_patient(self):
-        return self.PATIENT
+    def get_id(self):
+        return self.ID
 
-    def get_doctor(self):
-        return self.DOCTOR
+    def get_username(self):
+        return self.USERNAME
 
     def get_symptoms(self):
         return self.SYMPTOMS
 
-    def get_queue(self):
-        return self.QUEUE
-
-    def get_specialist(self):
-        return self.SPECIALIST
-
     def get_diagnosis(self):
         return self.DIAGNOSIS
-    # -- Getters --
+
+    def get_doctor(self):
+        return self.DOCTOR
+
+    def get_speciality(self):
+        return self.SPECIALITY
+
+    def get_queue(self):
+        return self.QUEUE
