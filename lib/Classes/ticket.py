@@ -10,17 +10,19 @@ class Ticket(object):
 
 
 
-    def __init__(self, patient, doctor, symptoms, queue):
-        self._initialise_variables(patient, doctor, symptoms, queue)
+    def __init__(self, patient, doctor, symptoms, queue, id):
+        self._initialise_variables(patient, doctor, symptoms, queue,id)
 
-    def _initialise_variables(self, patient, doctor, symptoms, queue):
+    def _initialise_variables(self, patient, doctor, symptoms, queue, id):
         self.PATIENT = patient
         self.DOCTOR = doctor
         self.SYMPTOMS = symptoms
         self.QUEUE = queue
+        self.ID = id
         # ----------------------
         self.SPECIALIST = None
         self.DIAGNOSIS = None
+       
     
     def close(self):
         # update model and database 
