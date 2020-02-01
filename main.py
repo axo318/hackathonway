@@ -5,6 +5,8 @@ import os
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 from werkzeug.utils import secure_filename
 
+PORT = 5000
+
 # Begin Serving
 app = Flask(__name__)
 
