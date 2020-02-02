@@ -24,3 +24,7 @@ Request Subclasses
 class LoginRequest(WebRequest):
     def deal(self, data):
         return 'login request REPLY'
+
+class LogoutRequest(WebRequest):
+    def deal(self, data):
+        return 'logout request REPLY'

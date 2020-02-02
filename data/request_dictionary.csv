@@ -1,2 +1,3 @@
 Identifier,ClassName
 login,LoginRequest
+LogOut,LogoutRequest
