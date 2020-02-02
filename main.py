@@ -6,33 +6,42 @@ from lib.controller import Controller
 
 # Web imports
 from flask import Flask, render_template, flash, request, redirect, url_for, session
-from werkzeug.utils import secure_filename
 
 PORT = 5000
 
 # Begin Serving
 app = Flask(__name__)
+
+# Begin Back-End
 controller = Controller()
-controller.run()
 
 
-## ROUTES ##
-
+'''
+ROUTES
+'''
 # Index
 @app.route('/')
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    """
-    Renders the initial page with the options for actions on the website.
-    :return: initial html page
-    """
+    return render_template('index.html', message='FER')
 
-    '''
-    DEBUG
-    '''
-    reply = controller.dealWithRequest('login','van')
-    print(reply)
-    return render_template('index.html')
+@app.route('/fill_ticket', methods=['GET', 'POST'])
+def fill_ticket():
+    return render_template('fill_ticket.html')
+
+@app.route('/submit_ticket', methods=['GET', 'POST'])
+def submit_ticket():
+    name = request.form['name']
+    if len(name)>0:
+        # Deal with Ticket
+        controller.dealWithRequest('ticket', data=request.form)
+        return render_template('index.html', message='SUCCESS')
+    else:
+        return render_template('index.html', message='ERROR, PLEASE RETRY')
+
+@app.route('/doctor_dashboard', methods=['GET', 'POST'])
+def doctor_dashboard():
+    return render_template('index.html', message='Doctor Dashboard')
 
 
 ### MAIN ###

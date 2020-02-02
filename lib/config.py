@@ -9,6 +9,8 @@ DATA_LOGIN   = os.path.join(DIR_DATA,'data_login.csv')
 DATA_TICKETS = os.path.join(DIR_DATA,'data_tickets.csv')
 
 REQUEST_DICTIONARY = os.path.join(DIR_DATA,'request_dictionary.csv')
+IDENTIFIER_COLUMN_NAME = 'Identifier'
+CLASSNAME_COLUMN_NAME = 'ClassName'
 
 #login dataset headers
 LOGIN_USERNAME_COL = 'username'

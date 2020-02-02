@@ -2,7 +2,7 @@ import os
 import pandas as pd
 # Custom Imports
 from .webRequest import RequestBuilder
-from config import DIR_DATA, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME
+from .config import REQUEST_DICTIONARY, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME
 
 '''
 Main class that handles requests from front-end and replies with any needed info
@@ -11,22 +11,29 @@ class Controller:
     # Constructor
     def __init__(self):
         self.request_dictionary = self.readDictionary()
-
-    def run(self):
-        pass
+        self.activeQueue = []
 
     # Reads the csv file with available requests and returns it as dict
     def readDictionary(self):
-        df = pd.read_csv(DIR_DATA, index_col=IDENTIFIER_COLUMN_NAME)
+        df = pd.read_csv(REQUEST_DICTIONARY, index_col=IDENTIFIER_COLUMN_NAME)
         d = df.to_dict().get(CLASSNAME_COLUMN_NAME)
-        '''
-        DEBUGG
-        '''
-        print(d)
         return d
 
     # Controller deals with incoming web request
-    def dealWithRequest(self, classifier, data):
+    def dealWithRequest(self, classifier, data=None):
         request = RequestBuilder.getRequest(classifier, self.request_dictionary)
-        reply = request.deal(data)
+        reply = request.deal(self, data)
         return reply
+
+    # Add ticket to correct place of activeQueue
+    def addActiveTicket(self, ticket):
+        ind = 0
+        for temp_ticket in self.activeQueue:
+            if temp_ticket.severity < ticket.severity:
+                ind += 1
+            else:
+                break
+        self.activeQueue.insert(ind, ticket)
+
+    def popActiveTicket(self):
+        return self.activeQueue.pop()

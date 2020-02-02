@@ -1,10 +1,11 @@
 import sys
+from .classes.ticket import Ticket
 
 '''
 Superclass for all requests
 '''
 class WebRequest:
-    def deal(self, data):
+    def deal(self, controller, data):
         pass
 
 '''
@@ -21,10 +22,21 @@ class RequestBuilder:
 '''
 Request Subclasses
 '''
-class LoginRequest(WebRequest):
-    def deal(self, data):
-        return 'login request REPLY'
+class TicketRequest(WebRequest):
+    def deal(self, controller, data):
+        # Get name and symptoms
+        name = data['name']
+        symptoms = [data['s'+str(i)] for i in range(1,7) if len(data['s'+str(i)])>0]
 
-class LogoutRequest(WebRequest):
-    def deal(self, data):
-        return 'logout request REPLY'
+        # Get unique id
+        id = 12
+
+        # Get possible diagnosis
+        diagnosis = controller.classifier.predict(symptoms)
+        severity = getSeverity(diagnosis)
+
+        # Make ticket
+        ticket = Ticket(id=id, name=name, symptoms=symptoms, diagnosis=diagnosis, severity=severity)
+        controller.addActiveTicket(ticket)
+
+        return 'login request REPLY'

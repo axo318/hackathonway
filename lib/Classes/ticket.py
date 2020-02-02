@@ -1,6 +1,6 @@
 class Ticket(object):
 
-    def __init__(self, id=None, username=None, symptoms=None, diagnosis=None, doctor=None, speciality=None):
+    def __init__(self, id=None, username=None, symptoms=None, diagnosis=None, doctor=None, speciality=None, severity=None):
         self.ID = id
         self.USERNAME = username
         self.SYMPTOMS = symptoms
@@ -8,7 +8,7 @@ class Ticket(object):
         self.DOCTOR = doctor
         self.SPECIALITY = speciality
         # ----------------------
-        self.QUEUE = None
+        self.SEVERITY = severity
 
     def close(self):
         # update model and database
