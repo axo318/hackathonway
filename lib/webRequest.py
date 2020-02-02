@@ -1,6 +1,6 @@
 import sys
-from .classes.ticket import Ticket
-
+from .Classes.ticket import Ticket
+from .database import *
 '''
 Superclass for all requests
 '''
@@ -43,3 +43,23 @@ class TicketRequest(WebRequest):
         controller.addActiveTicket(ticket)
 
         return 'login request REPLY'
+'''
+gets the next patient once button is pressed
+'''
+class NextPatientRequest(WebRequest):
+    def deal(self, controller, data):
+        # pop the last ticket from live que
+        all_doctors = getDoctors()
+        for doc in all_doctors:
+            doc_name = doc.get_name()
+            if (doc_name==response):
+                controller.freeDoctors.append(doc)
+                break
+        # add doctor name to ticket
+        # EXTRA
+        # save that ticket into memory
+        next_ticket = controller.popActiveTicket()
+        next_ticket.set_doctor(doc_name)
+        # !!! ADD DIAGNISOS ???
+        addTicket(next_ticket)
+        #

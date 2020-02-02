@@ -7,7 +7,12 @@ from lib.controller import Controller
 # Web imports
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 
+# GLOBALSs
 PORT = 5000
+DOCTOR_RESPONSE_GEORGE = 'George Smith'
+DOCTOR_RESPONSE_LISA = 'Lisa Anna'
+DOCTOR_RESPONSE_JOHNNY = 'Johnny Smith'
+DOCTOR_RESPONSE_MIA = 'Mia Khalifa'
 
 # Begin Serving
 app = Flask(__name__)
@@ -45,7 +50,13 @@ def doctor_dashboard():
 
 @app.route('/next_patient', methods=['GET', 'POST'])
 def next_patient():
-    # Do smth
+    # response is the name of the doctor
+    response = request.args.get('doc')
+    controller.dealWithRequest('next_patient', data=response)
+    # CALL
+
+    # Get name of doctor
+    # move queue
     return redirect(url_for('doctor_dashboard'))
 
 

@@ -14,21 +14,25 @@
 
         <div class="col-xl-3">
             <p>George Smith</p>
-            <form action="{{ url_for('next_patient') }}" method="post">
-                <p><a target="_blank" class="btn btn-primary">Next Patient</a></p>
-            </form>
+            <p><a href="{{ url_for('next_patient',doc='George Smith') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
         </div>
 
         <div class="col-xl-3">
-            <p>Kayla Colestorm</p>
-            <p><a href="{{ url_for('next_patient') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+            <p>Lisa Anna</p>
+            <p><a href="{{ url_for('next_patient',doc='Lisa Anna') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
 
         </div>
 
-        <div class="col-md-6 col-lg-3 col-xl-3">
-          <h2>Create Ticket</h2>
-          <p>Fill in a medical ticket form to get a doctor visit.</p>
-          <p><a href="{{ url_for('fill_ticket') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+        <div class="col-xl-3">
+            <p>Johnny Sinns</p>
+            <p><a href="{{ url_for('next_patient',doc='Johnny Sinns') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+
+        </div>
+
+        <div class="col-xl-3">
+            <p>Mia Khalifa</p>
+            <p><a href="{{ url_for('next_patient',doc='Mia Khalifa') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+
         </div>
 
     </div>

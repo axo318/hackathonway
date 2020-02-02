@@ -3,10 +3,10 @@ File contains functions used for dealing with databases
 '''
 import pandas as pd
 from .config import *
-from .classes.ticket import Ticket
-# from .controller import Controller
-from .classes.person import Patient
-from .classes.person import Doctor
+from .Classes.ticket import Ticket
+# from .Controller import Controller
+from .Classes.person import Patient
+from .Classes.person import Doctor
 
 # GLOBALS
 TABLE_ID_DOCTORS  = 0
@@ -201,7 +201,7 @@ def checkIfPresent(table_id,identifier):
         if (rows == 0):
             print('returns false')
             return False
-        else:      
+        else:
             print('returns true')
             return True
     if(table_id==TABLE_ID_PATIENTS):
@@ -209,7 +209,7 @@ def checkIfPresent(table_id,identifier):
         rows = df[df[LOGIN_USERNAME_COL]==identifier].shape[0]
         if (rows == 0):
             return False
-        else:      
+        else:
             print('returns true')
             return True
     if(table_id==TABLE_ID_TICKETS):
@@ -218,6 +218,6 @@ def checkIfPresent(table_id,identifier):
         rows = df[df[TICKETS_ID_COL]==identifier].shape[0]
         if (rows == 0):
             return False
-        else:      
+        else:
             print('returns true')
             return True

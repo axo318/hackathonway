@@ -3,6 +3,7 @@ import pandas as pd
 # Custom Imports
 from .webRequest import RequestBuilder
 from .config import REQUEST_DICTIONARY, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME
+from .database import *
 
 '''
 Main class that handles requests from front-end and replies with any needed info
@@ -13,6 +14,10 @@ class Controller:
         self.request_dictionary = self.readDictionary()
         self.activeQueue = []
         self.freeDoctors = []
+        self.initializeVariables()
+
+    def initializeVariables(self):
+        self.freeDoctors = getDoctors()
 
     # Reads the csv file with available requests and returns it as dict
     def readDictionary(self):
@@ -28,6 +33,13 @@ class Controller:
 
     # Add ticket to correct place of activeQueue
     def addActiveTicket(self, ticket):
+        # Check if doctors free
+        if(len(self.freeDoctors)>0):
+            # add & remove immediatly from the live que
+            self.activeQueue.append(ticket)
+            self.popActiveTicket()
+
+        # If not add ticket to active queue
         ind = 0
         for temp_ticket in self.activeQueue:
             if temp_ticket.severity < ticket.severity:
@@ -37,5 +49,8 @@ class Controller:
         self.activeQueue.insert(ind, ticket)
 
     def popActiveTicket(self):
-
-        return self.activeQueue.pop()
+        ticket = self.activeQueue.pop()
+        ticket.set_doctor(self.freeDoctors.pop(0))
+        # !!! DIAGNOSIS ???
+        addTicket(ticket)
+        return ticket
