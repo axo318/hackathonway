@@ -8,6 +8,39 @@
   box-sizing: border-box;
 }
 
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
 textarea {
   width: 100%;
   height: 150px;
@@ -36,12 +69,13 @@ label {
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
-  padding: 16px 20px;
-  margin-left: 10px;
+  padding: 10px 12px;
+  margin-left: 1px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin-right: 7px;
 }
 
 input[type=submit]:hover {
@@ -51,18 +85,20 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #66cfff;
-  padding: 20px;
+  padding: 25px;
+  width: 1300px;
 }
 
 .col-25 {
   float: left;
   width: 15%;
   margin-top: 6px;
+  margin-left: 1px;
 }
 
 .col-75 {
   float: left;
-  width: 85%;
+  width: 55%;
   margin-top: 6px;
 }
 
@@ -75,9 +111,9 @@ input[type=submit]:hover {
 
 .container-fluid-personal {
   width: 100%;
-  height: 5%;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 2%;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -88,6 +124,13 @@ input[type=submit]:hover {
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
+
+h2 {
+  color: white;
+}
+
+label.white { color: white; }
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -104,82 +147,157 @@ input[type=submit]:hover {
     <div class="jumbotron-personal">
         <img src="static/img/checklist.png" style="width:80px;height:80px;float:right;"/>
         <h1>Ticket</h1>
-        <p class="lead"> Fill in your Ticket</p>
+        <p class="lead"> Submit your symptoms so we can provide you with a queue number and schedule and visit. </p>
     </div>
 </div>
 
 <div class="container">
-  <form action="{{ url_for('submit_ticket') }}" method="post">
+  <!--Make sure the form has the autocomplete function switched off:-->
+  <form autocomplete="off" action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+          <label class='white'><b>Fill in your name: </b></label>
+      </div>
+      <div class="col-75">
+        <p> <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"> </p>
+      </div>
+    </div>
+    <h2> Please fill in the symptoms you have experienced: </h2>
+    <br>
+    <div class="autocomplete" style="width:300px;">
+      <input id="s1" type="text" name="myCountry" placeholder="Symptom">
+    </div>
+    <div class="autocomplete" style="width:300px;">
+      <input id="s2" type="text" name="myCountry" placeholder="Symptom">
+    </div>
+    <div class="autocomplete" style="width:300px;">
+      <input id="s3" type="text" name="myCountry" placeholder="Symptom">
+    </div>
+    <div class="autocomplete" style="width:300px;">
+      <input id="s4" type="text" name="myCountry" placeholder="Symptom">
+    </div>
+    <div class="autocomplete" style="width:300px;">
+      <input id="s5" type="text" name="myCountry" placeholder="Symptom">
+    </div>
+    <div class="autocomplete" style="width:300px;">
+      <input id="s6" type="text" name="myCountry" placeholder="Symptom">
+    </div>
 
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Name</b></label>
-    </div>
-    <div class="col-75">
-      <p> <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"> </p>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Symptom 1</b></label>
-    </div>
-    <div class="col-75">
-       <p> <input type="text" name="s1" class="form-control" id="s1" aria-describedby="emailHelp" placeholder="Optional"> </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Symptom 2</b></label>
-    </div>
-    <div class="col-75">
-        <p> <input type="text" name="s2" class="form-control" id="s2" aria-describedby="emailHelp" placeholder="Optional"> </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Symptom 3</b></label>
-    </div>
-    <div class="col-75">
-        <p> <input type="text" name="s3" class="form-control" id="s3" aria-describedby="emailHelp" placeholder="Optional"> </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Symptom 4</b></label>
-    </div>
-    <div class="col-75">
-        <p> <input type="text" name="s4" class="form-control" id="s4" aria-describedby="emailHelp" placeholder="Optional"> </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Symptom 5</b></label>
-    </div>
-    <div class="col-75">
-        <p> <input type="text" name="s5" class="form-control" id="s5" aria-describedby="emailHelp" placeholder="Optional"> </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-25">
-        <label ><b>Symptom 6</b></label>
-    </div>
-    <div class="col-75">
-        <p> <input type="text" name="s6" class="form-control" id="s6" aria-describedby="emailHelp" placeholder="Optional"> </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <input type="submit" id="submit_incidence" name="submit_incidence" value="Submit">
-  </div>
+    <input type="submit" value="Submit">
   </form>
 
 </div>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var symptoms = ["hello", "fuckyou"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("s1"), symptoms);
+autocomplete(document.getElementById("s2"), symptoms);
+autocomplete(document.getElementById("s3"), symptoms);
+autocomplete(document.getElementById("s4"), symptoms);
+autocomplete(document.getElementById("s5"), symptoms);
+autocomplete(document.getElementById("s6"), symptoms);
+</script>
 </body>
 
 {% endblock %}
