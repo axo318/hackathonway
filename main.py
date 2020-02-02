@@ -3,7 +3,7 @@ import os
 
 # Custom imports
 from lib.controller import Controller
-from lib.database import getTickets
+from lib.database import *
 # Web imports
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 
@@ -58,7 +58,7 @@ def close_ticket():
                 hit += 1
                 break
         if hit==0:
-            return render_template('doctor_dashboard', message='Patient name not found.')
+            return render_template('doctor_dashboard.html', message='Patient name not found.')
         if request.form['diag']==diagnosis:
             return render_template('index.html', message='SUCCESS')
         else:
