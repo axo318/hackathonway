@@ -172,9 +172,9 @@ def test_4(model):
     similarity_df = model.get_similarity(symptoms)
     print(similarity_df.tail(5))
 
-if __name__ == "__main__":
-    model = SimilarityModel()
-    test_1(model)
-    test_2(model)
-    test_3(model)
-    test_4(model)
+# if __name__ == "__main__":
+#     model = SimilarityModel()
+#     test_1(model)
+#     test_2(model)
+#     test_3(model)
+#     test_4(model)
