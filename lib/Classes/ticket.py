@@ -19,7 +19,7 @@ class Ticket(object):
         self.DIAGNOSIS = diagnosis
 
     def set_doctor(self, doctor):
-        self.DOCTOR = doctor    
+        self.DOCTOR = doctor
 
     def set_speciality(self, speciality):
         self.SPECIALITY = speciality
@@ -51,5 +51,5 @@ class Ticket(object):
         return self.QUEUE
 
     def __str__(self):
-        str_out = 'ID = {}\n USERNAME = {}\n SYMPTOMS = {}\n DIAGNOSIS = {}\n DOCTOR = {}\n SPECIALITY={}'.format(self.ID, self.USERNAME, self.SYMPTOMS, self.DIAGNOSIS, self.DOCTOR, self.SPECIALITY)
+        str_out = 'ID = {}\n USERNAME = {}\n SYMPTOMS = {}\n DIAGNOSIS = {}\n DOCTOR = {}\n SPECIALITY={}'.format(self.ID, self.USERNAME, self.SYMPTOMS, self.DIAGNOSIS, self.DOCTOR.get_name(), self.SPECIALITY)
         return str_out

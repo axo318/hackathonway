@@ -1,0 +1,11 @@
+[
+ [Abdominal trauma :: Neck ache or pain, Leg ache or pain, Skin sores, Arm ache or pain, Rash, Chest pressure, Painful rash, Headache, Ear pressure, Chest pain, Pain or soreness of breast]
+ [Abrasions (scrapes):: Mouth swelling, Eye swelling, Cough, Lip swelling]
+ [ACE inhibitor induced cough blood pressure medication side effect Drug-induced cough Drug reaction: ACE inhibitor :: Poisoning,Overdose]
+ [acetaminophen overdose Adverse reaction to acetaminophen :: Substance abuse (Drug abuse)]
+ [Adenoiditis (a type of lymph node inflammation) :: Loss of balance, Confusion, Unsteady gait (Trouble walking), Confusion and headache]
+ [Alcohol ethanol poisoning (overdose) :: Dizziness, Insomnia (Trouble sleeping), Anxiety (Nervousness), Delusions or hallucinations, Headache, Substance abuse (Drug abuse)]
+ [Allergic reaction :: Mouth swelling, Itchy rash (Pruritic rash), Hives, Lip swelling]
+ [Allergy :: Mouth swelling, Itchy rash (Pruritic rash), Hives, Shortness of breath, Lip swelling, Skin swelling]
+ [Altitude illness Illnesses due to high altitude effects :: Hand redness, Foot redness, Foot itching, Arm redness, Arm itching, Hand itching]
+ [Amphetamine abuse :: Hand redness, Poisoning, Foot redness, Urinary retention (Inability to urinate), Arm redness

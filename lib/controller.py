@@ -2,8 +2,9 @@ import os
 import pandas as pd
 # Custom Imports
 from .webRequest import RequestBuilder
-from .config import REQUEST_DICTIONARY, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME
+from .config import REQUEST_DICTIONARY, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME, DIR_DATA
 from .database import *
+from .model import SimilarityModel
 
 '''
 Main class that handles requests from front-end and replies with any needed info
@@ -14,6 +15,17 @@ class Controller:
         self.request_dictionary = self.readDictionary()
         self.activeQueue = []
         self.freeDoctors = []
+        self.model = SimilarityModel()
+
+        symptoms_list = self.model.dataframe.columns[:-2]
+        symptoms_list_str = ''
+        for i in symptoms_list:
+            symptoms_list_str+="\"" + i + "\"" + ","
+        file2write=open(os.path.join(DIR_DATA,"symptoms_list.txt"),'w')
+        file2write.write(symptoms_list_str)
+        file2write.close()
+
+        examples = self.model._get_example()
         self.initializeVariables()
 
     def initializeVariables(self):
@@ -38,6 +50,7 @@ class Controller:
             # add & remove immediatly from the live que
             self.activeQueue.append(ticket)
             self.popActiveTicket()
+            return
 
         # If not add ticket to active queue
         ind = 0
@@ -49,6 +62,7 @@ class Controller:
         self.activeQueue.insert(ind, ticket)
 
     def popActiveTicket(self):
+        # if(len(self.activeQueue)>0):
         ticket = self.activeQueue.pop()
         ticket.set_doctor(self.freeDoctors.pop(0))
         # !!! DIAGNOSIS ???

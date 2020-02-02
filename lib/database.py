@@ -126,13 +126,13 @@ def addTicket(ticket): #-> bool
     temp_id =ticket.get_id()
     temp_username =ticket.get_username()
     temp_symptoms_str = ticket.get_symptoms()
-    print('temp_symptoms_str={}'.format(temp_symptoms_str))
     temp_diagnosis =ticket.get_diagnosis()
-    temp_doctor =ticket.get_doctor()
+    temp_doctor =ticket.get_doctor().get_name()
     temp_speciality =ticket.get_speciality()
     attributes_ticket = [temp_id,temp_username,temp_symptoms_str,temp_diagnosis,temp_doctor,temp_speciality]
     df_tickets.loc[df_tickets.shape[0]] = attributes_ticket
     saveTable(TABLE_ID_TICKETS,df_tickets)
+    print(df_tickets.to_string())
     return True
 
 #-----------------------------------------------------------
@@ -214,7 +214,7 @@ def checkIfPresent(table_id,identifier):
             return True
     if(table_id==TABLE_ID_TICKETS):
         df = getTable(TABLE_ID_TICKETS)
-        print('df[df[TICKETS_ID_COL]]={}'.format(df[df[TICKETS_ID_COL]==identifier]))
+        print('df[df[TICKETS_ID_COL]]={}'.format(df[df[TICKETS_ID_COL] == identifier]))
         rows = df[df[TICKETS_ID_COL]==identifier].shape[0]
         if (rows == 0):
             return False

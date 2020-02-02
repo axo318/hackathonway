@@ -5,7 +5,7 @@ import numpy as np
 from scipy.spatial import distance
 from scipy.special import softmax
 import os
-from config import dis_ids, symp_ids, syms_dis_weights, diagnosis_amount_df
+from .config import dis_ids, symp_ids, syms_dis_weights, diagnosis_amount_df
 
 
 
@@ -112,6 +112,20 @@ class SimilarityModel():
         # --
         return similarity_df
 
+    def _get_example(self):
+        examples = pd.DataFrame(columns=["Diagnosis","Symptoms"])
+        for i in range(10):
+            symptoms_vector = self.dataframe.iloc[i][:-2]
+            diagnosis = self.dataframe.iloc[i][-2]
+            symptoms = []
+            for k, sym in enumerate(symptoms_vector):
+                if (sym == 1):
+                    symptoms.append(self.dataframe.columns[k])
+            examples.loc[i] = [diagnosis, symptoms]
+        print(examples.values)
+        return examples
+
+
     # create a valid symptom vector from a list of symptoms
     def _create_symptoms_vector(self, symptoms):
         stored_symptoms = self.dataframe.columns[:-2]
@@ -144,9 +158,9 @@ class SimilarityModel():
     def _get_probability_dataframe(self, dataframe):
         similarities = dataframe["Similarity"]
         similarities = [1 - x for x in similarities]
-        print("Similarities: {}".format(similarities))
+        #print("Similarities: {}".format(similarities))
         probabilities = softmax(similarities)
-        print("probabilities: {}".format(probabilities))
+        #print("probabilities: {}".format(probabilities))
         dataframe_prob = dataframe.copy().drop(columns=["Similarity"])
         dataframe_prob["Similarity Probability"] = probabilities
         # print(dataframe_prob)
@@ -172,9 +186,9 @@ def test_4(model):
     similarity_df = model.get_similarity(symptoms)
     print(similarity_df.tail(5))
 
-if __name__ == "__main__":
-    model = SimilarityModel()
-    test_1(model)
-    test_2(model)
-    test_3(model)
-    test_4(model)
+# if __name__ == "__main__":
+#     model = SimilarityModel()
+#     test_1(model)
+#     test_2(model)
+#     test_3(model)
+#     test_4(model)
