@@ -30,6 +30,9 @@ class TicketRequest(WebRequest):
 
         # Get unique id
         id = 12
+        # Go to db and get number of tickets stored
+        # Go to active queue anf get num of TicketRequest
+        # Sum them + 1 assign to id
 
         # Get possible diagnosis
         diagnosis = controller.classifier.predict(symptoms)

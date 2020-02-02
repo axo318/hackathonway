@@ -12,6 +12,7 @@ class Controller:
     def __init__(self):
         self.request_dictionary = self.readDictionary()
         self.activeQueue = []
+        self.freeDoctors = []
 
     # Reads the csv file with available requests and returns it as dict
     def readDictionary(self):
@@ -36,4 +37,5 @@ class Controller:
         self.activeQueue.insert(ind, ticket)
 
     def popActiveTicket(self):
+
         return self.activeQueue.pop()

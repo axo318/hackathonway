@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<head>
+    <style>
+
+    </style>
+</head>
+
+{% block content %}
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>Doctor Dashboard</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-xl-3">
+            <p>George Smith</p>
+            <form action="{{ url_for('next_patient') }}" method="post">
+                <p><a target="_blank" class="btn btn-primary">Next Patient</a></p>
+            </form>
+        </div>
+
+        <div class="col-xl-3">
+            <p>Kayla Colestorm</p>
+            <p><a href="{{ url_for('next_patient') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+
+        </div>
+
+        <div class="col-md-6 col-lg-3 col-xl-3">
+          <h2>Create Ticket</h2>
+          <p>Fill in a medical ticket form to get a doctor visit.</p>
+          <p><a href="{{ url_for('fill_ticket') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

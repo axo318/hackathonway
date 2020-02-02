@@ -41,7 +41,13 @@ def submit_ticket():
 
 @app.route('/doctor_dashboard', methods=['GET', 'POST'])
 def doctor_dashboard():
-    return render_template('index.html', message='Doctor Dashboard')
+    return render_template('doctor_dashboard.html')
+
+@app.route('/next_patient', methods=['GET', 'POST'])
+def next_patient():
+    # Do smth
+    return redirect(url_for('doctor_dashboard'))
+
 
 
 ### MAIN ###
