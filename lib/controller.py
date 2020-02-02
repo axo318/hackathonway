@@ -2,7 +2,7 @@ import os
 import pandas as pd
 # Custom Imports
 from .webRequest import RequestBuilder
-from config import DIR_DATA, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME
+from .config import DIR_DATA, IDENTIFIER_COLUMN_NAME, CLASSNAME_COLUMN_NAME
 
 '''
 Main class that handles requests from front-end and replies with any needed info

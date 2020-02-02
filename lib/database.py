@@ -3,6 +3,10 @@ File contains functions used for dealing with databases
 '''
 import pandas as pd
 from .config import *
+from .classes.ticket import Ticket
+# from .controller import Controller
+from .classes.person import Patient
+from .classes.person import Doctor
 
 # GLOBALS
 TABLE_ID_DOCTORS  = 0
@@ -44,17 +48,22 @@ def getTickets(): #-> list[Ticket]
 # returns list of Doctors
 def getDoctors(): #-> list[Doctor]
     df = getTable(TABLE_ID_DOCTORS)
+    # print(df)
     listDoctors = []
     for i in range(df.shape[0]):
         row = df.iloc[i]
+        # print('row: {}'.format(row))
         name        = row.iloc[0]
         speciality  = row.iloc[1]
-        listDoctors.append(Doctor(name=name,speciality=speciality))
+        rating      = row.iloc[2]
+        temp_doc = Doctor(name=name, speciality=speciality, rating=rating)
+        # print('temp_doc: {}'.format(temp_doc))
+        listDoctors.append(temp_doc)
     return listDoctors
 
 # returns list of Patients
 def getPatients(): #-> list[Patient]
-    df = getTable(TABLE_ID_TICKETS)
+    df = getTable(TABLE_ID_PATIENTS)
     listPatients = []
     for i in range(df.shape[0]):
         row = df.iloc[i]
@@ -72,14 +81,20 @@ def getPatients(): #-> list[Patient]
 def addDoctor(doctor): #-> bool
     # get Doctor attributes
     doctor_name_given      = doctor.get_name()
+    print('doctor given:\n{}\n'.format(doctor))
     # check if already in lsit of Doctors
     if(checkIfPresent(TABLE_ID_DOCTORS,doctor_name_given)):
         #remove Doctor from list of doctors
         removeData(TABLE_ID_DOCTORS,doctor_name_given)
     # add Doctor to list of Doctors
     df_doctors = getTable(TABLE_ID_DOCTORS)
-    attributes_doctor = [doctor.get_name(),doctor.get_specialty()]
-    df_doctors.loc[df_doctors.shape[0]] = attributes_doctor
+    print('BEFORE ADDING NEW\nshould print all doctors now...')
+    print('df_doctors\n{}'.format(df_doctors))
+    attributes_doctor = [doctor.get_name(),doctor.get_speciality(),doctor.get_rating()]
+    print('attributes_doctor={}'.format(attributes_doctor))
+    df_doctors.loc[len(df_doctors),:] = attributes_doctor
+    print(df_doctors)
+    # print('AFTER ADDING NEW\nshould print all doctors now...')
     saveTable(TABLE_ID_DOCTORS,df_doctors)
     return True
 
@@ -94,7 +109,7 @@ def addPatient(patient): #-> bool
     # add Doctor to list of Doctors
     df_patients = getTable(TABLE_ID_PATIENTS)
     attributes_patient = [patient.get_username(),patient.get_password(),patient.get_dob()]
-    df_patients.loc[df_patients.shape[0]] = attributes_patient
+    df_patients.loc[len(df_patients),:] = attributes_patient
     saveTable(TABLE_ID_PATIENTS,df_patients)
     return True
 
@@ -108,16 +123,24 @@ def addTicket(ticket): #-> bool
         removeData(TABLE_ID_TICKETS,ticket_id_given)
     # add Doctor to list of Doctors
     df_tickets = getTable(TABLE_ID_TICKETS)
-    attributes_ticket = [ticket.get_id(),ticket.get_username(),ticket.get_symptoms(),ticket.get_diagnosis(),ticket.get_doctor(),ticket.get_speciality()]
+    temp_id =ticket.get_id()
+    temp_username =ticket.get_username()
+    temp_symptoms_str = ticket.get_symptoms()
+    print('temp_symptoms_str={}'.format(temp_symptoms_str))
+    temp_diagnosis =ticket.get_diagnosis()
+    temp_doctor =ticket.get_doctor()
+    temp_speciality =ticket.get_speciality()
+    attributes_ticket = [temp_id,temp_username,temp_symptoms_str,temp_diagnosis,temp_doctor,temp_speciality]
     df_tickets.loc[df_tickets.shape[0]] = attributes_ticket
-    saveTable(TABLE_ID_TICKETS,df_patients)
+    saveTable(TABLE_ID_TICKETS,df_tickets)
     return True
 
 #-----------------------------------------------------------
 # Removals
 #-----------------------------------------------------------
 def removeData(table_id,identifier):
-    if(table_id==0):
+    print('removing data from table')
+    if(table_id==TABLE_ID_DOCTORS):
         # get existing one
         df_doctors     = getTable(TABLE_ID_DOCTORS)
         # remove undesired
@@ -144,11 +167,11 @@ def removeData(table_id,identifier):
 # retuers pandas object
 # 0-doctor; 1-patient; 2-ticket
 def getTable(table_id):
-    if(table_id==0):
+    if(table_id==TABLE_ID_DOCTORS):
         return pd.read_csv(DATA_DOCTORS)
-    if(table_id==1):
+    if(table_id==TABLE_ID_PATIENTS):
         return pd.read_csv(DATA_LOGIN)
-    if(table_id==2):
+    if(table_id==TABLE_ID_TICKETS):
         return pd.read_csv(DATA_TICKETS)
     else:
         return -1
@@ -157,13 +180,13 @@ def getTable(table_id):
 # 0-doctor; 1-patient; 2-ticket
 def saveTable(table_id,df):
     if(table_id==TABLE_ID_DOCTORS):
-        df.to_csv(DATA_DOCTORS)
+        df.to_csv(DATA_DOCTORS,index=False)
         return True
     if(table_id==TABLE_ID_PATIENTS):
-        df.to_csv(DATA_LOGIN)
+        df.to_csv(DATA_LOGIN,index=False)
         return True
     if(table_id==TABLE_ID_TICKETS):
-        df.to_csv(DATA_TICKETS)
+        df.to_csv(DATA_TICKETS,index=False)
         return True
     else:
         return False
@@ -171,19 +194,30 @@ def saveTable(table_id,df):
 # 0-doctor; 1-patient; 2-ticket
 def checkIfPresent(table_id,identifier):
     if(table_id==TABLE_ID_DOCTORS):
+        print('check if doctor in list\nidentifier={}'.format(identifier))
         df = getTable(TABLE_ID_DOCTORS)
         rows = df[df[DOCTORS_NAME_COL]==identifier].shape[0]
-        if (rows != 0):
+        print(rows)
+        if (rows == 0):
+            print('returns false')
+            return False
+        else:      
+            print('returns true')
             return True
     if(table_id==TABLE_ID_PATIENTS):
         df = getTable(TABLE_ID_PATIENTS)
         rows = df[df[LOGIN_USERNAME_COL]==identifier].shape[0]
-        if (rows != 0):
+        if (rows == 0):
+            return False
+        else:      
+            print('returns true')
             return True
     if(table_id==TABLE_ID_TICKETS):
         df = getTable(TABLE_ID_TICKETS)
+        print('df[df[TICKETS_ID_COL]]={}'.format(df[df[TICKETS_ID_COL]==identifier]))
         rows = df[df[TICKETS_ID_COL]==identifier].shape[0]
-        if (rows != 0):
+        if (rows == 0):
+            return False
+        else:      
+            print('returns true')
             return True
-    else:
-        return False
