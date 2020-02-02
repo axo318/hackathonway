@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+
+{% block content %}
 <head>
     <style>
       * {
@@ -139,7 +141,9 @@
     </style>
 </head>
 
-{% block content %}
+<body>
+
+
 <div class="container-fluid">
     <div class="jumbotron">
         <h1>Doctor Dashboard</h1>
@@ -177,9 +181,6 @@
         </div>
         <div class="autocomplete" style="width:300px;">
           <input id="s3" type="text" name="s3" placeholder="Symptom">
-        </div>
-        <div class="autocomplete" style="width:300px;">
-          <input id="s4" type="text" name="s4" placeholder="Symptom">
         </div>
 
         <h2> Please fill in final diagnosis: </h2>
@@ -299,7 +300,6 @@
     autocomplete(document.getElementById("s1"), symptoms);
     autocomplete(document.getElementById("s2"), symptoms);
     autocomplete(document.getElementById("s3"), symptoms);
-    autocomplete(document.getElementById("s4"), symptoms);
     autocomplete(document.getElementById("s5"), symptoms);
     autocomplete(document.getElementById("s6"), symptoms);
     autocomplete(document.getElementById("diag"), diagnosis);
@@ -307,5 +307,6 @@
     </script>
 
 </div>
+</body>
 
 {% endblock %}
