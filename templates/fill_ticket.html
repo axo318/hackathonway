@@ -153,7 +153,7 @@ label.white { color: white; }
 
 <div class="container">
   <!--Make sure the form has the autocomplete function switched off:-->
-  <form autocomplete="off" action="/action_page.php">
+  <form autocomplete="off" action="{{ url_for('submit_ticket') }}" method="post">
     <div class="row">
       <div class="col-25">
           <label class='white'><b>Fill in your name: </b></label>
@@ -165,22 +165,22 @@ label.white { color: white; }
     <h2> Please fill in the symptoms you have experienced: </h2>
     <br>
     <div class="autocomplete" style="width:300px;">
-      <input id="s1" type="text" name="myCountry" placeholder="Symptom">
+      <input id="s1" type="text" name="s1" placeholder="Symptom">
     </div>
     <div class="autocomplete" style="width:300px;">
-      <input id="s2" type="text" name="myCountry" placeholder="Symptom">
+      <input id="s2" type="text" name="s2" placeholder="Symptom">
     </div>
     <div class="autocomplete" style="width:300px;">
-      <input id="s3" type="text" name="myCountry" placeholder="Symptom">
+      <input id="s3" type="text" name="s3" placeholder="Symptom">
     </div>
     <div class="autocomplete" style="width:300px;">
-      <input id="s4" type="text" name="myCountry" placeholder="Symptom">
+      <input id="s4" type="text" name="s4" placeholder="Symptom">
     </div>
     <div class="autocomplete" style="width:300px;">
-      <input id="s5" type="text" name="myCountry" placeholder="Symptom">
+      <input id="s5" type="text" name="s5" placeholder="Symptom">
     </div>
     <div class="autocomplete" style="width:300px;">
-      <input id="s6" type="text" name="myCountry" placeholder="Symptom">
+      <input id="s6" type="text" name="s6" placeholder="Symptom">
     </div>
 
 
@@ -288,7 +288,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var symptoms = ["hello", "fuckyou"];
+var symptoms = ["Infertility (Female)","Choking","Kidney pain (Flank pain)","Vertigo (Room spinning)","Headache","Tremors","Skin itching","Eye pain (Irritation)","Tired","Ringing in ears (Tinnitus)","Muscle spasm","Fainting","Arm numbness (paresthesias)","Change in behavior","Lower abdominal pain","Pain or soreness of breast","Face numbness (paresthesias)","Unsteady gait (Trouble walking)","Pustule (Collection of pus)","Dizziness","Arm itching","Blurry vision","Fever of unknown origin","Blood in urine (Hematuria)","Arm redness","General weakness","Upper abdominal pain","Hand redness","Mouth ulcers","Vaginal pain","Fever in the returning traveler","Insomnia (Trouble sleeping)","Foot itching","Rash","Muscle pain","Loss of balance","Double vision (Diplopia)","Numbness","Hand itching","Shoulder ache or pain","Confusion and headache","Seizure","Skin sores","Urinary retention (Inability to urinate)","Bleeding tendency","Ear pressure","Swollen lymph nodes (Large lymph nodes)","Learning difficulties","Vomiting coffee ground material","Failure to thrive","Low heart rate","Abdominal swelling (Stomach swelling)","Skin swelling","Anxiety (Nervousness)","Chest pain","Chest pressure","Hand numbness (paresthesias)","Swollen gums","Shortness of breath","Amenorrhea (No menstruation)","Throat pain","Sinus pain and pressure","Visual problems","Arm ache or pain","Overdose","Frequent urination (Frequency)","Pain in the ear","Nipple discharge","Fever","Incontinence (leaking urine)","Painful gums","Facial droop (weakness)","Visual flashing lights","Speech problem","Bleeding gums","Eye redness","Alcohol abuse","Obesity","Nasal bleeding","Flank pain","Blister (Pocket of fluid)","Headache and weakness","Foot numbness (paresthesias)","Chills","Steatorrhea (Excess fat in stool)","Vaginal bleeding","Hives","Jaundice (Yellowing skin)","Increased facial hair","Trauma","Heart pulsations and palpitations","Ear swelling","Hemoptysis (Coughing blood)","Lethargy (Sluggishness)","Poisoning","Depressed","Sore throat","Eye floaters","Mouth pain","Eye swelling","Leg numbness (paresthesias)","Hot flashes","Itchy rash (Pruritic rash)","Substance abuse (Drug abuse)","Painful rash","Weight loss, unexplained","Arm swelling","Delusions or hallucinations","Jaw pain","Confusion","Neck ache or pain","Swallowing problem (Dysphagia)","Mouth swelling","Nasal congestion","Neck swelling","Low back ache or pain","Facial pain","Impotence","Hypothermia (Low temperature)","Inconsolable baby","Back ache or pain","Armpit pain","Foot redness","Stomach and abdominal pain","Leg ache or pain","Vomiting","Lip swelling","Swelling of both legs","Blood in vomit","Cough","Snoring"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("s1"), symptoms);

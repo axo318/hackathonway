@@ -1,7 +1,141 @@
 {% extends "base.html" %}
 <head>
     <style>
+      * {
+        box-sizing: border-box;
+      }
 
+      .autocomplete {
+        /*the container must be positioned relative:*/
+        position: relative;
+        display: inline-block;
+      }
+
+      .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        /*position the autocomplete items to be the same width as the container:*/
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+      .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+      }
+      .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+      }
+      .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        resize: none;
+      }
+
+      input[type=text], select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 5px 10px 5px 0;
+        display: inline-block;
+        margin-left: 15px;
+      }
+
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 12px;
+        margin-left: 1px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-right: 7px;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #66cfff;
+        padding: 25px;
+        width: 1300px;
+      }
+
+      .col-25 {
+        float: left;
+        width: 15%;
+        margin-top: 6px;
+        margin-left: 1px;
+      }
+
+      .col-75 {
+        float: left;
+        width: 55%;
+        margin-top: 6px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .container-fluid-personal {
+        width: 100%;
+        height: 2%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .jumbotron-personal {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+        border-radius: 0.3rem;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      label.white { color: white; }
+
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
     </style>
 </head>
 
@@ -9,33 +143,169 @@
 <div class="container-fluid">
     <div class="jumbotron">
         <h1>Doctor Dashboard</h1>
+        <h3>{{message}}</h3>
     </div>
-    <div class="row">
 
-        <div class="col-xl-3">
-            <p>George Smith</p>
-            <p><a href="{{ url_for('next_patient',doc='George Smith') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+    <div class="container">
+      <!--Make sure the form has the autocomplete function switched off:-->
+      <form autocomplete="off" action="{{ url_for('close_ticket') }}" method="post">
+        <div class="row">
+          <div class="col-25">
+              <label class='white'><b>Doctor ID: </b></label>
+          </div>
+          <div class="col-75">
+            <p> <input type="text" name="doctorname" class="form-control" id="doctorname" aria-describedby="emailHelp" placeholder="Enter name"> </p>
+          </div>
         </div>
 
-        <div class="col-xl-3">
-            <p>Lisa Anna</p>
-            <p><a href="{{ url_for('next_patient',doc='Lisa Anna') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
-
+        <div class="row">
+          <div class="col-25">
+              <label class='white'><b>Patient ID: </b></label>
+          </div>
+          <div class="col-75">
+            <p> <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"> </p>
+          </div>
         </div>
 
-        <div class="col-xl-3">
-            <p>Johnny Sinns</p>
-            <p><a href="{{ url_for('next_patient',doc='Johnny Sinns') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
-
+        <h2> Please fill in any additional symptoms discussed: </h2>
+        <br>
+        <div class="autocomplete" style="width:300px;">
+          <input id="s1" type="text" name="s1" placeholder="Symptom">
+        </div>
+        <div class="autocomplete" style="width:300px;">
+          <input id="s2" type="text" name="s2" placeholder="Symptom">
+        </div>
+        <div class="autocomplete" style="width:300px;">
+          <input id="s3" type="text" name="s3" placeholder="Symptom">
+        </div>
+        <div class="autocomplete" style="width:300px;">
+          <input id="s4" type="text" name="s4" placeholder="Symptom">
         </div>
 
-        <div class="col-xl-3">
-            <p>Mia Khalifa</p>
-            <p><a href="{{ url_for('next_patient',doc='Mia Khalifa') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
-
+        <h2> Please fill in final diagnosis: </h2>
+        <br>
+        <div class="autocomplete" style="width:300px;">
+          <input id="diag" type="text" name="diag" placeholder="Diagnosis">
         </div>
+        <input type="submit" value="Submit">
+      </form>
 
     </div>
+    </div>
+
+    <script>
+    function autocomplete(inp, arr) {
+      /*the autocomplete function takes two arguments,
+      the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function(e) {
+          var a, b, i, val = this.value;
+          /*close any already open lists of autocompleted values*/
+          closeAllLists();
+          if (!val) { return false;}
+          currentFocus = -1;
+          /*create a DIV element that will contain the items (values):*/
+          a = document.createElement("DIV");
+          a.setAttribute("id", this.id + "autocomplete-list");
+          a.setAttribute("class", "autocomplete-items");
+          /*append the DIV element as a child of the autocomplete container:*/
+          this.parentNode.appendChild(a);
+          /*for each item in the array...*/
+          for (i = 0; i < arr.length; i++) {
+            /*check if the item starts with the same letters as the text field value:*/
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+              /*create a DIV element for each matching element:*/
+              b = document.createElement("DIV");
+              /*make the matching letters bold:*/
+              b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+              b.innerHTML += arr[i].substr(val.length);
+              /*insert a input field that will hold the current array item's value:*/
+              b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+              /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+                  /*insert the value for the autocomplete text field:*/
+                  inp.value = this.getElementsByTagName("input")[0].value;
+                  /*close the list of autocompleted values,
+                  (or any other open lists of autocompleted values:*/
+                  closeAllLists();
+              });
+              a.appendChild(b);
+            }
+          }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function(e) {
+          var x = document.getElementById(this.id + "autocomplete-list");
+          if (x) x = x.getElementsByTagName("div");
+          if (e.keyCode == 40) {
+            /*If the arrow DOWN key is pressed,
+            increase the currentFocus variable:*/
+            currentFocus++;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 38) { //up
+            /*If the arrow UP key is pressed,
+            decrease the currentFocus variable:*/
+            currentFocus--;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 13) {
+            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+            e.preventDefault();
+            if (currentFocus > -1) {
+              /*and simulate a click on the "active" item:*/
+              if (x) x[currentFocus].click();
+            }
+          }
+      });
+      function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+          closeAllLists(e.target);
+      });
+    }
+
+    /*An array containing all the country names in the world:*/
+    var symptoms = ["Infertility (Female)","Choking","Kidney pain (Flank pain)","Vertigo (Room spinning)","Headache","Tremors","Skin itching","Eye pain (Irritation)","Tired","Ringing in ears (Tinnitus)","Muscle spasm","Fainting","Arm numbness (paresthesias)","Change in behavior","Lower abdominal pain","Pain or soreness of breast","Face numbness (paresthesias)","Unsteady gait (Trouble walking)","Pustule (Collection of pus)","Dizziness","Arm itching","Blurry vision","Fever of unknown origin","Blood in urine (Hematuria)","Arm redness","General weakness","Upper abdominal pain","Hand redness","Mouth ulcers","Vaginal pain","Fever in the returning traveler","Insomnia (Trouble sleeping)","Foot itching","Rash","Muscle pain","Loss of balance","Double vision (Diplopia)","Numbness","Hand itching","Shoulder ache or pain","Confusion and headache","Seizure","Skin sores","Urinary retention (Inability to urinate)","Bleeding tendency","Ear pressure","Swollen lymph nodes (Large lymph nodes)","Learning difficulties","Vomiting coffee ground material","Failure to thrive","Low heart rate","Abdominal swelling (Stomach swelling)","Skin swelling","Anxiety (Nervousness)","Chest pain","Chest pressure","Hand numbness (paresthesias)","Swollen gums","Shortness of breath","Amenorrhea (No menstruation)","Throat pain","Sinus pain and pressure","Visual problems","Arm ache or pain","Overdose","Frequent urination (Frequency)","Pain in the ear","Nipple discharge","Fever","Incontinence (leaking urine)","Painful gums","Facial droop (weakness)","Visual flashing lights","Speech problem","Bleeding gums","Eye redness","Alcohol abuse","Obesity","Nasal bleeding","Flank pain","Blister (Pocket of fluid)","Headache and weakness","Foot numbness (paresthesias)","Chills","Steatorrhea (Excess fat in stool)","Vaginal bleeding","Hives","Jaundice (Yellowing skin)","Increased facial hair","Trauma","Heart pulsations and palpitations","Ear swelling","Hemoptysis (Coughing blood)","Lethargy (Sluggishness)","Poisoning","Depressed","Sore throat","Eye floaters","Mouth pain","Eye swelling","Leg numbness (paresthesias)","Hot flashes","Itchy rash (Pruritic rash)","Substance abuse (Drug abuse)","Painful rash","Weight loss, unexplained","Arm swelling","Delusions or hallucinations","Jaw pain","Confusion","Neck ache or pain","Swallowing problem (Dysphagia)","Mouth swelling","Nasal congestion","Neck swelling","Low back ache or pain","Facial pain","Impotence","Hypothermia (Low temperature)","Inconsolable baby","Back ache or pain","Armpit pain","Foot redness","Stomach and abdominal pain","Leg ache or pain","Vomiting","Lip swelling","Swelling of both legs","Blood in vomit","Cough","Snoring"];
+
+    var diagnosis = ["Abdominal trauma","Abrasions (scrapes)","ACE inhibitor induced cough blood pressure medication side effect Drug-induced cough Drug reaction: ACE inhibitor","acetaminophen overdose Adverse reaction to acetaminophen","Adenoiditis (a type of lymph node inflammation)","Alcohol ethanol poisoning (overdose)","Allergic reaction","Allergy","Altitude illness Illnesses due to high altitude effects","Amphetamine abuse","Amphetamine overdose","Anaphylactoid reactions (pseudo allergic reaction)","Anaphylaxis (severe/life threatening allergic reaction)","Ant bite","Anticholinergic drug overdose","Antidepressant overdose","Aortic valve stenosis tight heart valve","Arm swelling","Arteriovenous malformation blood vessel abnormality, AVM","Arthritis joint inflammation","Aspirin salicylates overdose","Atopic dermatitis eczema","Autoimmune conditions","Autoimmune disease","Bartholin abscess or cyst sac of pus near the vaginal opening","Beta blocker overdose blood pressure medication overdose","Bee sting wasp sting","Benign prostatic hyperplasia prostate enlargement","Benzodiazepine Valium abuse","Benzodiazepine Valium overdose","Breast cancer tumor","Breast fibroadenoma benign breast lumps","Bronchiolitis bronchial tube inflammation","Bursitis inflammation of joint cushion","Caffeine use","Calcium channel blocker overdose blood pressure medication overdose","Calluses and corns","Carbon monoxide poisoning odorless, poisonous gas","Carotid cavernous fistula abnormal blood vessel communication","Cavernous sinus aneurysm head vein dilation","Cavernous sinus tumor head vein cancer","Cellulitis skin infection","Cerebellar hemorrhage bleeding in back of brain","Cerebral contusion bruise of brain","Cerebral vascular accident stroke","Cervical lymphadenopathy enlarged neck lymph nodes","Cervical radiculopathy pinched nerve in neck","Cervical spine fracture broken neck bone","Child abuse","Chlorine bleach ingestion","Choledocholithiasis stone in bile duct","Cirrhosis liver failure and scarring","Cluster headache one-sided headache behind the eye","Cocaine overdose","Colonic diverticulitis inflammation of pouches in the large intestine","Common spider bite spider bite","Compartment syndrome increased pressure inside muscles","Contact dermatitis contact skin irritation","Corneal abrasion scrape on eye","Coronary artery dissection heart artery tear","Cough medicine abuse","Crohn's disease regional enteritis, Crohn's colitis, intestinal inflammation","Cystocele bladder hernia","Deep venous thrombosis DVT, venous blood clot","Dental eruption appearance of new tooth","Dentures","Diabetes high blood sugar","Diabetes mellitus type 2 elevated blood sugar","Benadryl diphenhydramine overdose","Diphtheria infection bacterial respiratory infection","Discitis spinal disk inflammation","Dislocation joint out of place","Unisom overdose doxylamine overdose","Drug overuse Prescription Drug Overuse","Drug overdose","Dry air nasal irritation","Ear laceration cut on the ear","Ear swelling","Ecstasy MDMA abuse","Ectopic pregnancy tubal pregnancy","Encephalitis brain infection","Epidural hematoma bleeding around brain or spine","Epiglottitis severe throat inflammation","Erythrasma chronic bacterial skin infection","Esophageal varices dilation of esophageal veins","Esophageal web Schatzki's ring, constriction of esophagus","Estrogen withdrawal female hormone","Extremity trauma leg or arm injury","Facial trauma facial injury","False pregnancy","Familial cold urticaria cold-related hives","Fecal impaction rectal blockage from stool","Fibroid uterine muscle tumor","Fibromyalgia chronic pain disorder","Fracture broken bone","Fungal infections","Gastritis stomach inflammation","Gingivitis inflammation of the gums","Head injury","Head trauma","Heat stroke","Hemoptysis coughing blood","Hemotympanum blood behind ear drum","Herniated disc slipped disc, ruptured disc","Hip fracture broken hip","Hypertension high blood pressure","Hypertensive emergency severely high blood pressure","Hyperthyroidism elevated thyroid hormone","Hypertrophic cardiomyopathy thickened heart muscle","Hypocalcemia low blood calcium","Hypoxia lack of oxygen","Nonsteroidal anti-inflammatory drug overdose Motrin, Advil","Impacted tooth tooth that doesn't erupt","Impingement syndrome of shoulder bone rubs again tendon, bursa","Infection","Inflammatory conditions","Inhalants abuse huffing","Insulin overdose","Intrahepatic cholestasis of pregnancy liver disorder in pregnancy","Iron overdose","Jet lag","Kidney cancer tumor","Knee laceration skin cut","Laryngeal carcinoma throat cancer","Legionellosis Legionnaires' disease","Ligament sprain connection between two bones","Ligament tear connection between two bones","Limb ischemia decreased blood flow","Lung cancer tumor","Malignant hyperthermia rare temperature abnormality","Marijuana use","Maxillary sinus carcinoma sinus cancer","Meniscus injury knee cartilage injury","Metastatic neoplasm cancer spread","Methamphetamine abuse","Mosquito bite","Myocardial infarction heart attack","Myositis muscle inflammation or infection","Narcotic morphine, heroin abuse","Narcotic morphine, heroin overdose","Nasal cancer tumor","Nasal fracture broken nose","Nasal trauma nose injury","Nasopharyngeal carcinoma tumor","Normal menstruation","Norovirus infection viral diarrhea, Norwalk virus","Ophthalmoplegia eye muscle weakness","Oral ulcers mouth ulcers","Orbital fracture broken bone near the eye","Orbital mass growth near the eye","Osteoarthritis bone inflammation","Ovarian cyst female organ fluid collection","Ovarian torsion twisting of the ovary","Overdose","Overuse syndrome injury from repetitive activity","Paget disease of the nipple rare breast cancer","Pancoast syndrome apical lung tumor","Pancreatitis pancreas inflammation","Parasite infection","Perforated septum hole in skin between nostrils","Pericarditis heart sac inflammation","Periodontitis gum inflammation","Periorbital cellulitis infection around eye","Pesticide poisoning organophosphate poisoning","Pheochromocytoma adrenal gland tumor","Pituitary tumor","Placenta previa placenta covers cervix","Poisoning","Posterior inferior cerebellar artery syndrome stroke syndrome","Primary sclerosing cholangitis bile duct disease","Pulmonary edema fluid build-up in the lungs","Pulmonary embolism blood clot in the lungs","Pulmonary fibrosis lung scarring","Quaternary syphilis late stage syphilis","Radial head fracture broken elbow bone","Radiator fluid ethylene glycol poisoning","Rectal abscess collection of pus in the rectum","Renal failure, chronic ongoing kidney failure","Renal trauma kidney trauma","Respiratory failure breathing failure, ARDS","Restless legs syndrome nervous system disorder","Rotavirus infection intestinal viral infection","Rubbing isopropyl alcohol overdose","Severe Acute Respiratory Syndrome SARS, serious viral pneumonia","Scoliosis crooked spine","Septal perforation hole in the skin between nostrils","Septic hip infected hip joint","Sjogren's syndrome dry eyes and mouth","Skin abscess collection of pus","Skull fracture broken bone","Small bowel lymphoma intestinal lymph node cancer","Smoke inhalation","Insect bite","Spinal abscess collection of spinal pus","Spinal cord injury, acute","Splenic infarction death of spleen","Sprain stretched, torn ligament","Squamous cell cancer common skin cancer","Steroid use","Steven Johnson syndrome rare, serious skin disorder","Muscle strain pulled muscle","Supracondylar fracture elbow fracture","Symptomatic dermatographism exaggerated skin response to pressure","Temporal arteritis inflamed scalp artery","Temporal lobe epilepsy non-convulsive seizure","Temporomandibular joint syndrome TMJ, jaw joint pain","Testicular torsion twisting of testicle","Third cranial nerve disorder disorder of eye movement","Tick paralysis toxin from ticks","Tonsillitis tonsil infection","Toxic shock syndrome life-threatening bacterial infection complication","Transverse myelitis spinal cord inflammation","Traumatic nerve injury","Trichomonas vaginalis infection vaginal infection","Vaccination","Vaginal cancer tumor","Vaginal foreign body","Vaginitis vaginal infection inflammation","Vascular insufficiency due to peripheral artery disease PAD, claudication, inadequate blood flow","Vertebral artery dissection neck artery tear","Vertebral fracture broken back or neck bone","Vertebral- basilar artery insufficiency inadequate blood flow to the back of the brain vertebro-basilar insufficiency","Vertebral-basilar stroke stroke in the back of the brain Vertebro basilar insufficiency","Vitiligo loss of skin pigment","Vulvar squamous cell carcinoma skin cancer on female genitalia","Warfarin Coumadin, Jantoven overdose","Warfarin Coumadin use","Whiplash injury neck injury","Windshield wiper fluid Methanol poisoning","Essential tremor abnormal rhythmic shaking","Lymphoma lymph node cancer","Swine Flu H1N1 Influenza","Sagittal sinus thrombosis venous blood clot in the brain","Cervical myelopathy spinal cord compression","Spinal cord tumor","Brain arteriovenous malformation blood vessel abnormality in the brain, AVM Arteriovenous malformation of brain","Carotid artery stenosis neck artery narrowing","Hydrocephalus brain fluid build-up","Central cord syndrome traumatic spine injury","Allergic conjunctivitis allergic reaction in the eye","Cradle cap infant scalp rash","Staphylococcus aureus type of bacteria","Failure to thrive - child Failure to thrive-child Failure to thrive (child)","Hemochromatosis excess iron disorder","Coccidiomycosis valley fever, fungal infection","Rheumatic fever complication of strep infection","Long QT Syndrome inherited heart condition","Subconjunctival hemorrhage blood covering white part of the eye","Myotonia impaired muscle relaxation","Carbuncle","Hyperosmolar hyperglycemic state severely elevated glucose level","Cubital tunnel syndrome nerve compression in the elbow","Foot fracture broken foot","Broken heart syndrome Takotsubo cardiomyopathy","Near drowning","Sea lice bite","Sun poisoning","Vaginal yeast fungal infection","Human papillomavirus infection HPV","Congenital heart disease heart defect at birth","Lumbar spinal stenosis spinal cord compression","Idiopathic thrombocytopenia purpura ITP, low platelets","Ventricular tachycardia VT, dangerous irregular heart beat","Frostbite tissue damage from cold","Skin blood vessel damage Chilblains, pernio","Lactose intolerance","Graves' disease overproduction of thyroid hormone","Angioedema swelling of skin, lips, eyes","Hot tub follicullitis hair follicle infection Pustular folliculitis","Posterior vitreous detachment common eye abnormality","Birth control pill use","Hand fracture broken hand","Mitral regurgitation leaking heart valve","Thalassemia Mediterranean anemia, inherited blood disorder","Heart attack acute myocardial infarction, AMI","Medication reaction","Myxedema coma severely low thyroid hormone","Bed bugs","Early menopause premature ovarian failure","Mayer Rokitansky Küster Hauser syndrome MRKH, inherited vaginal abnormality","Muscle tear","Gastroparesis stomach muscle malfunction","Amaurosis fugax momentary vision loss in one eye","Foreign body in a wound","Wound infection cut infection","Spleen injury splenic rupture","Radiation exposure radiation sickness","Tape worm infection","Basal cell carcinoma skin cancer","Skin tags acrochordons","Compression fracture broken spinal bone","Flea bite","Gilbert's disease liver abnormality","Newborn jaundice newborn skin discoloration","Lewy body dementia common type of dementia","Sarcoma soft tissue cancer","Bone cancer bone tumor","Mastocytosis urticaria pigmentosa, skin disease","Complex migraine migraine with neurologic changes","Small cell lung cancer","Tension headache stress headache","Varicose veins","Lumbar spondylosis spine arthritis","Focal seizure partial seizure","Generalized seizure disorder generalized epilepsy","Peyronie's disease abnormal curvature of the penis","Duodenal cancer small intestine","Essential thrombocythemia excessive blood platelets","Extragonadal germ cell tumors","Food allergy","Foot ulcer","Fragile X syndrome genetic disorder","Glomerulonephritis kidney disease","Graves eye disease Graves ophthalmopathy","Head injury in children Non-accidental traumatic head injury to child","Hemorrhagic stroke CVA, cerebrovascular accident","Hyperkeratosis skin thickening","Lacunar stroke","Large cell lung cancer","Malignant Mesothelioma","Morton's neuroma","Neuroblastoma","Paget disease of the bone paget's disease of the bone","Paraphimosis","Post-polio syndrome","Rectocele","Retinitis pigmentosa","Retinoblastoma pediatric eye cancer","Shoulder sprain","Squamous cell lung cancer","Tay-Sachs disease","Traumatic hip dislocation traumatic dislocation of hip","Traveler's diarrhea Montezuma's revenge","Wilms' Tumor","Amyloidosis","Arnold Chiari malformation","Broken jaw mandible fracture","Dermatofibroma","Broken leg leg fracture","Supraventricular tachycardia SVT","Traumatic brain injury","Lymphadenitis","Stuttering","Complex partial seizures psychomotor epilepsy","Blocked tear duct dacryostenosis","Bacterial tracheitis","Finger amputation","Cutaneous T cell lymphoma","Ductal carcinoma in situ DCIS, breast cancer","Triple negative breast cancer","Invasive ductal carcinoma","Failure to thrive - adult failure to thrive","Burkitt lymphoma lymph node tumor","Genital warts HPV, Human papillomavirus infection","Hand foot and mouth disease Coxsackie virus","Lead overdose lead poisoning","Lead poisoning toxicity","Pharyngeal pouch Zenker's diverticulum, weakening of the esophageal wall","Shoulder joint dislocation dislocated shoulder","Trichinella spiralis infection trichinosis, parasitic infection from undercooked pork","Whooping cough pertussis","HIV AIDS Human Immunodeficiency Virus, Acquired Immune Deficiency Syndrome Human immunodeficiency virus [HIV] disease","Dyslexia reading disorder","Pubic lice","Rickets childhood bone disease","Obesity","Liver injury liver trauma","Reflex sympathetic dystrophy complex pain syndrome","Bulimia nervosa binge eating, vomiting","Cocaine abuse","Corneal foreign body object in the eye","Cutaneous larva migrans parasitic skin disease","Measles viral disease with typical rash","Methyl alcohol intoxication methanol","Pityriasis rosea inflammatory skin rash","Rickettsial infections type of bacterial infection","Septic arthritis joint infection","Sickle cell crisis complication of sickle cell disease","Tick borne encephalitis brain infection","Tuberculosis infection TB","Typhoid fever salmonella typhi infection from contaminated food or water","Nasal foreign body unnatural object in the nose","Hodgkin's disease cancer of the lymph system","Body lice","Cat scratch fever bacterial infection after cat scratch","Sunburn","Mucormycosis fungal infection","Japanese encephalitis viral brain infection","Familial dysautonomia genetic disorder","Friedreich's Ataxia genetic disorder","Excessive hair growth Hirsutism","Scurvy vitamin C deficiency","Chlamydia trachomatis infection STD","Chronic pain","Dysfunctional uterine bleeding abnormal vaginal bleeding","Genital herpes HSV type 2 infection","Hordeolum stye of eye","Neisseria gonorrhea infection sexually transmitted disease","Retropharyngeal abscess throat abscess","Septic shock low blood pressure from serious blood infection","Sexually transmitted disease STD","Torticollis, spasmodic neck muscle spasm","Urinary tract malformation","Head lice","Moles nevi","Pterygium growth on the eye","Scleritis inflammation of the eye","Herpangina mouth blisters","Farsightedness hyperopia/hypermetropia","Parathyroid cancer","Presbyopia aging vision","Tropical sprue","Ichthyosis","Vitamin D deficiency","Tic Disorder","Retinopathy","Achilles tendonitis (heel tendon inflammation)","Cavernous sinus thrombosis head vein blood clot","Dry socket pain after tooth removal","Epidural abscess brain or spine pus collection","Poliomyelitis polio","Shigellosis bacterial intestinal infection","Sickle cell disease disease of red blood cells","Rocky mountain spotted fever bacterial infection spread by ticks","Tourette syndrome repetitive involuntary movements, vocalizations","Hidradenitis suppurativa chronic collections of pus","Retrobulbar Neuritis","Fibromuscular dysplasia FMD","Anorexia nervosa (eating disorder)","Esophageal cyst","Hantavirus infection rare, serious viral infection","Infectious mononucleosis Epstein Barr virus, "Mono"","Lipoma benign fatty tumor","Mononucleosis common viral illness","Optic neuritis optic nerve inflammation","Mouth cancer oropharyngeal cancer","Pelvic inflammatory disease PID, female reproductive organ infection","Serotonin syndrome severe medication reaction","Toothache","Brachial plexus injury shoulder nerve injury","Chicken pox varicella virus","Carcinoid syndrome flushing, diarrhea","Goodpasture syndrome disease of kidneys and lungs","Tear duct infection Dacryocystitis","Testicular hypofunction","Turner syndrome gonadal dysgenesis","Meralgia Paresthetica","Alcohol ethanol intoxication","Brain abscess collection of pus in the brain","Breast fat necrosis dead breast fat","Hemophilia inherited bleeding disorder","Migraine type of headache","Tarsal tunnel syndrome foot nerve damage","Tonsillar cancer tumor tongue","Toxoplasma infection Toxoplasmosis parasite infection","Inhaled foreign body in respiratory tract","Neurofibromatosis inherited nerve tumors","Fallopian tube cancer","AC joint separation acromioclavicular joint separation closed separation of acromioclavicular joint","Back trauma injury","Chest trauma injury","Eye trauma injury","Motor neuron disease progressive nerve disorder","Mouth trauma injury","Neck trauma injury","Trauma","Autism spectrum disorder ASD","Erectile dysfunction ED","Keloid overgrown scar","Beriberi thiamine vitamin B1 deficiency","Cholesteatoma middle ear mass","Giardiasis giardia infection","Mediastinitis inner chest inflammation","Pseudogout calcium deposit arthritis","Syphilis treponema pallidum","Thyroglossal duct cyst neck cyst","Tongue cancer tumor","Cauliflower ear wrestlers ear","Mumps viral infection involving salivary glands","Peritonsillar abscess collection of pus around tonsils","Pulpitis dental root inflammation","Ramsay Hunt syndrome viral infection causing facial weakness","Thyroiditis thyroid inflammation","Ringworm of the body tinea corporis","Male infertility","Thyroid cyst","Charcot-Marie-Tooth disease","Appendicitis","Aseptic necrosis of bone bone death and destruction","Basilar skull fracture broken skull","Hereditary hemorrhagic telangiectasia Osler Weber Rendu syndrome","Hypokalemic periodic paralysis inherited muscle weakness and low potassium","Pemphigus rare skin disorder","Polyarteritis Nodosa PAN","Wrist sprain","Alcohol withdrawal syndrome (mild)","Contusion bruise, ecchymosis","Henoch Schönlein purpura blood vessel inflammation","Kawasaki disease pediatric blood vessel disease","Leukemia blood cell cancer","Nasal polyps growths","Thoracic outlet syndrome nerve, blood vessel compression","Muscular dystrophy inherited muscle disease","Celiac disease celiac sprue","Cerebellar syndrome loss of coordination","Herpes stomatitis viral mouth infection","Hyphema traumatic blood in eye","Leishmaniasis parasitic infection, kala azar","Uveitis iritis, eye inflammation","Impetigo bacterial skin infection","Pneumocystis pneumonia PCP, fungal lung infection","Huntington disease chorea","Cerebellar Ataxia","Lyme disease bacterial infection from ticks","Malaria mosquito transmitted illness","Osteomyelitis bone infection","Thrombotic thrombocytopenia purpura TTP, rare blood disorder Thrombotic thrombocytopenic purpura","Hepatitis A","Takayasu's arteritis Giant cell arteritis of the young","Aphthous ulcers mouth stomatitis","Botulism bacterial toxin causing muscle weakness","Ludwigs angina severe infection in the floor of the mouth and neck","Ear drum rupture tympanic membrane rupture","Scabies skin disease caused by mites","Food poisoning","Brucellosis bacterial infection spread from animals","Campylobacter infection intestinal bacterial infection","Myocarditis heart muscle inflammation","Myopathy muscle disease","Rhinosporidiosis fungal nasal infection","Coronary artery anomaly heart artery malformation","Clavicle fracture broken collar bone","Cerebral palsy movement disorder","Heat cramps","Porphyria rare disorder of skin, nervous system","Behcets disease small blood vessel inflammation disorder","Chagas disease trypanosomiasis","Lymphangitis lymph tissue inflammation","Malabsorption syndrome abnormal intestinal digestion","Orbital cellulitis soft tissue eye infection","Polycystic kidney disease inherited kidney disorder","Strabismus crossed eyes","Developmental delay","Acute angle closure glaucoma increased inner eye pressure","Gallbladder cancer","Gallbladder and bile duct cancer Gallbladder cancer bile duct cancer","Conversion disorder","Body dysmorphic disorder body appearance obsession","De Quervain's tenosynovitis hand tendon inflammation","Melanoma skin cancer","Pemphigoid","Atypical pneumonia lung infection","Brain tumor cancer of the brain","Meningitis spinal fluid infection","Meningioma brain tumor","Astrocytoma brain tumor","Adjustment disorder (poor adjustment to life stressor)","Intracranial hemorrhage bleeding in brain","Toxic megacolon rapid dilation of the colon","Corneal ulcer","Obsessive compulsive disorder OCD, anxiety disorder","Teeth grinding bruxism","Dystonia","Post concussive syndrome symptoms after a concussion","Viral infections","Amyotrophic lateral sclerosis ALS, Lou Gehrig's disease","Ankle fracture broken ankle","Mycoplasma infection bacteria","Aphakia","Laryngitis voice box inflammation","Urticaria hives","Esophageal cancer tumor","Wolff Parkinson White syndrome WPW, additional electrical pathway in the heart","Hypoparathyroidism","Ankylosing spondylitis (severe spine arthritis)","Spinal cord compression cauda equina syndrome","Cervical cancer tumor","Gastroenteritis intestinal infection","Candida albicans yeast infection","Dental abscess tooth infection","Malnutrition","Scalded skin syndrome blistering skin infection","Cushing disease excessive pituitary gland hormones","Rectal ulcer","Sarcoidosis inflammatory disease","Guillain Barre syndrome ascending muscle weakness","Raynaud's disease blood vessel constriction","Miller Fisher Syndrome rare nerve disease","Burns","Fat embolism blood clot from fat","Lupus systemic lupus erythematosus, SLE","Peripheral neuropathy nerve damage"]
+    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    autocomplete(document.getElementById("s1"), symptoms);
+    autocomplete(document.getElementById("s2"), symptoms);
+    autocomplete(document.getElementById("s3"), symptoms);
+    autocomplete(document.getElementById("s4"), symptoms);
+    autocomplete(document.getElementById("s5"), symptoms);
+    autocomplete(document.getElementById("s6"), symptoms);
+    autocomplete(document.getElementById("diag"), diagnosis);
+
+    </script>
+
 </div>
 
 {% endblock %}

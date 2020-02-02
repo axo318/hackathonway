@@ -3,7 +3,7 @@ import os
 
 # Custom imports
 from lib.controller import Controller
-
+from lib.database import getTickets
 # Web imports
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 
@@ -41,6 +41,28 @@ def submit_ticket():
         # Deal with Ticket
         controller.dealWithRequest('ticket', data=request.form)
         return render_template('index.html', message='SUCCESS')
+    else:
+        return render_template('index.html', message='ERROR, PLEASE RETRY')
+
+@app.route('/close_ticket', methods=['GET', 'POST'])
+def close_ticket():
+    docid = request.form['doctorname']
+    patname = request.form['name']
+    hit = 0
+    if len(patname)>0:
+        # Deal with Ticket
+        tickets = getTickets()
+        for x in tickets:
+            if x.get_username() == patname:
+                diagnosis = x.get_diagnosis()
+                hit += 1
+                break
+        if hit==0:
+            return render_template('doctor_dashboard', message='Patient name not found.')
+        if request.form['diag']==diagnosis:
+            return render_template('index.html', message='SUCCESS')
+        else:
+            return render_template('doctor_dashboard.html', message='Please call for assistance. Diagnosis deemed invalid.')
     else:
         return render_template('index.html', message='ERROR, PLEASE RETRY')
 
