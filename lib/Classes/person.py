@@ -16,10 +16,10 @@ class Patient:
 
     def get_dob(self):
         return self.DOB
-    
-    def __str__(self):
-        str_out = 'self.USERNAME = {}\nself.PASSWORD = {}\nself.DOB = {}\n'.format(self.USERNAME,self.PASSWORD,self.DOB)
-        return str_out
+
+    # def __str__(self):
+    #     str_out = 'self.USERNAME = {}\nself.PASSWORD = {}\nself.DOB = {}\n'.format(self.USERNAME,self.PASSWORD,self.DOB)
+    #     return str_out
 
 
 class Doctor:
@@ -38,6 +38,6 @@ class Doctor:
     def get_speciality(self):
         return self.SPECIALITY
 
-    def __str__(self):
-        str_out = 'self.NAME = {}\nself.SPECIALITY = {}\nself.RATING={}'.format(self.NAME,self.SPECIALITY,self.RATING)
-        return str_out
+    # def __str__(self):
+    #     str_out = 'self.NAME = {}\nself.SPECIALITY = {}\nself.RATING={}'.format(self.NAME,self.SPECIALITY,self.RATING)
+    #     return str_out

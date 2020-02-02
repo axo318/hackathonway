@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+<head>
+    <style>
+
+    </style>
+</head>
+
+{% block content %}
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>Doctor Dashboard</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-xl-3">
+            <p>George Smith</p>
+            <p><a href="{{ url_for('next_patient',doc='George Smith') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+        </div>
+
+        <div class="col-xl-3">
+            <p>Lisa Anna</p>
+            <p><a href="{{ url_for('next_patient',doc='Lisa Anna') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+
+        </div>
+
+        <div class="col-xl-3">
+            <p>Johnny Sinns</p>
+            <p><a href="{{ url_for('next_patient',doc='Johnny Sinns') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+
+        </div>
+
+        <div class="col-xl-3">
+            <p>Mia Khalifa</p>
+            <p><a href="{{ url_for('next_patient',doc='Mia Khalifa') }}" target="_blank" class="btn btn-primary">Fill in Ticket &raquo;</a></p>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

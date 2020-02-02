@@ -1,6 +1,6 @@
 class Ticket(object):
 
-    def __init__(self, id=None, username=None, symptoms=None, diagnosis=None, doctor=None, speciality=None):
+    def __init__(self, id=None, username=None, symptoms=None, diagnosis=None, doctor=None, speciality=None, severity=None):
         self.ID = id
         self.USERNAME = username
         self.SYMPTOMS = symptoms
@@ -8,7 +8,7 @@ class Ticket(object):
         self.DOCTOR = doctor
         self.SPECIALITY = speciality
         # ----------------------
-        self.QUEUE = None
+        self.SEVERITY = severity
 
     def close(self):
         # update model and database
@@ -17,6 +17,9 @@ class Ticket(object):
     # -- Update/add variables --
     def set_diagnosis(self, diagnosis):
         self.DIAGNOSIS = diagnosis
+
+    def set_doctor(self, doctor):
+        self.DOCTOR = doctor
 
     def set_speciality(self, speciality):
         self.SPECIALITY = speciality
@@ -48,5 +51,5 @@ class Ticket(object):
         return self.QUEUE
 
     def __str__(self):
-        str_out = 'ID = {}\n USERNAME = {}\n SYMPTOMS = {}\n DIAGNOSIS = {}\n DOCTOR = {}\n SPECIALITY={}'.format(self.ID, self.USERNAME, self.SYMPTOMS, self.DIAGNOSIS, self.DOCTOR, self.SPECIALITY) 
+        str_out = 'ID = {}\n USERNAME = {}\n SYMPTOMS = {}\n DIAGNOSIS = {}\n DOCTOR = {}\n SPECIALITY={}'.format(self.ID, self.USERNAME, self.SYMPTOMS, self.DIAGNOSIS, self.DOCTOR.get_name(), self.SPECIALITY)
         return str_out
