@@ -46,3 +46,7 @@ class Ticket(object):
 
     def get_queue(self):
         return self.QUEUE
+
+    def __str__(self):
+        str_out = 'ID = {}\n USERNAME = {}\n SYMPTOMS = {}\n DIAGNOSIS = {}\n DOCTOR = {}\n SPECIALITY={}'.format(self.ID, self.USERNAME, self.SYMPTOMS, self.DIAGNOSIS, self.DOCTOR, self.SPECIALITY) 
+        return str_out

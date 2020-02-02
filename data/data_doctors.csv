@@ -1,3 +1,4 @@
-name,speciality
-Aristide Fumagalli,psychologist
-Blanca Salamanca,psychologist
+name,speciality,rating
+Aristide Fumagalli,psychologist,
+Blanca Salamanca,psychologist,
+Mia Malkova,surgeon,0.9
