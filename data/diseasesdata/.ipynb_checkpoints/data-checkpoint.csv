@@ -1,0 +1,1314 @@
+,Diagnosis,Symptoms,Weight
+0,Abdominal swelling,[],0.5
+1,Abdominal trauma,"['Trauma', 'Lower abdominal pain']",2.0
+2,Abrasions (scrapes),"['Painful rash', 'Arm ache or pain', 'Pain or soreness of breast', 'Chest pressure', 'Ear pressure', 'Headache', 'Leg ache or pain', 'Neck ache or pain', 'Rash', 'Skin sores', 'Chest pain']",0.36
+3,ACE inhibitor induced cough blood pressure medication side effect Drug-induced cough Drug reaction: ACE inhibitor,"['Cough', 'Mouth swelling', 'Lip swelling', 'Eye swelling']",1.0
+4,acetaminophen overdose Adverse reaction to acetaminophen,"['Overdose', 'Poisoning']",3.0
+5,Tylenol acetaminophen poisoning,[],2.0
+6,Achilles tendon rupture (heel tendon tear),[],1.75
+7,Acid LSD abuse,['Substance abuse (Drug abuse)'],
+8,Acute fatty liver of pregnancy,[],0.5
+9,Adenoiditis (a type of lymph node inflammation),['Snoring'],1.67
+10,Alcohol ethanol poisoning (overdose),"['Alcohol abuse', 'Choking']",2.0
+11,Alcoholic ketoacidosis Alcohol induced ketoacidosis (complication of heavy alcohol use),[],2.0
+12,Allergic reaction,"['Hives', 'Skin itching', 'Rash', 'Itchy rash (Pruritic rash)', 'Mouth swelling', 'Lip swelling', 'Eye swelling', 'Swollen gums', 'Foot itching', 'Arm swelling', 'Ear swelling', 'Cough', 'Arm itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Lower abdominal pain', 'Chest pressure', 'Dizziness', 'Fainting', 'Shortness of breath', 'Skin sores']",2.57
+13,Allergy,"['Sinus pain and pressure', 'Snoring']",1.8
+14,Altitude illness Illnesses due to high altitude effects,"['Unsteady gait (Trouble walking)', 'Loss of balance', 'Confusion', 'Confusion and headache']",1.17
+15,Amphetamine abuse,"['Delusions or hallucinations', 'Insomnia (Trouble sleeping)', 'Anxiety (Nervousness)', 'Dizziness', 'Headache', 'Substance abuse (Drug abuse)']",1.29
+16,Amphetamine overdose,"['Overdose', 'Poisoning']",1.75
+17,Anaphylactoid reactions (pseudo allergic reaction),"['Hives', 'Itchy rash (Pruritic rash)', 'Mouth swelling', 'Lip swelling']",2.0
+18,Anaphylaxis (severe/life threatening allergic reaction),"['Hives', 'Shortness of breath', 'Itchy rash (Pruritic rash)', 'Mouth swelling', 'Skin swelling', 'Lip swelling']",2.18
+19,Ankle laceration (cut in skin),[],2.0
+20,Ankle swelling,[],1.5
+21,Anopheles mosquito bite,[],2.0
+22,Ant bite,"['Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching']",0.18
+23,Anticholinergic drug overdose,"['Urinary retention (Inability to urinate)', 'Poisoning', 'Foot redness', 'Hand redness', 'Arm redness']",1.33
+24,Antidepressant overdose,"['Overdose', 'Poisoning']",1.67
+25,Aortic valve stenosis tight heart valve,"['Heart pulsations and palpitations', 'Chest pain']",0.0
+26,Arm laceration skin cut,[],2.0
+27,Arm swelling,['Arm swelling'],0.0
+28,"Arteriovenous malformation blood vessel abnormality, AVM",['Nasal bleeding'],1.0
+29,Arthritis joint inflammation,"['Arm ache or pain', 'Back ache or pain', 'Leg ache or pain', 'Neck ache or pain', 'Low back ache or pain']",0.79
+30,Aspirin salicylates overdose,"['Overdose', 'Poisoning', 'Ringing in ears (Tinnitus)']",3.0
+31,Atopic dermatitis eczema,"['Skin itching', 'Rash', 'Itchy rash (Pruritic rash)', 'Skin sores']",2.0
+32,Autoimmune conditions,"['Fever of unknown origin', 'Mouth ulcers']",1.0
+33,Autoimmune disease,"['Lethargy (Sluggishness)', 'Muscle pain', 'Jaundice (Yellowing skin)']",0.75
+34,Avulsions forcible tissue detachment,[],2.0
+35,Bacterial dysentery bacterial infection of the intestines,[],2.0
+36,Bacterial vaginosis vaginal infection,"['Vaginal pain', 'Lower abdominal pain', 'Back ache or pain', 'Skin itching', 'Rash', 'Skin sores', 'Stomach and abdominal pain']",
+37,Balanitis penis swelling,[],
+38,Bartholin abscess or cyst sac of pus near the vaginal opening,"['Vaginal pain', 'Skin sores']",1.0
+39,Beta blocker overdose blood pressure medication overdose,"['Overdose', 'Poisoning']",1.0
+40,Bee sting wasp sting,"['Skin swelling', 'Lip swelling', 'Ear swelling', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching']",1.88
+41,Benign prostatic hyperplasia prostate enlargement,"['Frequent urination (Frequency)', 'Blood in urine (Hematuria)', 'Urinary retention (Inability to urinate)']",1.0
+42,Benzodiazepine Valium abuse,"['Substance abuse (Drug abuse)', 'Depressed']",0.5
+43,Benzodiazepine Valium overdose,"['Overdose', 'Poisoning', 'Change in behavior']",2.0
+44,Benzodiazepine Valium toxicity,[],2.0
+45,Black widow spider bite,[],1.0
+46,Breast cancer tumor,"['Pain or soreness of breast', 'Dizziness', 'Chest pain', 'Nipple discharge']",1.6
+47,Breast fibroadenoma benign breast lumps,"['Pain or soreness of breast', 'Nipple discharge']",1.33
+48,Bronchiolitis bronchial tube inflammation,['Shortness of breath'],0.88
+49,Brown recluse spider bite,[],2.0
+50,Burning mouth syndrome,"['Mouth pain', 'Painful gums', 'Sore throat', 'Throat pain']",
+51,Bursitis inflammation of joint cushion,"['Shoulder ache or pain', 'Arm ache or pain', 'Leg ache or pain']",0.92
+52,Caffeine use,"['Insomnia (Trouble sleeping)', 'Infertility (Female)']",1.0
+53,Calcium channel blocker overdose blood pressure medication overdose,"['Overdose', 'Poisoning']",1.0
+54,Calluses and corns,['Skin sores'],0.67
+55,"Carbon monoxide poisoning odorless, poisonous gas","['Change in behavior', 'Dizziness', 'Headache', 'Numbness', 'Poisoning', 'Seizure', 'Vomiting', 'Fainting', 'Confusion', 'Headache and weakness', 'Confusion and headache']",2.07
+56,Carotid cavernous fistula abnormal blood vessel communication,['Sinus pain and pressure'],0.0
+57,Cavernous sinus aneurysm head vein dilation,"['Sinus pain and pressure', 'Headache and weakness']",1.0
+58,Cavernous sinus tumor head vein cancer,"['Sinus pain and pressure', 'Headache and weakness']",0.0
+59,Cellulitis skin infection,"['Arm ache or pain', 'Pain or soreness of breast', 'Chills', 'Fever', 'Leg ache or pain', 'Swelling of both legs', 'Neck swelling', 'Rash', 'Painful rash', 'Skin swelling', 'Lip swelling', 'Arm swelling', 'Ear swelling', 'Hand redness', 'Foot redness', 'Arm redness', 'Armpit pain', 'Upper abdominal pain', 'Back ache or pain', 'Ear pressure', 'Pain in the ear', 'Skin itching', 'Neck ache or pain', 'Skin sores', 'Chest pain', 'Stomach and abdominal pain', 'Low back ache or pain']",1.35
+60,Cerebellar hemorrhage bleeding in back of brain,['Headache and weakness'],1.0
+61,Cerebral contusion bruise of brain,"['Speech problem', 'Visual problems', 'Headache and weakness', 'Confusion and headache']",1.86
+62,Cerebral vascular accident stroke,"['Change in behavior', 'Dizziness', 'Fainting', 'Hypothermia (Low temperature)', 'Incontinence (leaking urine)', 'Numbness', 'Seizure', 'Speech problem', 'Swallowing problem (Dysphagia)', 'Unsteady gait (Trouble walking)', 'Visual problems', 'Urinary retention (Inability to urinate)', 'Choking', 'Loss of balance', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)', 'Facial droop (weakness)', 'Confusion', 'Headache and weakness']",1.78
+63,Cervical lymphadenopathy enlarged neck lymph nodes,"['Neck swelling', 'Swollen lymph nodes (Large lymph nodes)']",2.0
+64,Cervical radiculopathy pinched nerve in neck,"['Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Arm ache or pain', 'Neck ache or pain']",0.29
+65,Cervical spine fracture broken neck bone,"['Neck ache or pain', 'Arm numbness (paresthesias)', 'Incontinence (leaking urine)']",1.8
+66,Child abuse,"['Inconsolable baby', 'Learning difficulties']",2.25
+67,Chlorine bleach ingestion,['Poisoning'],1.0
+68,Choledocholithiasis stone in bile duct,"['Upper abdominal pain', 'Jaundice (Yellowing skin)', 'Steatorrhea (Excess fat in stool)', 'Chest pain']",1.5
+69,Chronic fatigue syndrome CFS,"['Lethargy (Sluggishness)', 'Tired']",
+70,Cirrhosis liver failure and scarring,"['Weight loss, unexplained', 'Vomiting coffee ground material', 'Bleeding gums', 'Swelling of both legs', 'Abdominal swelling (Stomach swelling)', 'Jaundice (Yellowing skin)', 'Impotence', 'Blood in vomit', 'Alcohol abuse']",1.38
+71,Cluster headache one-sided headache behind the eye,"['Facial pain', 'Headache']",0.33
+72,Cocaine overdose,"['Overdose', 'Poisoning']",1.4
+73,Colonic diverticulitis inflammation of pouches in the large intestine,"['Lower abdominal pain', 'Flank pain', 'Stomach and abdominal pain', 'Upper abdominal pain', 'Back ache or pain', 'Kidney pain (Flank pain)']",1.36
+74,Common spider bite spider bite,['Arm swelling'],2.0
+75,Compartment syndrome increased pressure inside muscles,"['Leg ache or pain', 'Numbness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)']",1.33
+76,Contact dermatitis contact skin irritation,"['Rash', 'Foot itching', 'Hand itching', 'Armpit pain', 'Ear pressure', 'Pain in the ear', 'Skin itching', 'Skin sores']",1.09
+77,"Poison ivy poison oak, poison sumac","['Skin itching', 'Mouth swelling', 'Skin swelling', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Rash', 'Skin sores']",
+78,Corneal abrasion scrape on eye,"['Eye pain (Irritation)', 'Visual problems', 'Inconsolable baby', 'Eye redness', 'Blurry vision']",1.83
+79,Coronary artery dissection heart artery tear,['Chest pain'],1.0
+80,Cough medicine abuse,['Overdose'],2.0
+81,"Crohn's disease regional enteritis, Crohn's colitis, intestinal inflammation","['Flank pain', 'Weight loss, unexplained', 'Lower abdominal pain', 'Stomach and abdominal pain', 'Back ache or pain', 'Kidney pain (Flank pain)', 'Vomiting']",1.57
+82,Cryptosporidium infection diarrheal parasite infection Infection by Cryptosporidium Cryptosporidiosis infection Infection by Cryptosporidium parvum,[],1.0
+83,Cystocele bladder hernia,"['Frequent urination (Frequency)', 'Incontinence (leaking urine)', 'Urinary retention (Inability to urinate)']",0.75
+84,"Deep venous thrombosis DVT, venous blood clot","['Arm ache or pain', 'Leg ache or pain', 'Swelling of both legs', 'Arm swelling', 'Hand redness', 'Foot redness', 'Arm redness']",1.68
+85,Dental eruption appearance of new tooth,['Pain in the ear'],1.0
+86,Dentures,"['Mouth pain', 'Painful gums', 'Swollen gums']",1.0
+87,Diabetes high blood sugar,"['Lethargy (Sluggishness)', 'Visual problems', 'Tired', 'Weight loss, unexplained', 'Failure to thrive', 'Urinary retention (Inability to urinate)', 'Frequent urination (Frequency)', 'Numbness', 'Hand numbness (paresthesias)', 'Impotence', 'Eye floaters', 'Arm itching', 'Foot itching', 'Hand itching', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)', 'Confusion']",0.96
+88,Diabetes mellitus type 2 elevated blood sugar,"['Double vision (Diplopia)', 'Incontinence (leaking urine)', 'Obesity']",0.57
+89,Benadryl diphenhydramine overdose,"['Overdose', 'Poisoning']",2.0
+90,Diphtheria infection bacterial respiratory infection,"['Sore throat', 'Swallowing problem (Dysphagia)', 'Throat pain']",1.0
+91,Discitis spinal disk inflammation,"['Back ache or pain', 'Neck ache or pain', 'Low back ache or pain']",1.0
+92,Dislocation joint out of place,['Arm ache or pain'],0.88
+93,Unisom overdose doxylamine overdose,"['Overdose', 'Poisoning']",1.67
+94,Drug overuse Prescription Drug Overuse,"['Change in behavior', 'Lethargy (Sluggishness)', 'Weight loss, unexplained', 'Anxiety (Nervousness)', 'Substance abuse (Drug abuse)']",2.0
+95,Drug overdose,"['Hypothermia (Low temperature)', 'Loss of balance', 'Speech problem', 'Confusion']",1.43
+96,Drug reaction,"['Rash', 'Seizure', 'Blister (Pocket of fluid)', 'Change in behavior', 'Depressed', 'Dizziness', 'Fainting', 'Delusions or hallucinations', 'Headache', 'Insomnia (Trouble sleeping)', 'Skin itching', 'Substance abuse (Drug abuse)', 'Vomiting', 'Skin sores', 'Chest pain']",
+97,Dry air nasal irritation,['Nasal bleeding'],2.0
+98,Ear laceration cut on the ear,"['Ear pressure', 'Pain in the ear']",0.0
+99,Ear swelling,"['Ear pressure', 'Pain in the ear']",0.0
+100,Eclampsia hypertensive disorder of pregnancy,[],1.0
+101,Ecstasy MDMA abuse,['Substance abuse (Drug abuse)'],2.0
+102,Ectopic pregnancy tubal pregnancy,"['Lower abdominal pain', 'Shoulder ache or pain', 'Vaginal bleeding', 'Stomach and abdominal pain']",1.43
+103,"Elapid Elapid venom cobra, coral, mamba venom toxicity",[],1.0
+104,Encephalitis brain infection,"['Fever in the returning traveler', 'Seizure', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Headache', 'Tremors', 'Confusion and headache']",1.64
+105,Endometrial cancer cancer of the lining of the uterus,[],0.0
+106,Inflammation of testicular tubes epididymitis,[],1.0
+107,Epidural hematoma bleeding around brain or spine,"['Change in behavior', 'Seizure', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Headache', 'Loss of balance', 'Confusion', 'Headache and weakness', 'Confusion and headache']",2.36
+108,Epiglottitis severe throat inflammation,"['Chills', 'Fever', 'Swallowing problem (Dysphagia)', 'Sore throat', 'Throat pain', 'Choking']",1.88
+109,Erythrasma chronic bacterial skin infection,"['Hand redness', 'Foot redness', 'Arm redness']",0.0
+110,Esophageal varices dilation of esophageal veins,"['Blood in vomit', 'Vomiting coffee ground material']",1.75
+111,"Esophageal web Schatzki's ring, constriction of esophagus",['Swallowing problem (Dysphagia)'],2.0
+112,Estrogen withdrawal female hormone,['Vaginal bleeding'],1.0
+113,Extremity trauma leg or arm injury,"['Trauma', 'Arm ache or pain']",0.4
+114,Eyelid laceration skin cut,[],0.0
+115,Eyelid swelling,[],2.0
+116,Facial laceration skin cut,[],2.0
+117,Facial trauma facial injury,"['Trauma', 'Face numbness (paresthesias)', 'Facial droop (weakness)']",3.0
+118,Facial swelling,[],2.0
+119,False pregnancy,['Depressed'],0.0
+120,Familial cold urticaria cold-related hives,"['Hives', 'Itchy rash (Pruritic rash)']",0.0
+121,Fecal impaction rectal blockage from stool,['Incontinence (leaking urine)'],1.5
+122,Femoral hernia groin hernia,[],
+123,Fever of unknown origin fever without obvious cause,[],
+124,Fibroid uterine muscle tumor,"['Vaginal bleeding', 'Infertility (Female)', 'Stomach and abdominal pain']",0.5
+125,Fibromyalgia chronic pain disorder,"['Muscle pain', 'Tired', 'Low back ache or pain', 'Lower abdominal pain', 'Arm ache or pain', 'Back ache or pain', 'Flank pain', 'Kidney pain (Flank pain)', 'Leg ache or pain', 'Neck ache or pain', 'Chest pain']",0.12
+126,Finger laceration skin cut,[],1.0
+127,Finger swelling,[],2.0
+128,Foot laceration skin cut,[],2.0
+129,Foot swelling,[],2.0
+130,Foreign body object originating outside the body,[],1.67
+131,"Foreign body, rectal",[],1.67
+132,Fracture broken bone,"['Arm ache or pain', 'Leg ache or pain', 'Swelling of both legs', 'Hand numbness (paresthesias)', 'Arm swelling', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)', 'Back ache or pain', 'Low back ache or pain']",1.36
+133,Functional disorders psychogenic illness,[],0.67
+134,Fungal infections,"['Fever of unknown origin', 'Itchy rash (Pruritic rash)']",1.33
+135,"Bacterial vaginosis BV, garnerella vaginalis",[],2.0
+136,Gastritis stomach inflammation,"['Upper abdominal pain', 'Blood in vomit', 'Vomiting coffee ground material', 'Stomach and abdominal pain', 'Back ache or pain', 'Chest pressure', 'Vomiting', 'Low back ache or pain']",0.77
+137,"Gastrointestinal perforation hole in the stomach, intestine",[],0.77
+138,Gestational diabetes diabetes during pregnancy,[],0.5
+139,Gestational hypertension high blood pressure in pregnancy,[],0.5
+140,Gingivitis inflammation of the gums,"['Mouth pain', 'Mouth ulcers', 'Bleeding gums', 'Painful gums', 'Swollen gums']",1.8
+141,Hammer toes toe deformity,[],1.0
+142,Hand laceration skin cut,[],1.0
+143,Hand swelling,[],2.0
+144,Head injury,"['Headache', 'Nasal bleeding', 'Dizziness', 'Neck ache or pain', 'Vomiting', 'Tremors', 'Headache and weakness']",1.67
+145,Head trauma,"['Trauma', 'Ringing in ears (Tinnitus)', 'Visual problems']",3.0
+146,Heat stroke,"['Speech problem', 'Hand redness', 'Foot redness', 'Arm redness', 'Headache and weakness']",1.36
+147,Hematocele collection of blood around testicle,[],1.0
+148,Hematoma collection of blood,['Stomach and abdominal pain'],
+149,Hemoptysis coughing blood,['Blood in vomit'],0.0
+150,Hemorrhage of pregnancy vaginal bleeding during pregnancy,[],2.0
+151,Hemotympanum blood behind ear drum,"['Ear pressure', 'Pain in the ear']",2.0
+152,"Herniated disc slipped disc, ruptured disc","['Arm ache or pain', 'Back ache or pain', 'Leg ache or pain', 'Neck ache or pain', 'Unsteady gait (Trouble walking)', 'Shoulder ache or pain', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Low back ache or pain', 'Headache']",0.5
+153,Hip fracture broken hip,['Leg ache or pain'],1.25
+154,Hirschsprung disease pediatric large intestine paralysis,[],1.25
+155,Hypertension high blood pressure,"['Nasal bleeding', 'Impotence', 'Headache']",0.75
+156,Hypertensive emergency severely high blood pressure,"['Dizziness', 'Headache', 'Confusion and headache']",1.57
+157,Hyperthyroidism elevated thyroid hormone,"['Amenorrhea (No menstruation)', 'Hot flashes', 'Confusion']",0.56
+158,Hypertrophic cardiomyopathy thickened heart muscle,"['Fainting', 'Shortness of breath', 'Chest pain']",1.5
+159,Hypocalcemia low blood calcium,"['Seizure', 'General weakness', 'Tired', 'Muscle spasm', 'Numbness', 'Tremors']",0.67
+160,Hypoxia lack of oxygen,"['Anxiety (Nervousness)', 'Change in behavior', 'Shortness of breath', 'Confusion']",2.4
+161,"Nonsteroidal anti-inflammatory drug overdose Motrin, Advil","['Overdose', 'Poisoning', 'Vomiting coffee ground material', 'Ringing in ears (Tinnitus)', 'Blood in vomit']",2.83
+162,Immobility lack of movement,[],2.83
+163,Impacted tooth tooth that doesn't erupt,['Painful gums'],2.0
+164,"Impingement syndrome of shoulder bone rubs again tendon, bursa",['Shoulder ache or pain'],1.0
+165,Infection,"['Lethargy (Sluggishness)', 'Heart pulsations and palpitations', 'Failure to thrive']",2.67
+166,Inflammatory bowel disease,[],2.67
+167,Inflammatory conditions,['Fever of unknown origin'],0.5
+168,Inhalants abuse huffing,['Substance abuse (Drug abuse)'],0.0
+169,Insulin overdose,"['Overdose', 'Poisoning', 'Fainting']",1.5
+170,Intrahepatic cholestasis of pregnancy liver disorder in pregnancy,['Itchy rash (Pruritic rash)'],0.0
+171,Intravenous drug abuse IVDA,[],
+172,Iron overdose,['Poisoning'],1.5
+173,Jet lag,['Insomnia (Trouble sleeping)'],1.5
+174,Kidney cancer tumor,"['Kidney pain (Flank pain)', 'Blood in urine (Hematuria)', 'Hot flashes', 'Flank pain']",0.5
+175,Knee laceration skin cut,['Leg ache or pain'],0.0
+176,Knee swelling,[],
+177,Laceration skin cut,[],1.75
+178,Laryngeal carcinoma throat cancer,"['Swallowing problem (Dysphagia)', 'Sore throat', 'Throat pain']",0.0
+179,Laxative abuse,[],
+180,Leg laceration skin cut,['Leg ache or pain'],
+181,Leg swelling leg edema,['Leg ache or pain'],
+182,Legg Calve Perthes disease childhood hip condition,[],1.5
+183,Legionellosis Legionnaires' disease,['Fever in the returning traveler'],1.0
+184,Ligament sprain connection between two bones,"['Chest pain', 'Low back ache or pain', 'Upper abdominal pain', 'Lower abdominal pain', 'Arm ache or pain', 'Back ache or pain', 'Pain or soreness of breast', 'Chest pressure', 'Leg ache or pain', 'Neck ache or pain']",0.72
+185,Ligament tear connection between two bones,['Swelling of both legs'],0.86
+186,Limb ischemia decreased blood flow,['Numbness'],1.0
+187,Lip laceration skin cut,[],2.0
+188,Lip swelling,[],2.0
+189,Lung cancer tumor,"['Hemoptysis (Coughing blood)', 'Shortness of breath', 'Back ache or pain', 'Chest pain']",0.14
+190,Magic mushroom ingestion psilocybin,"['Delusions or hallucinations', 'Substance abuse (Drug abuse)']",
+191,Malignant hyperthermia rare temperature abnormality,"['Change in behavior', 'Confusion']",1.0
+192,Marijuana use,"['Substance abuse (Drug abuse)', 'Alcohol abuse', 'Change in behavior']",1.2
+193,Maxillary sinus carcinoma sinus cancer,"['Double vision (Diplopia)', 'Facial pain', 'Nasal bleeding']",0.0
+194,Meniscus injury knee cartilage injury,['Leg ache or pain'],0.5
+195,Peyote abuse mescaline abuse,[],0.5
+196,Metastatic neoplasm cancer spread,"['Pain or soreness of breast', 'Leg ache or pain', 'Skin sores']",0.0
+197,Methamphetamine abuse,['Heart pulsations and palpitations'],0.0
+198,Miscarriage,"['Lower abdominal pain', 'Low back ache or pain']",
+199,"Molar pregnancy gestational trophoblastic disease, pregnancy-related tumor",[],0.0
+200,Mosquito bite,"['Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching']",2.0
+201,Mouth laceration mouth cut,[],2.0
+202,Mouth swelling,[],0.0
+203,"Multiple pregnancy twins, triplets, etc",['Lower abdominal pain'],
+204,Munchausen syndrome fabricated illness,[],0.0
+205,Munchausen syndrome by proxy fabricated illness in a dependent,[],1.0
+206,Myocardial infarction heart attack,"['Arm ache or pain', 'Chest pressure', 'Heart pulsations and palpitations', 'Shortness of breath', 'Shoulder ache or pain', 'Vomiting', 'Jaw pain', 'Chest pain', 'Flank pain', 'Kidney pain (Flank pain)']",1.43
+207,Myositis muscle inflammation or infection,['Muscle pain'],1.5
+208,Nail avulsion traumatic removal of nail,[],2.0
+209,Nail bruise subungual hematoma,[],2.0
+210,Nail contusion swelling of finger and nail,[],2.0
+211,Nail laceration nail bed cut,[],2.0
+212,"Narcotic morphine, heroin abuse","['Substance abuse (Drug abuse)', 'Alcohol abuse', 'Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Fainting', 'Insomnia (Trouble sleeping)']",0.14
+213,"Narcotic morphine, heroin overdose","['Overdose', 'Poisoning']",2.2
+214,Nasal cancer tumor,['Nasal bleeding'],0.0
+215,Nasal fracture broken nose,"['Nasal congestion', 'Headache']",0.67
+216,Nasal trauma nose injury,['Nasal bleeding'],2.0
+217,Nasopharyngeal carcinoma tumor,['Double vision (Diplopia)'],0.0
+218,"Neisseria meningitidis infection Neisseria meningitidis meningococcus, serious bacterial illness",[],2.0
+219,Non venomous snake bite,[],2.0
+220,Normal menstruation,['Vaginal bleeding'],1.0
+221,"Norovirus infection viral diarrhea, Norwalk virus",['Fever in the returning traveler'],0.0
+222,Nursemaid's elbow radial head subluxation,[],1.0
+223,Ophthalmoplegia eye muscle weakness,['Double vision (Diplopia)'],2.0
+224,Oral ulcers mouth ulcers,"['Mouth pain', 'Mouth ulcers']",2.0
+225,Orbital fracture broken bone near the eye,"['Double vision (Diplopia)', 'Visual problems', 'Headache']",1.5
+226,Orbital mass growth near the eye,"['Double vision (Diplopia)', 'Visual problems', 'Blurry vision']",1.75
+227,Orchitis inflammation of the testicles,[],1.0
+228,Osteoarthritis bone inflammation,"['Arm ache or pain', 'Leg ache or pain', 'Swelling of both legs', 'Back ache or pain', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Low back ache or pain', 'Neck ache or pain']",0.78
+229,Ototoxicity ear toxicity,['Vertigo (Room spinning)'],
+230,Ovarian cyst female organ fluid collection,"['Lower abdominal pain', 'Vaginal bleeding', 'Low back ache or pain', 'Stomach and abdominal pain', 'Upper abdominal pain', 'Back ache or pain', 'Pain or soreness of breast']",0.33
+231,Ovarian torsion twisting of the ovary,['Lower abdominal pain'],1.5
+232,Overdose,"['Heart pulsations and palpitations', 'Seizure', 'Tired']",2.33
+233,Overuse syndrome injury from repetitive activity,"['Muscle pain', 'Swelling of both legs', 'Muscle spasm', 'Blister (Pocket of fluid)']",1.45
+234,Paget disease of the nipple rare breast cancer,['Nipple discharge'],1.0
+235,Pancoast syndrome apical lung tumor,['Shoulder ache or pain'],0.0
+236,Pancreatitis pancreas inflammation,"['Upper abdominal pain', 'Back ache or pain', 'Vomiting', 'Low back ache or pain', 'Stomach and abdominal pain', 'Alcohol abuse', 'Chest pain']",1.25
+237,Parasite infection,"['Fever of unknown origin', 'Vomiting', 'Nasal congestion', 'Stomach and abdominal pain']",1.33
+238,Paronychia infection around the nail,[],1.33
+239,Patellar dislocation knee cap dislocation,[],2.0
+240,Patellar knee cap tendon rupture,[],
+241,Penis carcinoma tumor,[],0.0
+242,Perforated septum hole in skin between nostrils,"['Nasal congestion', 'Skin sores']",0.0
+243,Pericarditis heart sac inflammation,"['Chest pressure', 'Chest pain']",2.5
+244,Periodontitis gum inflammation,"['Bleeding gums', 'Painful gums', 'Swollen gums', 'Pain in the ear']",1.6
+245,Periorbital cellulitis infection around eye,"['Eye pain (Irritation)', 'Eye swelling']",2.5
+246,Pesticide poisoning organophosphate poisoning,['Poisoning'],1.0
+247,Pheochromocytoma adrenal gland tumor,['Hot flashes'],1.0
+248,Pituitary tumor,"['Double vision (Diplopia)', 'Visual problems', 'Amenorrhea (No menstruation)', 'Nipple discharge']",0.0
+249,Placenta previa placenta covers cervix,"['Lower abdominal pain', 'Low back ache or pain']",1.33
+250,Placental abruption placenta separation,[],1.0
+251,"Plantar wart human papilloma virus infection, foot warts",[],1.0
+252,Poisoning,"['Seizure', 'Tired']",2.5
+253,Posterior inferior cerebellar artery syndrome stroke syndrome,['Headache'],1.0
+254,Pregnancy,"['Incontinence (leaking urine)', 'Amenorrhea (No menstruation)', 'Arm itching', 'Foot itching', 'Hand itching', 'Back ache or pain', 'Nipple discharge']",
+255,Prescription drug abuse,"['Substance abuse (Drug abuse)', 'Alcohol abuse', 'Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Dizziness', 'Delusions or hallucinations', 'Vomiting', 'Tremors', 'Low back ache or pain']",
+256,Preseptal hematoma blood clot in the nose,[],0.0
+257,Primary sclerosing cholangitis bile duct disease,"['Itchy rash (Pruritic rash)', 'Jaundice (Yellowing skin)', 'Arm itching', 'Foot itching', 'Hand itching', 'Steatorrhea (Excess fat in stool)']",1.0
+258,Puerperal depression depression after giving birth,[],0.0
+259,Pulmonary edema fluid build-up in the lungs,"['Shortness of breath', 'Chest pain']",1.4
+260,Pulmonary embolism blood clot in the lungs,"['Chest pressure', 'Shortness of breath', 'Hemoptysis (Coughing blood)', 'Back ache or pain', 'Dizziness', 'Chest pain']",1.5
+261,Pulmonary fibrosis lung scarring,"['Shortness of breath', 'Chest pressure']",0.0
+262,Puncture wound,[],1.0
+263,Puncture wound of ankle,[],
+264,Puncture wound of arm,[],
+265,Puncture wound of ear,[],
+266,Puncture wound of eyelid,[],
+267,Puncture wound of face,['Headache'],
+268,Puncture wound of finger,[],2.0
+269,Puncture wound of foot,[],2.0
+270,Puncture wound of hand,[],2.0
+271,Puncture wound of knee,[],
+272,"Puncture wound, leg Puncture wound of leg",[],
+273,Puncture wound of lip,[],
+274,Puncture wound of mouth,[],
+275,Puncture wound of scalp,[],
+276,Puncture wound of skin,[],2.0
+277,Puncture wound of toe,[],2.0
+278,Quaternary syphilis late stage syphilis,"['Unsteady gait (Trouble walking)', 'Visual problems']",0.0
+279,Radial head fracture broken elbow bone,['Arm ache or pain'],1.0
+280,Radiator fluid ethylene glycol poisoning,['Poisoning'],1.0
+281,Rectal abscess collection of pus in the rectum,"['Skin sores', 'Low back ache or pain']",0.75
+282,Rectal impaction collection of pus in the rectum Fecal impaction of rectum,[],1.5
+283,Rectovaginal fistula internal rectum to vagina connection,[],1.5
+284,"Renal arteriovenous malformation AVM, blood vessel abnormality of the kidney",[],0.0
+285,"Renal failure, chronic ongoing kidney failure","['Skin itching', 'Lethargy (Sluggishness)', 'Seizure', 'General weakness', 'Tired', 'Swelling of both legs', 'Muscle spasm', 'Impotence', 'Arm itching', 'Foot itching', 'Hand itching', 'Dizziness', 'Shortness of breath', 'Vomiting', 'Confusion']",0.14
+286,Renal trauma kidney trauma,"['Kidney pain (Flank pain)', 'Blood in urine (Hematuria)', 'Flank pain']",1.67
+287,"Respiratory failure breathing failure, ARDS","['Change in behavior', 'Seizure', 'Cough', 'Confusion']",1.8
+288,Restless legs syndrome nervous system disorder,"['Insomnia (Trouble sleeping)', 'Leg ache or pain', 'Tremors']",0.4
+289,Rib fracture broken bone,"['Back ache or pain', 'Flank pain', 'Kidney pain (Flank pain)', 'Chest pain', 'Low back ache or pain']",
+290,Rotator cuff syndrome shoulder injury,"['Shoulder ache or pain', 'Arm ache or pain', 'Back ache or pain', 'Neck ache or pain']",
+291,Rotavirus infection intestinal viral infection,['Fever in the returning traveler'],1.33
+292,Rubbing isopropyl alcohol overdose,['Poisoning'],0.5
+293,"Severe Acute Respiratory Syndrome SARS, serious viral pneumonia",['Fever in the returning traveler'],1.33
+294,Scalp laceration scalp cut,['Headache'],
+295,Scalp swelling,[],
+296,Scoliosis crooked spine,"['Low back ache or pain', 'Back ache or pain']",0.0
+297,Scorpion sting,[],2.0
+298,Scrotal hematoma collection of blood in skin around testicles,[],0.0
+299,Seasonal affective disorder intermittent seasonal depression,[],0.0
+300,Self-inflicted injury,[],3.0
+301,Septal perforation hole in the skin between nostrils,['Nasal bleeding'],1.0
+302,Septic hip infected hip joint,['Inconsolable baby'],2.5
+303,Septic knee joint infected knee joint,[],2.0
+304,Serum sickness abnormal immune system response,[],0.0
+305,Situational depression,[],0.0
+306,Sjogren's syndrome dry eyes and mouth,"['Vaginal pain', 'Mouth swelling']",0.0
+307,Skin abscess collection of pus,"['Pustule (Collection of pus)', 'Skin swelling']",1.71
+308,Skin laceration cut skin,[],2.0
+309,Skin swelling,[],1.0
+310,Skull fracture broken bone,['Confusion and headache'],2.0
+311,Slipped capital femoral epiphysis adolescent hip disorder,[],1.0
+312,Small bowel lymphoma intestinal lymph node cancer,['Blood in vomit'],0.33
+313,Smoke inhalation,"['Shortness of breath', 'Dizziness', 'Fainting']",1.0
+314,Insect bite,"['Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Skin itching', 'Rash', 'Skin sores']",1.6
+315,Spinal abscess collection of spinal pus,"['Back ache or pain', 'Neck ache or pain']",1.0
+316,"Spinal cord injury, acute","['Incontinence (leaking urine)', 'Urinary retention (Inability to urinate)', 'Impotence', 'Low back ache or pain', 'Neck ache or pain']",1.2
+317,Splenic infarction death of spleen,"['Upper abdominal pain', 'Chest pain']",1.0
+318,"Sprain stretched, torn ligament",['Swelling of both legs'],1.91
+319,Squamous cell cancer common skin cancer,"['Sinus pain and pressure', 'Lip swelling', 'Skin sores']",0.0
+320,Steroid abuse,[],0.0
+321,Steroid use,['Obesity'],1.5
+322,"Steven Johnson syndrome rare, serious skin disorder","['Itchy rash (Pruritic rash)', 'Painful rash', 'Blister (Pocket of fluid)', 'Lip swelling', 'Eye swelling', 'Hand redness', 'Foot redness', 'Arm redness']",1.1
+323,Muscle strain pulled muscle,"['Arm ache or pain', 'Back ache or pain', 'Leg ache or pain', 'Swelling of both legs', 'Shoulder ache or pain', 'Armpit pain', 'Low back ache or pain', 'Chest pressure', 'Flank pain', 'Kidney pain (Flank pain)', 'Neck ache or pain', 'Chest pain']",1.35
+324,Strangulation of genitalia constriction of genital blood supply,[],1.33
+325,Stress headache tension headache,[],0.0
+326,Substance abuse,"['Depressed', 'Tremors']",
+327,Subungual hematoma blood under nail,[],1.5
+328,Suicide,[],3.0
+329,Supracondylar fracture elbow fracture,['Arm ache or pain'],0.33
+330,Symptomatic dermatographism exaggerated skin response to pressure,"['Hives', 'Itchy rash (Pruritic rash)']",0.5
+331,Tarantula bite Tarantula Venoms,[],0.0
+332,Temporal arteritis inflamed scalp artery,"['Double vision (Diplopia)', 'Eye pain (Irritation)', 'Facial pain', 'Headache', 'Visual problems']",1.2
+333,Temporal lobe epilepsy non-convulsive seizure,"['Delusions or hallucinations', 'Tremors']",2.0
+334,"Temporomandibular joint syndrome TMJ, jaw joint pain","['Facial pain', 'Jaw pain', 'Pain in the ear', 'Headache']",0.75
+335,Testicular cancer tumor,[],0.0
+336,Testicular torsion twisting of testicle,['Inconsolable baby'],2.5
+337,Third cranial nerve disorder disorder of eye movement,"['Double vision (Diplopia)', 'Visual problems']",2.0
+338,Tick paralysis toxin from ticks,['Unsteady gait (Trouble walking)'],2.0
+339,laceration of toe cut skin,[],0.0
+340,Toe swelling,[],0.5
+341,Tonsillitis tonsil infection,"['Sore throat', 'Throat pain', 'Hemoptysis (Coughing blood)', 'Blood in vomit', 'Snoring', 'Chills', 'Cough', 'Pain in the ear', 'Fever', 'Headache', 'Shortness of breath', 'Vomiting']",1.0
+342,Toxic shock syndrome life-threatening bacterial infection complication,"['Fever', 'Muscle pain']",1.0
+343,Transverse myelitis spinal cord inflammation,"['Back ache or pain', 'Numbness', 'Hand numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Foot numbness (paresthesias)']",1.33
+344,Traumatic nerve injury,"['Numbness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)']",2.56
+345,Trichomonas vaginalis infection vaginal infection,"['Lower abdominal pain', 'Stomach and abdominal pain']",0.5
+346,Tubo ovarian abscess pelvic abscess,[],0.0
+347,Ureaplasma urealyticum infection genital infection,[],0.0
+348,Uterine rupture uterine tear during childbirth,[],1.0
+349,Vaccination,"['Chills', 'Fever']",1.5
+350,Vaginal cancer tumor,['Vaginal bleeding'],0.0
+351,Vaginal foreign body,['Vaginal bleeding'],1.5
+352,Vaginitis vaginal infection inflammation,"['Vaginal pain', 'Lower abdominal pain', 'Back ache or pain', 'Skin itching', 'Rash', 'Skin sores', 'Stomach and abdominal pain']",0.22
+353,Blood vessel headache familial basilar artery migraine headache,[],0.0
+354,"Vascular insufficiency due to peripheral artery disease PAD, claudication, inadequate blood flow","['Muscle spasm', 'Arm swelling']",0.0
+355,Vertebral artery dissection neck artery tear,"['Neck ache or pain', 'Vertigo (Room spinning)', 'Unsteady gait (Trouble walking)', 'Loss of balance', 'Headache and weakness']",1.0
+356,Vertebral fracture broken back or neck bone,"['Back ache or pain', 'Low back ache or pain']",1.0
+357,Vertebral- basilar artery insufficiency inadequate blood flow to the back of the brain vertebro-basilar insufficiency,"['Vertigo (Room spinning)', 'Visual problems', 'Fainting']",1.0
+358,Vertebral-basilar stroke stroke in the back of the brain Vertebro basilar insufficiency,"['Vertigo (Room spinning)', 'Loss of balance']",1.0
+359,Vesicovaginal fistula connection between the bladder and vagina,[],0.0
+360,Rattlesnake pit viper bite,[],3.0
+361,Vitiligo loss of skin pigment,['Rash'],0.0
+362,Vocal cord nodule growth on the vocal cords,[],0.0
+363,Vulvar squamous cell carcinoma skin cancer on female genitalia,"['Vaginal bleeding', 'Skin sores']",0.0
+364,"Warfarin Coumadin, Jantoven overdose","['Overdose', 'Poisoning', 'Blood in urine (Hematuria)', 'Eye redness', 'Hemoptysis (Coughing blood)', 'Vaginal bleeding', 'Blood in vomit']",1.0
+365,Warfarin Coumadin use,"['Bleeding tendency', 'Nasal bleeding', 'Vomiting coffee ground material', 'Bleeding gums']",0.86
+366,Whiplash injury neck injury,"['Neck ache or pain', 'Arm ache or pain', 'Chest pressure', 'Headache']",0.8
+367,White coat hypertension elevated blood pressure at doctor's office,[],1.5
+368,Windshield wiper fluid Methanol poisoning,['Poisoning'],1.0
+369,Wood alcohol methanol poisoning,[],1.0
+370,Yeast infection fungal infection,[],1.0
+371,Essential tremor abnormal rhythmic shaking,['Tremors'],1.0
+372,Lymphoma lymph node cancer,"['Skin itching', 'Neck swelling', 'Tired', 'Weight loss, unexplained', 'Swollen lymph nodes (Large lymph nodes)', 'Eye floaters', 'Arm itching', 'Foot itching', 'Hand itching', 'Armpit pain', 'Back ache or pain', 'Pain or soreness of breast', 'Fever', 'Low back ache or pain']",0.33
+373,Osgood Schlatter disease painful shinbone inflammation,[],1.0
+374,"Respiratory syncytial virus RSV, pediatric respiratory infection",[],2.0
+375,Swine Flu H1N1 Influenza,['Muscle pain'],0.83
+376,Sagittal sinus thrombosis venous blood clot in the brain,['Seizure'],1.0
+377,Cervical myelopathy spinal cord compression,['Hand numbness (paresthesias)'],1.0
+378,Spinal cord tumor,"['Unsteady gait (Trouble walking)', 'Urinary retention (Inability to urinate)']",0.0
+379,"Brain arteriovenous malformation blood vessel abnormality in the brain, AVM Arteriovenous malformation of brain","['Headache and weakness', 'Confusion and headache']",1.0
+380,Carotid artery stenosis neck artery narrowing,"['Speech problem', 'Visual problems', 'Dizziness', 'Fainting']",0.2
+381,Hydrocephalus brain fluid build-up,"['Headache', 'Change in behavior', 'Inconsolable baby', 'Incontinence (leaking urine)', 'Visual problems', 'Confusion', 'Headache and weakness', 'Confusion and headache']",1.82
+382,Central cord syndrome traumatic spine injury,['Neck ache or pain'],1.0
+383,Acne pimples,"['Rash', 'Pain in the ear', 'Skin itching', 'Skin sores']",
+384,Allergic conjunctivitis allergic reaction in the eye,"['Eye pain (Irritation)', 'Eye redness']",2.0
+385,Chemical burn,"['Painful rash', 'Blister (Pocket of fluid)', 'Skin swelling', 'Hand redness', 'Foot redness', 'Arm redness']",
+386,Cradle cap infant scalp rash,['Rash'],1.0
+387,Cryptorchidism undescended testicle,[],1.0
+388,"Methicillin-resistant Staphylococcus aureus MRSA, type of bacteria",[],3.0
+389,Staphylococcus aureus type of bacteria,"['Swollen lymph nodes (Large lymph nodes)', 'Pustule (Collection of pus)', 'Rash', 'Skin sores']",2.0
+390,Failure to thrive - child Failure to thrive-child Failure to thrive (child),['Learning difficulties'],2.0
+391,Hemochromatosis excess iron disorder,"['Weight loss, unexplained', 'Jaundice (Yellowing skin)', 'Low heart rate']",0.6
+392,Keratosis pilaris common skin condition,[],0.0
+393,"Coccidiomycosis valley fever, fungal infection",['Itchy rash (Pruritic rash)'],1.0
+394,Meconium aspiration newborn respiratory problem,[],2.0
+395,Mongolian spots blue birthmark,[],1.0
+396,Rheumatic fever complication of strep infection,['Heart pulsations and palpitations'],2.0
+397,Salmon patch common birthmark,[],2.0
+398,Pepto Bismol or Kaopectate ingestion bismuth,[],2.0
+399,Long QT Syndrome inherited heart condition,"['Fainting', 'Heart pulsations and palpitations', 'Dizziness']",2.33
+400,"Stroke CVA, cerebrovascular accident",[],2.0
+401,Subconjunctival hemorrhage blood covering white part of the eye,['Eye redness'],2.0
+402,Myotonia impaired muscle relaxation,['General weakness'],1.0
+403,Carbuncle,"['Skin swelling', 'Pain in the ear', 'Rash', 'Skin sores']",1.0
+404,Cat bite,[],2.0
+405,Dog bite,[],2.0
+406,Hyperosmolar hyperglycemic state severely elevated glucose level,['Confusion'],1.0
+407,Strawberry hemangioma blood vessel birthmark,[],1.0
+408,Bird flu avian influenza,[],1.0
+409,Cubital tunnel syndrome nerve compression in the elbow,"['Numbness', 'Hand numbness (paresthesias)', 'Arm ache or pain']",0.33
+410,Foot fracture broken foot,['Leg ache or pain'],1.33
+411,Tick bite,[],2.0
+412,Broken heart syndrome Takotsubo cardiomyopathy,"['Shortness of breath', 'Chest pain']",1.0
+413,Near drowning,['Abdominal swelling (Stomach swelling)'],1.0
+414,Clostridium difficile C. Diff,[],1.33
+415,Sea lice bite,"['Itchy rash (Pruritic rash)', 'Foot itching', 'Hand redness', 'Foot redness', 'Foot redness', 'Arm redness', 'Hand itching']",0.0
+416,Broken bones fractures,[],0.0
+417,Sun poisoning,"['Blister (Pocket of fluid)', 'Confusion']",1.0
+418,"Sever's disease calcaneal apophysitis, common cause of heel pain",[],1.0
+419,Vaginal yeast fungal infection,"['Vaginal pain', 'Skin itching', 'Rash', 'Stomach and abdominal pain']",0.75
+420,Human papillomavirus infection HPV,['Vaginal pain'],2.0
+421,Congenital heart disease heart defect at birth,"['Low heart rate', 'Shortness of breath']",1.8
+422,Lumbar spinal stenosis spinal cord compression,"['Back ache or pain', 'Incontinence (leaking urine)', 'Numbness', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Low back ache or pain', 'Leg ache or pain']",0.75
+423,"Idiopathic thrombocytopenia purpura ITP, low platelets","['Bleeding gums', 'Blood in urine (Hematuria)', 'Vaginal bleeding']",2.0
+424,Sudden Cardiac Death SCD,[],2.0
+425,"Ventricular tachycardia VT, dangerous irregular heart beat","['Dizziness', 'Fainting', 'Heart pulsations and palpitations', 'Chest pain']",1.25
+426,Frostbite tissue damage from cold,"['Hand numbness (paresthesias)', 'Blister (Pocket of fluid)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)']",1.86
+427,"Skin blood vessel damage Chilblains, pernio","['Blister (Pocket of fluid)', 'Hand redness', 'Foot redness']",0.67
+428,Lactose intolerance,"['Abdominal swelling (Stomach swelling)', 'Lower abdominal pain', 'Upper abdominal pain', 'Steatorrhea (Excess fat in stool)', 'Stomach and abdominal pain']",1.86
+429,Graves' disease overproduction of thyroid hormone,"['Eye redness', 'Eye pain (Irritation)', 'Heart pulsations and palpitations']",0.33
+430,"Angioedema swelling of skin, lips, eyes","['Skin swelling', 'Lip swelling', 'Eye swelling', 'Rash']",2.67
+431,Hot tub follicullitis hair follicle infection Pustular folliculitis,['Itchy rash (Pruritic rash)'],2.0
+432,Posterior vitreous detachment common eye abnormality,"['Visual flashing lights', 'Eye floaters']",1.0
+433,Double diabetes hybrid diabetes,[],0.0
+434,Birth control pill use,['Amenorrhea (No menstruation)'],2.0
+435,Toe fracture,[],2.0
+436,Finger fracture broken finger,[],1.0
+437,Hand fracture broken hand,['Arm ache or pain'],1.0
+438,Scaphoid fracture broken hand bone,[],2.0
+439,Mitral regurgitation leaking heart valve,"['Shortness of breath', 'Heart pulsations and palpitations', 'Fainting', 'Chest pain']",0.0
+440,Avascular necrosis death of bone,[],0.0
+441,"Thalassemia Mediterranean anemia, inherited blood disorder",['Tired'],1.67
+442,Addisonian crisis acute adrenal crisis,[],1.67
+443,"Heart attack acute myocardial infarction, AMI","['Low heart rate', 'Armpit pain']",1.5
+444,Medication reaction,"['Low heart rate', 'Infertility (Female)', 'Increased facial hair', 'Amenorrhea (No menstruation)', 'Loss of balance', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Foot numbness (paresthesias)', 'Hand numbness (paresthesias)', 'Anxiety (Nervousness)', 'Change in behavior', 'Dizziness', 'Incontinence (leaking urine)', 'Insomnia (Trouble sleeping)', 'Obesity', 'Rash', 'Substance abuse (Drug abuse)', 'Vomiting', 'Tremors', 'Nipple discharge']",2.27
+445,Myxedema coma severely low thyroid hormone,"['Hypothermia (Low temperature)', 'Seizure', 'Swelling of both legs', 'Low heart rate', 'Confusion']",1.0
+446,Bed bugs,"['Arm itching', 'Foot itching', 'Foot redness', 'Hand redness', 'Arm redness', 'Hand itching']",1.0
+447,Early menopause premature ovarian failure,['Amenorrhea (No menstruation)'],1.0
+448,"Mayer Rokitansky Küster Hauser syndrome MRKH, inherited vaginal abnormality","['Amenorrhea (No menstruation)', 'Infertility (Female)']",1.0
+449,Osteopenia thin bone,[],1.0
+450,Muscle tear,"['Arm swelling', 'Muscle pain', 'Neck swelling']",1.8
+451,Gastroparesis stomach muscle malfunction,"['Abdominal swelling (Stomach swelling)', 'Stomach and abdominal pain', 'Upper abdominal pain']",0.0
+452,Colon polyps large intestine tumors,[],1.0
+453,Amaurosis fugax momentary vision loss in one eye,['Visual problems'],2.0
+454,Tendon laceration tendon cut,[],2.6
+455,Foreign body in a wound,"['Arm ache or pain', 'Skin sores']",2.22
+456,Wound infection cut infection,"['Fever', 'Leg ache or pain']",2.12
+457,Spleen injury splenic rupture,"['Abdominal swelling (Stomach swelling)', 'Flank pain', 'Kidney pain (Flank pain)']",1.0
+458,Radiation exposure radiation sickness,['Pain or soreness of breast'],1.0
+459,Tape worm infection,['Seizure'],1.0
+460,Basal cell carcinoma skin cancer,['Skin sores'],0.5
+461,Skin tags acrochordons,['Skin sores'],1.0
+462,Micturition syncope fainting with urination,[],1.0
+463,Epiploic appendagitis inflammation of colon fat,[],1.0
+464,Compression fracture broken spinal bone,"['Leg numbness (paresthesias)', 'Foot numbness (paresthesias)']",0.0
+465,Flea bite,['Itchy rash (Pruritic rash)'],2.0
+466,Gilbert's disease liver abnormality,['Jaundice (Yellowing skin)'],1.5
+467,Newborn jaundice newborn skin discoloration,['Jaundice (Yellowing skin)'],1.0
+468,Pallister Killian syndrome rare inherited disorder,[],1.0
+469,Post herpetic neuralgia nerve pain after shingles,[],0.0
+470,Lewy body dementia common type of dementia,"['Change in behavior', 'Unsteady gait (Trouble walking)', 'Confusion']",0.5
+471,Listeria serious bacterial illness,[],0.0
+472,Shin splints tibial stress syndrome,[],2.0
+473,Sarcoma soft tissue cancer,"['Leg ache or pain', 'Swelling of both legs', 'Shoulder ache or pain', 'Arm ache or pain', 'Arm swelling', 'Armpit pain', 'Low back ache or pain']",0.0
+474,Bone cancer bone tumor,"['Arm ache or pain', 'Arm swelling', 'Leg ache or pain', 'Shoulder ache or pain', 'Armpit pain', 'Low back ache or pain']",1.0
+475,"Mastocytosis urticaria pigmentosa, skin disease","['Hives', 'Itchy rash (Pruritic rash)']",2.0
+476,Jellyfish stings,[],2.0
+477,Dyslipidemia abnormal fat levels in the blood,[],2.0
+478,Hyperlipidemia elevated blood fat level,[],2.0
+479,"Discoid Lupus Erythematosus DLE, autoimmune skin inflammation",[],2.0
+480,Triangular fibrocartilage complex injury wrist injury,[],0.0
+481,Aponeurotic ptosis age-related drooping eyelid,[],1.0
+482,Complex migraine migraine with neurologic changes,['Double vision (Diplopia)'],0.0
+483,Complex regional pain syndrome chronic pain disorder,[],0.0
+484,Small cell lung cancer,['Hemoptysis (Coughing blood)'],0.0
+485,Slurred speech dysarthria,[],0.0
+486,Tension headache stress headache,"['Headache', 'Neck ache or pain']",0.33
+487,Retinal vein occlusion,[],0.33
+488,Retinal artery occlusion,[],0.33
+489,Lemierre's syndrome,[],0.33
+490,Thrombotic stroke,[],0.33
+491,Varicose veins,['Leg ache or pain'],1.0
+492,Absence seizures petit mal seizures,[],1.0
+493,Diabetes mellitus type 1 elevated blood sugar,[],1.0
+494,H. pylori infection helicobacter pylori,[],1.0
+495,Juvenile rheumatoid arthritis,[],1.0
+496,Atherosclerosis hardening of the arteries,[],1.0
+497,Seborrheic dermatitis,[],1.0
+498,Skin ulcer,[],1.0
+499,Friction blister,[],1.0
+500,Lumbar spondylosis spine arthritis,['Back ache or pain'],1.0
+501,Hepatitis B,[],1.0
+502,Hepatitis C,[],1.0
+503,Latex allergy,[],1.0
+504,Vitamin B12 deficiency,[],1.0
+505,ACL anterior cruciate ligament injury,[],1.0
+506,Angiodysplasia of stomach Angiodysplasia of intestines,[],1.0
+507,Neuralgia nerve pain,[],1.0
+508,Spider veins,[],1.0
+509,Dandruff,[],1.0
+510,Forearm fracture,[],1.0
+511,Femur fracture upper leg,[],1.0
+512,Knee ligament sprain,[],1.0
+513,Erythema multiforme,[],1.0
+514,Seroma fluid build-up,[],1.0
+515,Cyclospora infection Cyclosporiasis,[],1.0
+516,Middle East Respiratory Syndrome MERS,[],1.0
+517,Male pattern hair loss hereditary-patterned baldness Androgenic alopecia,[],1.0
+518,Focal seizure partial seizure,"['Seizure', 'Visual problems', 'Tremors', 'Numbness', 'Visual flashing lights']",1.2
+519,Generalized seizure disorder generalized epilepsy,"['Seizure', 'Seizure', 'Tremors', 'Incontinence (leaking urine)']",1.5
+520,Peyronie's disease abnormal curvature of the penis,['Impotence'],0.0
+521,Duodenal cancer small intestine,"['Weight loss, unexplained', 'Tired', 'Stomach and abdominal pain']",1.0
+522,Essential thrombocythemia excessive blood platelets,"['Stomach and abdominal pain', 'Headache', 'Numbness', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Arm swelling']",0.0
+523,Extragonadal germ cell tumors,"['Weight loss, unexplained', 'Fever of unknown origin', 'Tired', 'Lower abdominal pain', 'Abdominal swelling (Stomach swelling)', 'Chest pain']",0.0
+524,Food allergy,"['Vomiting', 'Shortness of breath', 'Hives', 'Rash', 'Lip swelling', 'Mouth swelling', 'Swallowing problem (Dysphagia)']",1.38
+525,Foot ulcer,"['Foot redness', 'Skin sores', 'Fever']",0.4
+526,Fragile X syndrome genetic disorder,"['Seizure', 'Learning difficulties']",0.0
+527,Glomerulonephritis kidney disease,"['Tired', 'Vomiting', 'Swelling of both legs']",0.0
+528,Graves eye disease Graves ophthalmopathy,"['Visual problems', 'Double vision (Diplopia)']",0.0
+529,Head injury in children Non-accidental traumatic head injury to child,"['Vomiting', 'Headache', 'Numbness', 'Fainting', 'Dizziness', 'Speech problem']",0.62
+530,"Hemorrhagic stroke CVA, cerebrovascular accident","['Seizure', 'Visual problems', 'Headache', 'Speech problem', 'Fainting', 'Numbness', 'Unsteady gait (Trouble walking)']",1.25
+531,Hyperkeratosis skin thickening,"['Skin itching', 'Skin sores']",0.5
+532,Lacunar stroke,"['Visual problems', 'Speech problem', 'Numbness', 'Unsteady gait (Trouble walking)', 'Loss of balance', 'Facial droop (weakness)', 'Face numbness (paresthesias)']",1.0
+533,Large cell lung cancer,"['Weight loss, unexplained', 'Fever of unknown origin', 'Tired', 'Shortness of breath', 'Cough', 'Hemoptysis (Coughing blood)']",0.0
+534,Malignant Mesothelioma,"['Weight loss, unexplained', 'Fever of unknown origin', 'Tired', 'Chest pain', 'Shortness of breath', 'Cough']",0.0
+535,Melasma choloasma,[],1.0
+536,Morton's neuroma,['Numbness'],0.0
+537,Neuroblastoma,['Fever'],0.0
+538,Paget disease of the bone paget's disease of the bone,"['Leg ache or pain', 'Headache', 'Arm ache or pain', 'Leg numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Back ache or pain']",0.0
+539,Paraphimosis,['Impotence'],0.0
+540,Post-polio syndrome,"['Shortness of breath', 'Unsteady gait (Trouble walking)', 'Speech problem', 'Muscle pain', 'Muscle spasm', 'Insomnia (Trouble sleeping)']",0.0
+541,Posterior cruciate ligament injuries PCL injury Rupture of posterior cruciate ligament Sprain of posterior cruciate ligament of knee,[],0.0
+542,Rectocele,['Back ache or pain'],0.33
+543,Retinitis pigmentosa,['Visual problems'],0.0
+544,Retinoblastoma pediatric eye cancer,"['Visual problems', 'Eye redness', 'Eye swelling']",0.0
+545,Shoulder sprain,"['Bleeding tendency', 'Shoulder ache or pain']",1.0
+546,Squamous cell lung cancer,"['Weight loss, unexplained', 'Tired', 'Chest pain', 'Shortness of breath', 'Cough', 'Hemoptysis (Coughing blood)']",0.0
+547,Tay-Sachs disease,"['Seizure', 'Visual problems', 'Loss of balance']",0.0
+548,Traumatic hip dislocation traumatic dislocation of hip,"['Leg ache or pain', 'Numbness']",0.25
+549,Traveler's diarrhea Montezuma's revenge,"['Vomiting', 'Stomach and abdominal pain']",1.5
+550,Wilms' Tumor,"['Vomiting', 'Stomach and abdominal pain']",0.0
+551,Amyloidosis,"['Tired', 'Vomiting', 'Shortness of breath', 'Rash', 'Numbness']",0.0
+552,Arnold Chiari malformation,"['Headache', 'Dizziness']",0.0
+553,Broken jaw mandible fracture,"['Bleeding tendency', 'Numbness', 'Jaw pain']",0.0
+554,Dermatofibroma,['Skin itching'],0.0
+555,Broken leg leg fracture,"['Leg ache or pain', 'Leg numbness (paresthesias)']",0.33
+556,Prediabetes high blood sugar,[],0.33
+557,Factor V Leiden Deficiency,[],0.33
+558,Subluxation,[],1.0
+559,Supraventricular tachycardia SVT,"['Chest pain', 'Shortness of breath', 'Dizziness', 'Heart pulsations and palpitations', 'Chest pressure', 'Fainting']",0.5
+560,Traumatic brain injury,"['Vomiting', 'Headache', 'Dizziness', 'Confusion']",0.67
+561,Lymphadenitis,"['Arm redness', 'Armpit pain', 'Fever']",0.8
+562,Stuttering,['Speech problem'],0.0
+563,Greater trochanteric bursitis hip bursitis,[],0.0
+564,Onycholysis,[],0.0
+565,Complex partial seizures psychomotor epilepsy,"['Tremors', 'Tremors', 'Anxiety (Nervousness)']",0.0
+566,Blocked tear duct dacryostenosis,['Eye redness'],0.0
+567,Bacterial tracheitis,"['Fever', 'Cough', 'Sore throat']",0.0
+568,Oral leukoplakia,[],0.0
+569,Cervical dysplasia,[],0.0
+570,Finger amputation,['Numbness'],0.0
+571,Cutaneous T cell lymphoma,['Skin itching'],0.0
+572,Breast cyst,[],1.0
+573,"Ductal carcinoma in situ DCIS, breast cancer",['Nipple discharge'],0.0
+574,Triple negative breast cancer,['Nipple discharge'],0.0
+575,Invasive ductal carcinoma,['Nipple discharge'],0.0
+576,Invasive lobular carcinoma,[],0.0
+577,Failure to thrive - adult failure to thrive,"['Confusion', 'Depressed']",1.0
+578,Factor X Deficiency,[],1.0
+579,Congenital Adrenal Hyperplasia CAH,[],1.0
+580,Necrotizing enterocolitis NEC,[],1.0
+581,Sandhoff disease,[],1.0
+582,Sandhoff disease,[],
+583,Burkitt lymphoma lymph node tumor,"['Neck swelling', 'Swollen lymph nodes (Large lymph nodes)']",2.0
+584,"Genital warts HPV, Human papillomavirus infection",['Skin sores'],0.0
+585,Hand foot and mouth disease Coxsackie virus,"['Fever', 'Mouth pain', 'Mouth ulcers', 'Mouth swelling', 'Painful gums']",1.38
+586,Lead overdose lead poisoning,['Poisoning'],1.5
+587,Lead poisoning toxicity,"['Learning difficulties', 'Arm numbness (paresthesias)', 'Hand numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)']",2.0
+588,"Pharyngeal pouch Zenker's diverticulum, weakening of the esophageal wall",['Neck swelling'],1.0
+589,Shoulder joint dislocation dislocated shoulder,"['Shoulder ache or pain', 'Arm numbness (paresthesias)', 'Arm ache or pain']",1.0
+590,"Trichinella spiralis infection trichinosis, parasitic infection from undercooked pork",['Muscle pain'],0.0
+591,Whooping cough pertussis,['Cough'],2.0
+592,"HIV AIDS Human Immunodeficiency Virus, Acquired Immune Deficiency Syndrome Human immunodeficiency virus [HIV] disease","['Seizure', 'Fever', 'Mouth pain', 'Swollen lymph nodes (Large lymph nodes)', 'Weight loss, unexplained', 'Weight loss, unexplained', 'Lower abdominal pain', 'Dizziness', 'Stomach and abdominal pain']",1.2
+593,Dyslexia reading disorder,['Learning difficulties'],2.0
+594,Enuresis bed wetting,[],2.0
+595,Pubic lice,"['Itchy rash (Pruritic rash)', 'Skin itching']",1.0
+596,Rickets childhood bone disease,"['Muscle pain', 'Low back ache or pain']",1.5
+597,Obesity,"['Back ache or pain', 'Amenorrhea (No menstruation)', 'Snoring', 'Low back ache or pain', 'Depressed', 'Obesity', 'Shortness of breath']",0.67
+598,Liver injury liver trauma,['Abdominal swelling (Stomach swelling)'],1.0
+599,Teething,[],
+600,Reflex sympathetic dystrophy complex pain syndrome,"['Arm ache or pain', 'Back ache or pain', 'Leg ache or pain', 'Stomach and abdominal pain']",0.0
+601,Difficulty swallowing dysphagia,[],0.0
+602,"Bulimia nervosa binge eating, vomiting","['Weight loss, unexplained', 'Amenorrhea (No menstruation)', 'Infertility (Female)']",1.67
+603,Cholelithiasis gallstones,"['Upper abdominal pain', 'Flank pain', 'Shoulder ache or pain', 'Vomiting', 'Jaundice (Yellowing skin)', 'Stomach and abdominal pain', 'Lower abdominal pain', 'Back ache or pain', 'Chest pressure', 'Kidney pain (Flank pain)', 'Chest pain']",
+604,Coarctation of aorta narrowing of the aorta,[],1.5
+605,Cocaine abuse,"['Substance abuse (Drug abuse)', 'Nasal bleeding', 'Change in behavior', 'Depressed', 'Fainting', 'Delusions or hallucinations', 'Chest pain']",1.25
+606,Corneal foreign body object in the eye,"['Eye pain (Irritation)', 'Visual problems', 'Eye redness', 'Blurry vision']",2.0
+607,Cutaneous larva migrans parasitic skin disease,"['Skin itching', 'Itchy rash (Pruritic rash)', 'Arm itching', 'Foot itching', 'Hand itching']",0.0
+608,Herpes vulvovaginitis viral infection of the vagina Herpesviral vulvovaginitis,[],1.0
+609,Mallet finger finger tendon rupture,[],
+610,Measles viral disease with typical rash,"['Bleeding tendency', 'Fever']",1.5
+611,Methyl alcohol intoxication methanol,"['Visual problems', 'Fainting']",1.0
+612,Pityriasis rosea inflammatory skin rash,"['Rash', 'Itchy rash (Pruritic rash)', 'Arm itching', 'Foot itching', 'Foot redness', 'Hand redness', 'Arm redness', 'Hand itching', 'Skin itching', 'Skin sores']",0.36
+613,Rickettsial infections type of bacterial infection,['Fever in the returning traveler'],2.33
+614,Septic arthritis joint infection,"['Arm ache or pain', 'Leg ache or pain', 'Swelling of both legs', 'Arm swelling']",1.5
+615,Sickle cell crisis complication of sickle cell disease,['Seizure'],1.0
+616,Tick borne encephalitis brain infection,['Confusion and headache'],1.0
+617,Tuberculosis infection TB,"['Fever in the returning traveler', 'Tired', 'Failure to thrive', 'Cough']",0.0
+618,Typhoid fever salmonella typhi infection from contaminated food or water,"['Fever in the returning traveler', 'Cough', 'Confusion and headache']",1.25
+619,Nasal foreign body unnatural object in the nose,['Nasal bleeding'],1.33
+620,Hodgkin's disease cancer of the lymph system,"['Swollen lymph nodes (Large lymph nodes)', 'Skin itching', 'Arm itching', 'Foot itching', 'Hand itching', 'Stomach and abdominal pain']",0.3
+621,Body lice,"['Itchy rash (Pruritic rash)', 'Rash', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Armpit pain', 'Skin sores']",1.73
+622,Cat scratch fever bacterial infection after cat scratch,"['Swollen lymph nodes (Large lymph nodes)', 'Neck swelling']",1.33
+623,Sunburn,"['Blister (Pocket of fluid)', 'Skin swelling', 'Hand redness', 'Foot redness', 'Arm redness', 'Rash']",1.8
+624,Sudden Infant Death Syndrome SIDS,[],1.8
+625,Mucormycosis fungal infection,['Facial pain'],0.0
+626,Japanese encephalitis viral brain infection,['Fever in the returning traveler'],1.0
+627,"Hemolytic uremic syndrome HUS, red blood cell destruction, kidney disease",[],2.0
+628,Foreign body in ear,[],1.5
+629,Astigmatism vision defect,[],1.5
+630,Familial dysautonomia genetic disorder,"['Vomiting', 'Seizure', 'Choking', 'Failure to thrive', 'Fainting', 'Shortness of breath']",0.0
+631,Friedreich's Ataxia genetic disorder,"['Weight loss, unexplained', 'Tired', 'Chest pain', 'Shortness of breath', 'Tremors', 'Unsteady gait (Trouble walking)', 'Speech problem', 'Numbness']",0.0
+632,Excessive hair growth Hirsutism,['Increased facial hair'],1.0
+633,Scurvy vitamin C deficiency,"['Tired', 'Bleeding tendency', 'Muscle pain', 'Bleeding gums']",0.0
+634,Chlamydia trachomatis infection STD,['Vaginal pain'],1.2
+635,Chronic pain,"['Lethargy (Sluggishness)', 'Low back ache or pain', 'Arm ache or pain', 'Back ache or pain', 'Depressed']",0.0
+636,Dysfunctional uterine bleeding abnormal vaginal bleeding,['Vaginal bleeding'],1.0
+637,Genital herpes HSV type 2 infection,"['Vaginal pain', 'Rash', 'Skin sores']",0.67
+638,Hordeolum stye of eye,"['Eye pain (Irritation)', 'Pustule (Collection of pus)', 'Eye swelling']",2.0
+639,Mycoplasma genitalium sexually transmitted disease,[],0.0
+640,Myringitis bullosa ear drum infection,[],0.0
+641,Neisseria gonorrhea infection sexually transmitted disease,"['Frequent urination (Frequency)', 'Stomach and abdominal pain']",0.83
+642,Polyphagia overeating,"['Obesity', 'Vomiting']",
+643,Priapism persistent erection,[],1.0
+644,Pruritus ani anal itching,[],1.0
+645,Retropharyngeal abscess throat abscess,"['Swallowing problem (Dysphagia)', 'Neck ache or pain']",1.2
+646,Septic shock low blood pressure from serious blood infection,['Confusion'],1.0
+647,Sexually transmitted disease STD,"['Lower abdominal pain', 'Skin itching']",0.33
+648,"Torticollis, spasmodic neck muscle spasm","['Neck ache or pain', 'Muscle spasm']",1.5
+649,Urinary tract malformation,['Frequent urination (Frequency)'],1.0
+650,Cerebrospinal fluid otorrhea leakage of brain fluid from the ear,[],1.0
+651,Head lice,"['Itchy rash (Pruritic rash)', 'Rash', 'Skin itching', 'Skin sores']",1.5
+652,Pinworms common intestinal worm,[],2.0
+653,Down syndrome common genetic disorder,[],1.0
+654,Hair loss alopecia,[],2.0
+655,Moles nevi,['Skin sores'],2.0
+656,"Alopecia areata circular, irregular hair loss",[],2.0
+657,Pterygium growth on the eye,['Eye redness'],1.0
+658,Marfan syndrome rare inherited disease,[],2.0
+659,Golfer's elbow medial epicondylitis of elbow,[],0.0
+660,Bullous myringitis middle ear infection,"['Ear pressure', 'Pain in the ear']",
+661,Nearsightedness myopia,[],
+662,Spina bifida,[],
+663,Chalazion,[],
+664,Finger dislocation,[],
+665,Scleritis inflammation of the eye,"['Visual problems', 'Visual problems', 'Eye redness', 'Eye pain (Irritation)']",0.0
+666,Herpangina mouth blisters,"['Fever', 'Sore throat', 'Mouth pain', 'Mouth ulcers']",1.0
+667,Farsightedness hyperopia/hypermetropia,"['Visual problems', 'Headache']",2.0
+668,Parathyroid cancer,"['Weight loss, unexplained', 'Leg ache or pain', 'Vomiting', 'Arm ache or pain', 'Confusion']",0.0
+669,Presbyopia aging vision,"['Visual problems', 'Headache']",0.5
+670,Tropical sprue,"['Vomiting', 'Stomach and abdominal pain']",0.0
+671,Ichthyosis,['Skin itching'],0.0
+672,Vitamin D deficiency,"['Muscle spasm', 'Muscle pain']",0.0
+673,Tic Disorder,['Tremors'],0.0
+674,Retinopathy,"['Visual problems', 'Double vision (Diplopia)', 'Eye pain (Irritation)', 'Eye redness']",0.0
+675,Achilles tendonitis (heel tendon inflammation),['Leg ache or pain'],1.5
+676,Cavernous sinus thrombosis head vein blood clot,"['Eye pain (Irritation)', 'Headache and weakness']",1.0
+677,Dry socket pain after tooth removal,['Painful gums'],1.0
+678,Epidural abscess brain or spine pus collection,['Confusion and headache'],1.0
+679,Poliomyelitis polio,['General weakness'],1.0
+680,Salmonella infection common bacterial intestinal infection,[],2.25
+681,Shigellosis bacterial intestinal infection,['Fever in the returning traveler'],2.2
+682,Sickle cell disease disease of red blood cells,"['Blood in urine (Hematuria)', 'Arm ache or pain', 'Back ache or pain', 'Pain or soreness of breast', 'Leg ache or pain', 'Chest pain', 'Low back ache or pain']",1.44
+683,Varicocele testicular vein enlargement,[],0.0
+684,Rocky mountain spotted fever bacterial infection spread by ticks,['Fever'],1.67
+685,"Tourette syndrome repetitive involuntary movements, vocalizations",['Tremors'],0.0
+686,Histoplasmosis fungal infection,[],0.0
+687,Hidradenitis suppurativa chronic collections of pus,"['Armpit pain', 'Pain or soreness of breast', 'Rash', 'Skin sores']",0.33
+688,Livedo reticularis purplish skin discoloration,[],0.33
+689,Eustachian tube dysfunction inner ear tube,[],2.0
+690,Hip dislocation,[],2.0
+691,Retrobulbar Neuritis,"['Visual problems', 'Visual problems', 'Eye pain (Irritation)']",0.0
+692,Fibromuscular dysplasia FMD,"['Headache', 'Speech problem', 'Numbness', 'Facial droop (weakness)', 'Vertigo (Room spinning)', 'Neck ache or pain']",0.0
+693,Anorexia nervosa (eating disorder),"['Hypothermia (Low temperature)', 'Weight loss, unexplained']",1.25
+694,Esophageal cyst,['Swallowing problem (Dysphagia)'],1.0
+695,Filariasis elephantiasis,['Fever in the returning traveler'],
+696,"Hantavirus infection rare, serious viral infection",['Fever in the returning traveler'],1.0
+697,"Infectious mononucleosis Epstein Barr virus, ""Mono""",['Tired'],1.5
+698,Lichen planus chronic skin inflammation,"['Vaginal pain', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Skin itching', 'Rash']",
+699,Lipoma benign fatty tumor,"['Neck swelling', 'Skin sores']",1.0
+700,Meckel's diverticulum bulge in small intestine,[],1.0
+701,Mononucleosis common viral illness,"['Chills', 'Fever', 'Swollen lymph nodes (Large lymph nodes)', 'Pain in the ear', 'Sore throat', 'Throat pain']",1.33
+702,Optic neuritis optic nerve inflammation,"['Eye pain (Irritation)', 'Visual problems', 'Visual flashing lights', 'Blurry vision']",1.0
+703,Mouth cancer oropharyngeal cancer,"['Speech problem', 'Mouth pain', 'Neck swelling', 'Sore throat', 'Swallowing problem (Dysphagia)', 'Throat pain', 'Mouth ulcers', 'Mouth swelling', 'Swollen gums']",0.18
+704,"Pelvic inflammatory disease PID, female reproductive organ infection","['Lower abdominal pain', 'Back ache or pain', 'Chills', 'Fever', 'Vaginal bleeding', 'Infertility (Female)', 'Low back ache or pain', 'Stomach and abdominal pain']",0.82
+705,Serotonin syndrome severe medication reaction,['Tremors'],0.0
+706,Toothache,['Mouth pain'],2.0
+707,Brachial plexus injury shoulder nerve injury,"['Shoulder ache or pain', 'Neck ache or pain', 'Hand numbness (paresthesias)', 'Armpit pain', 'Arm numbness (paresthesias)']",1.14
+708,Chicken pox varicella virus,"['Blister (Pocket of fluid)', 'Pustule (Collection of pus)', 'Loss of balance', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Rash']",1.07
+709,"Carcinoid syndrome flushing, diarrhea",['Hot flashes'],1.0
+710,Goodpasture syndrome disease of kidneys and lungs,"['Hemoptysis (Coughing blood)', 'Blood in urine (Hematuria)']",1.0
+711,Lazy eye amblyopia,[],1.0
+712,Acute myelogenous leukemia AML,[],1.0
+713,Tear duct infection Dacryocystitis,"['Fever', 'Eye redness', 'Eye swelling', 'Eye pain (Irritation)']",1.0
+714,Testicular hypofunction,['Impotence'],0.0
+715,Turner syndrome gonadal dysgenesis,"['Infertility (Female)', 'Amenorrhea (No menstruation)', 'Visual problems', 'Visual problems', 'Obesity', 'Learning difficulties']",0.0
+716,Meralgia Paresthetica,"['Leg ache or pain', 'Leg numbness (paresthesias)']",1.0
+717,Alcohol ethanol intoxication,"['Alcohol abuse', 'Hypothermia (Low temperature)', 'Urinary retention (Inability to urinate)', 'Loss of balance', 'Speech problem', 'Change in behavior', 'Incontinence (leaking urine)']",0.88
+718,Brain abscess collection of pus in the brain,['Confusion and headache'],1.0
+719,Breast fat necrosis dead breast fat,['Nipple discharge'],0.0
+720,Ethanol alcohol,[],0.0
+721,Hemophilia inherited bleeding disorder,"['Bleeding tendency', 'Bleeding gums', 'Hemoptysis (Coughing blood)', 'Nasal bleeding']",1.0
+722,Migraine type of headache,"['Eye pain (Irritation)', 'Headache', 'Vertigo (Room spinning)', 'Visual problems', 'Vomiting', 'Speech problem', 'Jaw pain', 'Visual flashing lights', 'Blurry vision', 'Face numbness (paresthesias)', 'Dizziness', 'Insomnia (Trouble sleeping)', 'Neck ache or pain']",1.2
+723,Post-traumatic stress disorder PTSD,"['Anxiety (Nervousness)', 'Depressed', 'Change in behavior', 'Delusions or hallucinations', 'Insomnia (Trouble sleeping)']",
+724,Social anxiety disorder social phobia,[],1.0
+725,Tarsal tunnel syndrome foot nerve damage,['Foot numbness (paresthesias)'],0.67
+726,Tonsillar cancer tumor tongue,['Swallowing problem (Dysphagia)'],0.0
+727,Toxoplasma infection Toxoplasmosis parasite infection,"['Eye pain (Irritation)', 'Swollen lymph nodes (Large lymph nodes)']",0.0
+728,Inhaled foreign body in respiratory tract,['Choking'],3.0
+729,Neurofibromatosis inherited nerve tumors,"['Seizure', 'Numbness', 'Learning difficulties', 'Skin sores']",0.4
+730,Mycosis fungoides lymphoma,[],0.4
+731,Fallopian tube cancer,"['Fever of unknown origin', 'Tired', 'Vaginal bleeding']",0.0
+732,AC joint separation acromioclavicular joint separation closed separation of acromioclavicular joint,['Arm ache or pain'],0.33
+733,Back trauma injury,"['Trauma', 'Low back ache or pain', 'Back ache or pain', 'Flank pain', 'Kidney pain (Flank pain)', 'Leg ache or pain', 'Neck ache or pain']",0.38
+734,Chest trauma injury,"['Trauma', 'Chest pain', 'Nipple discharge']",1.75
+735,Eye trauma injury,['Trauma'],2.0
+736,Motor neuron disease progressive nerve disorder,['General weakness'],1.0
+737,Mouth trauma injury,"['Trauma', 'Mouth swelling', 'Jaw pain']",3.0
+738,Neck trauma injury,"['Trauma', 'Ringing in ears (Tinnitus)', 'Neck ache or pain']",2.0
+739,Plantar fasciitis inflammation of tissue at the bottom of the foot,[],1.0
+740,Trauma,"['Mouth pain', 'Vaginal pain', 'Lip swelling', 'Eye swelling']",2.2
+741,Autism spectrum disorder ASD,"['Failure to thrive', 'Learning difficulties']",1.67
+742,Erectile dysfunction ED,['Impotence'],1.0
+743,Mastoiditis,[],1.0
+744,Chronic myelogenous leukemia CML,[],1.0
+745,Keloid overgrown scar,"['Skin itching', 'Skin sores']",1.2
+746,Beriberi thiamine vitamin B1 deficiency,"['Tired', 'Stomach and abdominal pain', 'Shortness of breath', 'Muscle spasm', 'Chest pain']",0.0
+747,Adenovirus infection (virus infection),[],2.0
+748,Amebiasis ameba infection,['Fever in the returning traveler'],
+749,Cholesteatoma middle ear mass,['Pain in the ear'],0.0
+750,Entamoeba histolytica infection ameba infection Infection due to Entamoeba histolytica,[],1.0
+751,Giardiasis giardia infection,['Fever in the returning traveler'],1.25
+752,Mediastinitis inner chest inflammation,['Swallowing problem (Dysphagia)'],1.0
+753,Pseudogout calcium deposit arthritis,['Swelling of both legs'],0.55
+754,Syphilis treponema pallidum,"['Double vision (Diplopia)', 'Swollen lymph nodes (Large lymph nodes)']",1.17
+755,Thyroglossal duct cyst neck cyst,['Neck swelling'],1.0
+756,Tongue cancer tumor,"['Swallowing problem (Dysphagia)', 'Skin sores']",0.0
+757,Treponema pallidum syphilis,[],0.0
+758,Cauliflower ear wrestlers ear,"['Ear swelling', 'Pain in the ear', 'Ear pressure']",2.0
+759,Diaper rash,[],2.0
+760,Acute lymphocytic leukemia ALL,[],2.0
+761,Nabothian cyst,[],2.0
+762,Trigger finger,[],0.0
+763,Finger pulp infection felon,[],
+764,Intraspinal abscess collection of pus in the spine,[],
+765,Mumps viral infection involving salivary glands,"['Bleeding tendency', 'Jaw pain']",2.0
+766,Peritonsillar abscess collection of pus around tonsils,"['Swallowing problem (Dysphagia)', 'Sore throat', 'Throat pain']",2.17
+767,Pulpitis dental root inflammation,['Painful gums'],2.0
+768,Ramsay Hunt syndrome viral infection causing facial weakness,"['Ear pressure', 'Pain in the ear', 'Facial droop (weakness)', 'Headache and weakness']",0.67
+769,Thyroiditis thyroid inflammation,['Neck ache or pain'],0.0
+770,Encopresis excessive fecal leaking,[],0.0
+771,Ringworm of the body tinea corporis,"['Itchy rash (Pruritic rash)', 'Rash', 'Skin sores']",1.6
+772,Molluscum contagiosum,[],0.0
+773,Hemangioma blood vessel birthmark,[],0.0
+774,Male infertility,['Impotence'],0.0
+775,Thyroid cyst,"['Neck ache or pain', 'Neck swelling', 'Shortness of breath', 'Anxiety (Nervousness)']",0.0
+776,Conduct disorder,[],0.0
+777,Charcot-Marie-Tooth disease,['Unsteady gait (Trouble walking)'],0.0
+778,Appendicitis,"['Lower abdominal pain', 'Inconsolable baby', 'Stomach and abdominal pain', 'Upper abdominal pain', 'Back ache or pain', 'Chills', 'Flank pain', 'Kidney pain (Flank pain)', 'Vomiting']",1.36
+779,Aseptic necrosis of bone bone death and destruction,['Leg ache or pain'],0.33
+780,Basilar skull fracture broken skull,"['Nasal congestion', 'Confusion and headache']",1.4
+781,Cytomegalovirus infection CMV viral infection,[],0.0
+782,Hereditary hemorrhagic telangiectasia Osler Weber Rendu syndrome,['Nasal bleeding'],0.0
+783,Hypokalemic periodic paralysis inherited muscle weakness and low potassium,['General weakness'],1.0
+784,Keratitis inflammation of cornea,['Eye pain (Irritation)'],
+785,Phobias irrational fear,"['Anxiety (Nervousness)', 'Alcohol abuse', 'Change in behavior', 'Depressed']",
+786,Heel spur,[],1.0
+787,Pemphigus rare skin disorder,['Blister (Pocket of fluid)'],1.0
+788,Polyarteritis Nodosa PAN,"['Weight loss, unexplained', 'Fever of unknown origin', 'Chest pain', 'Shortness of breath', 'Rash', 'Stomach and abdominal pain']",0.0
+789,Wrist sprain,['Bleeding tendency'],0.67
+790,Alcohol withdrawal syndrome (mild),"['Alcohol abuse', 'Change in behavior', 'Delusions or hallucinations', 'Seizure', 'Tremors', 'Insomnia (Trouble sleeping)', 'Confusion']",1.64
+791,"Contusion bruise, ecchymosis","['Arm ache or pain', 'Pain or soreness of breast', 'Facial pain', 'Leg ache or pain', 'Swelling of both legs', 'Shoulder ache or pain', 'Arm swelling', 'Ear swelling', 'Lower abdominal pain', 'Back ache or pain', 'Chest pressure', 'Ear pressure', 'Pain in the ear', 'Headache', 'Neck ache or pain', 'Chest pain', 'Low back ache or pain']",1.5
+792,Henoch Schönlein purpura blood vessel inflammation,"['Blood in vomit', 'Rash']",0.75
+793,Kawasaki disease pediatric blood vessel disease,"['Swollen lymph nodes (Large lymph nodes)', 'Lip swelling']",2.0
+794,Leukemia blood cell cancer,"['Bleeding tendency', 'Weight loss, unexplained', 'Bleeding gums', 'Eye floaters', 'Nasal bleeding']",0.5
+795,Nasal polyps growths,"['Sinus pain and pressure', 'Nasal bleeding', 'Nasal congestion', 'Snoring', 'Pain in the ear']",1.29
+796,Sialolithiasis salivary gland stone,['Facial pain'],
+797,"Thoracic outlet syndrome nerve, blood vessel compression","['Numbness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Back ache or pain']",0.0
+798,Muscular dystrophy inherited muscle disease,['General weakness'],1.0
+799,Viral exanthem rash from viral infection,[],2.0
+800,Erythema nodosum,[],2.0
+801,Celiac disease celiac sprue,"['Abdominal swelling (Stomach swelling)', 'Lower abdominal pain', 'Upper abdominal pain', 'Steatorrhea (Excess fat in stool)', 'Stomach and abdominal pain']",1.25
+802,Cerebellar syndrome loss of coordination,['Change in behavior'],0.0
+803,Common cold upper respiratory infection,[],2.0
+804,Herpes stomatitis viral mouth infection,"['Mouth pain', 'Mouth ulcers', 'Mouth swelling', 'Lip swelling', 'Swollen gums', 'Sore throat', 'Throat pain']",1.25
+805,Hyphema traumatic blood in eye,['Eye pain (Irritation)'],2.0
+806,"Leishmaniasis parasitic infection, kala azar",['Fever in the returning traveler'],1.0
+807,PCP phencyclidine abuse,[],1.0
+808,Rhinovirus infection common cold,[],2.0
+809,"Uveitis iritis, eye inflammation","['Eye pain (Irritation)', 'Visual problems', 'Eye redness', 'Blurry vision']",1.5
+810,Impetigo bacterial skin infection,"['Rash', 'Painful rash', 'Blister (Pocket of fluid)', 'Pustule (Collection of pus)', 'Lip swelling', 'Skin sores']",1.38
+811,Common warts,"['Rash', 'Skin sores']",
+812,Iritis inflammation of the iris,[],
+813,"Pneumocystis pneumonia PCP, fungal lung infection",['Chest pain'],1.0
+814,Huntington disease chorea,"['Speech problem', 'Unsteady gait (Trouble walking)', 'Depressed', 'Anxiety (Nervousness)']",0.0
+815,Cerebellar Ataxia,"['Headache', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Dizziness', 'Loss of balance']",0.0
+816,Lyme disease bacterial infection from ticks,"['Fever in the returning traveler', 'Numbness', 'Tired', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Facial droop (weakness)', 'Fever', 'Headache', 'Rash', 'Headache and weakness']",1.45
+817,Malaria mosquito transmitted illness,"['Chills', 'Fever', 'Fever in the returning traveler', 'Jaundice (Yellowing skin)']",1.4
+818,Osteomyelitis bone infection,"['Back ache or pain', 'Leg ache or pain']",1.0
+819,"Thrombotic thrombocytopenia purpura TTP, rare blood disorder Thrombotic thrombocytopenic purpura","['Seizure', 'Vaginal bleeding', 'Confusion']",1.0
+820,Tinea versicolor,[],1.0
+821,Hepatitis A,"['Tired', 'Fever', 'Stomach and abdominal pain', 'Jaundice (Yellowing skin)']",0.6
+822,Takayasu's arteritis Giant cell arteritis of the young,"['Arm ache or pain', 'Chest pain', 'Vomiting', 'Visual problems', 'Stomach and abdominal pain', 'Dizziness', 'Numbness']",1.0
+823,Glossitis,[],0.0
+824,Aphthous ulcers mouth stomatitis,"['Inconsolable baby', 'Sore throat', 'Throat pain']",0.8
+825,Botulism bacterial toxin causing muscle weakness,"['Speech problem', 'Swallowing problem (Dysphagia)', 'General weakness']",1.0
+826,Ludwigs angina severe infection in the floor of the mouth and neck,"['Jaw pain', 'Mouth swelling', 'Sore throat', 'Throat pain']",1.0
+827,Ear drum rupture tympanic membrane rupture,"['Ear pressure', 'Pain in the ear']",1.5
+828,Scabies skin disease caused by mites,"['Skin itching', 'Itchy rash (Pruritic rash)', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Armpit pain', 'Rash']",1.65
+829,Food poisoning,"['Dizziness', 'Vomiting', 'Stomach and abdominal pain']",0.67
+830,Brucellosis bacterial infection spread from animals,['Fever in the returning traveler'],1.0
+831,Campylobacter infection intestinal bacterial infection,['Fever in the returning traveler'],2.5
+832,Myocarditis heart muscle inflammation,"['Low heart rate', 'Chest pain']",1.0
+833,Myopathy muscle disease,['Muscle pain'],1.0
+834,Rhinosporidiosis fungal nasal infection,['Nasal bleeding'],0.0
+835,Coronary artery anomaly heart artery malformation,"['Heart pulsations and palpitations', 'Inconsolable baby']",1.5
+836,Clavicle fracture broken collar bone,"['Shoulder ache or pain', 'Arm ache or pain']",1.0
+837,Ganglion cyst,[],1.0
+838,Cerebral palsy movement disorder,"['Incontinence (leaking urine)', 'Unsteady gait (Trouble walking)', 'Speech problem', 'Loss of balance']",1.2
+839,Heat cramps,['Muscle spasm'],2.0
+840,Heat exhaustion,"['Dizziness', 'Fainting', 'Shortness of breath']",
+841,"Porphyria rare disorder of skin, nervous system","['Blister (Pocket of fluid)', 'Change in behavior', 'Headache']",0.0
+842,Behcets disease small blood vessel inflammation disorder,"['Mouth pain', 'Swelling of both legs', 'Eye pain (Irritation)', 'Mouth ulcers', 'Pustule (Collection of pus)', 'Painful gums', 'Swollen gums']",0.29
+843,Chagas disease trypanosomiasis,"['Fever in the returning traveler', 'Swollen lymph nodes (Large lymph nodes)', 'Fever in the returning traveler']",1.0
+844,Lymphangitis lymph tissue inflammation,"['Chills', 'Arm swelling', 'Armpit pain', 'Pain or soreness of breast', 'Pain in the ear', 'Rash', 'Skin sores']",0.2
+845,Malabsorption syndrome abnormal intestinal digestion,"['General weakness', 'Weight loss, unexplained', 'Failure to thrive', 'Abdominal swelling (Stomach swelling)', 'Steatorrhea (Excess fat in stool)', 'Blood in vomit']",1.22
+846,Orbital cellulitis soft tissue eye infection,"['Double vision (Diplopia)', 'Eye pain (Irritation)', 'Visual problems', 'Eye swelling', 'Blurry vision']",2.0
+847,Polycystic kidney disease inherited kidney disorder,"['Kidney pain (Flank pain)', 'Upper abdominal pain', 'Flank pain']",0.0
+848,Attention deficit hyperactivity disorder ADHD,"['Learning difficulties', 'Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Insomnia (Trouble sleeping)', 'Substance abuse (Drug abuse)']",
+849,Mesenteric adenitis intestinal lymph node enlargement,[],
+850,Strabismus crossed eyes,"['Visual problems', 'Double vision (Diplopia)']",1.0
+851,Developmental delay,['Learning difficulties'],0.0
+852,Acute angle closure glaucoma increased inner eye pressure,"['Eye pain (Irritation)', 'Visual problems', 'Blurry vision']",1.67
+853,Liver cancer tumor,[],0.0
+854,Itchy rash,[],0.0
+855,Uterine cancer,[],0.0
+856,Gallbladder cancer,"['Weight loss, unexplained', 'Upper abdominal pain', 'Jaundice (Yellowing skin)', 'Tired', 'Weight loss, unexplained', 'Vomiting']",0.0
+857,Gallbladder and bile duct cancer Gallbladder cancer bile duct cancer,"['Weight loss, unexplained', 'Fever of unknown origin', 'Tired', 'Stomach and abdominal pain', 'Jaundice (Yellowing skin)', 'Skin itching']",0.0
+858,Conversion disorder,"['Seizure', 'Unsteady gait (Trouble walking)', 'Speech problem', 'Visual problems']",0.0
+859,Body dysmorphic disorder body appearance obsession,['Anxiety (Nervousness)'],0.0
+860,De Quervain's tenosynovitis hand tendon inflammation,['Arm ache or pain'],0.2
+861,Melanoma skin cancer,"['Rash', 'Skin sores']",1.25
+862,Somatization disorder Somatic symptom disorder,[],1.25
+863,Tinnitus,[],1.25
+864,Dupuytren's contracture contracted palmar fascia,[],1.25
+865,Hypochondriasis,[],1.25
+866,Pemphigoid,"['Blister (Pocket of fluid)', 'Rash']",0.0
+867,Scar,[],2.0
+868,Atypical pneumonia lung infection,"['Cough', 'Shortness of breath', 'Chills', 'Fever']",2.33
+869,Blepharitis eyelid swelling,"['Eye pain (Irritation)', 'Eye redness', 'Eye swelling']",
+870,Brain tumor cancer of the brain,"['Seizure', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Visual problems', 'Vertigo (Room spinning)', 'Loss of balance', 'Face numbness (paresthesias)', 'Dizziness', 'Headache', 'Confusion and headache']",2.0
+871,Meningitis spinal fluid infection,"['Chills', 'Change in behavior', 'Fever', 'Headache', 'Lethargy (Sluggishness)', 'Seizure', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Inconsolable baby', 'Dizziness', 'Neck ache or pain', 'Tremors', 'Confusion', 'Confusion and headache']",2.0
+872,Spermatocele sperm-filled epididymal cyst,[],1.0
+873,Meningioma brain tumor,"['Headache', 'Change in behavior', 'Unsteady gait (Trouble walking)', 'Confusion', 'Headache and weakness', 'Confusion and headache']",0.44
+874,Astrocytoma brain tumor,"['Vertigo (Room spinning)', 'Confusion', 'Headache and weakness', 'Confusion and headache']",1.86
+875,Pinguecula growth on the eye,[],1.86
+876,Borderline personality disorder,[],1.86
+877,Adjustment disorder (poor adjustment to life stressor),"['Learning difficulties', 'Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Dizziness', 'Delusions or hallucinations', 'Insomnia (Trouble sleeping)', 'Substance abuse (Drug abuse)']",0.5
+878,Intracranial hemorrhage bleeding in brain,"['Change in behavior', 'Dizziness', 'Headache', 'Confusion']",1.86
+879,Vocal cord paralysis voice box weakness,[],0.0
+880,Toxic megacolon rapid dilation of the colon,['Abdominal swelling (Stomach swelling)'],1.0
+881,Corneal ulcer,"['Visual problems', 'Eye pain (Irritation)', 'Eye redness']",0.67
+882,Anal cancer,[],0.67
+883,"Obsessive compulsive disorder OCD, anxiety disorder","['Anxiety (Nervousness)', 'Change in behavior', 'Depressed']",0.0
+884,Teeth grinding bruxism,"['Mouth pain', 'Jaw pain']",2.0
+885,Dystonia,"['Muscle spasm', 'Tremors', 'Speech problem']",0.0
+886,Post concussive syndrome symptoms after a concussion,"['Learning difficulties', 'Dizziness', 'Headache', 'Vomiting']",0.83
+887,Viral infections,"['Fever of unknown origin', 'Cough', 'Dizziness', 'Pain in the ear', 'Fever', 'Headache', 'Rash', 'Shortness of breath', 'Sore throat', 'Vomiting', 'Throat pain', 'Nasal congestion']",0.19
+888,"Amyotrophic lateral sclerosis ALS, Lou Gehrig's disease",['Tremors'],1.0
+889,"Lou Gehrig's disease amyotrophic lateral sclerosis, ALS",[],1.0
+890,"Pleuritis inflammation of the lung's lining, pleurisy","['Chest pain', 'Back ache or pain', 'Flank pain', 'Kidney pain (Flank pain)']",
+891,Tension pneumothorax dangerous lung collapse,[],1.0
+892,Ankle fracture broken ankle,['Leg ache or pain'],1.33
+893,Polymyositis muscle inflammation,[],1.33
+894,Mycoplasma infection bacteria,"['Headache', 'Cough', 'Muscle pain', 'Nasal congestion', 'Pain in the ear', 'Sore throat']",0.17
+895,Aphakia,['Visual problems'],0.0
+896,Contact urticaria hives,"['Hives', 'Itchy rash (Pruritic rash)']",
+897,Hepatic abscess collection of pus in the liver,[],1.0
+898,Laryngitis voice box inflammation,"['Cough', 'Speech problem', 'Chills', 'Sore throat', 'Throat pain']",1.0
+899,Liver abscess collection of pus,[],
+900,Urticaria hives,"['Skin itching', 'Rash', 'Skin swelling', 'Skin sores']",1.67
+901,Athlete's foot tinea pedis,"['Foot itching', 'Rash', 'Skin sores']",
+902,Jock itch tinea cruris,[],
+903,Esophageal cancer tumor,"['Swallowing problem (Dysphagia)', 'Vomiting coffee ground material', 'Blood in vomit']",0.0
+904,"Wolff Parkinson White syndrome WPW, additional electrical pathway in the heart","['Fainting', 'Dizziness', 'Chest pain']",1.33
+905,Transient global amnesia sudden period of short-term memory loss,[],1.0
+906,Hypoparathyroidism,"['Shortness of breath', 'Anxiety (Nervousness)', 'Low heart rate']",0.0
+907,Panhypopituitarism pituitary gland malfunction,[],0.0
+908,Ankylosing spondylitis (severe spine arthritis),"['Back ache or pain', 'Neck ache or pain', 'Low back ache or pain']",0.0
+909,Spinal cord compression cauda equina syndrome,"['Incontinence (leaking urine)', 'Low back ache or pain']",1.0
+910,Cervical cancer tumor,"['Vaginal bleeding', 'Lower abdominal pain', 'Rash']",0.4
+911,Colitis large intestine inflammation,[],1.0
+912,Gastroenteritis intestinal infection,"['Upper abdominal pain', 'Vomiting', 'Stomach and abdominal pain', 'Lower abdominal pain', 'Blood in vomit', 'Chills', 'Dizziness', 'Fever']",0.77
+913,"Actinic keratosis AK, skin growth",[],0.0
+914,Candida albicans yeast infection,"['Rash', 'Swallowing problem (Dysphagia)', 'Skin itching', 'Sore throat', 'Throat pain', 'Skin sores']",0.67
+915,Dental abscess tooth infection,"['Facial pain', 'Jaw pain', 'Mouth swelling', 'Painful gums', 'Swollen gums', 'Pain in the ear', 'Headache', 'Sore throat', 'Throat pain']",1.27
+916,Malnutrition,"['Lethargy (Sluggishness)', 'Failure to thrive', 'Amenorrhea (No menstruation)', 'Swollen gums', 'Infertility (Female)', 'Tired']",1.09
+917,Tooth infection,[],1.09
+918,Rhinitis nasal inflammation,"['Snoring', 'Cough', 'Ear pressure', 'Sore throat', 'Throat pain', 'Nasal congestion']",
+919,Scalded skin syndrome blistering skin infection,"['Hand redness', 'Foot redness', 'Arm redness']",2.0
+920,Baker's cyst fluid sac behind knee,"['Swelling of both legs', 'Leg ache or pain']",
+921,Cushing disease excessive pituitary gland hormones,"['Obesity', 'Impotence', 'Increased facial hair']",0.38
+922,Rectal ulcer,['Skin sores'],0.0
+923,Night terrors nightmares,[],1.0
+924,Sarcoidosis inflammatory disease,"['Weight loss, unexplained', 'Amenorrhea (No menstruation)', 'Facial droop (weakness)', 'Chest pressure', 'Rash', 'Shortness of breath', 'Skin sores']",0.25
+925,Guillain Barre syndrome ascending muscle weakness,"['Numbness', 'Speech problem', 'General weakness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)', 'Facial droop (weakness)']",1.18
+926,Raynaud's disease blood vessel constriction,"['Numbness', 'Foot numbness (paresthesias)', 'Hand numbness (paresthesias)']",2.0
+927,Miller Fisher Syndrome rare nerve disease,"['Double vision (Diplopia)', 'Facial droop (weakness)']",0.0
+928,Seborrheic keratosis,[],0.0
+929,Burns,"['Painful rash', 'Blister (Pocket of fluid)', 'Hand redness', 'Foot redness', 'Arm redness', 'Arm ache or pain', 'Stomach and abdominal pain']",2.45
+930,Fat embolism blood clot from fat,['Shortness of breath'],0.0
+931,"Lupus systemic lupus erythematosus, SLE","['Rash', 'Seizure', 'Tired', 'Skin itching', 'Leg ache or pain', 'Skin sores', 'Headache and weakness']",0.0
+932,Peripheral nerve transection nerve injury,[],1.0
+933,Peripheral neuropathy nerve damage,"['Arm ache or pain', 'Leg ache or pain', 'Numbness', 'General weakness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Back ache or pain', 'Neck ache or pain', 'Tremors', 'Low back ache or pain']",0.67
+934,Pilonidal cyst fluid filled sac on tailbone,"['Low back ache or pain', 'Back ache or pain', 'Skin sores']",0.33
+935,Diabetic neuropathy nerve damage,"['Foot numbness (paresthesias)', 'Leg ache or pain', 'Leg numbness (paresthesias)', 'Urinary retention (Inability to urinate)']",0.0
+936,Rosacea,[],0.0
+937,Benign neoplasm,[],0.0
+938,Bacterial overgrowth of small intestine Bacterial Overgrowth Syndrome,"['Abdominal swelling (Stomach swelling)', 'Steatorrhea (Excess fat in stool)', 'Vomiting']",0.67
+939,Hyperventilation rapid breathing,"['Numbness', 'Hand numbness (paresthesias)', 'Chest pain', 'Anxiety (Nervousness)', 'Shortness of breath']",
+940,Ankle sprain,['Leg ache or pain'],1.33
+941,Anal fistula,['Fever'],0.0
+942,Cerumen impaction ear wax buildup,"['Ear pressure', 'Pain in the ear', 'Ringing in ears (Tinnitus)']",2.0
+943,Menopause end of menstruation and fertility,"['Vaginal pain', 'Vaginal bleeding', 'Amenorrhea (No menstruation)', 'Hot flashes', 'Change in behavior', 'Depressed']",0.7
+944,Renal infarct kidney damage from an area of blocked blood flow,"['Kidney pain (Flank pain)', 'Blood in urine (Hematuria)', 'Flank pain']",1.0
+945,"Systemic sclerosis scleroderma, progressive soft tissue hardening",['Swallowing problem (Dysphagia)'],0.0
+946,Vaginal atrophy atrophic vaginitis,[],0.5
+947,Boil pus-filled lump,"['Skin swelling', 'Hand redness', 'Arm redness']",2.0
+948,Scleroderma progressive hardening of soft tissue,['Rash'],0.0
+949,Tennis elbow lateral epicondylitis,['Arm ache or pain'],0.5
+950,Hemolytic anemia red blood cell destruction disorder,"['Jaundice (Yellowing skin)', 'Change in behavior']",1.67
+951,Muscle and ligament inflammation enthesopathy,[],1.25
+952,Hypothermia extreme cold exposure,"['Change in behavior', 'Hypothermia (Low temperature)', 'Tremors', 'Confusion']",1.67
+953,Whipple's disease rare bacterial infection of the small intestine,['Steatorrhea (Excess fat in stool)'],1.0
+954,Trench foot immersion foot,[],0.0
+955,Thyroid cancer neck gland cancer,"['Neck ache or pain', 'Neck swelling', 'Hot flashes', 'Dizziness']",0.25
+956,Ingrown nail onychocryptosis,[],
+957,Thrombophlebitis superficial,"['Arm ache or pain', 'Leg ache or pain', 'Arm redness']",0.67
+958,Anal fissure (tear),['Skin sores'],1.0
+959,Lung abscess collection of pus,"['Hemoptysis (Coughing blood)', 'Shortness of breath']",1.0
+960,Insomnia difficulty sleeping,[],1.0
+961,Delusional disorder,['Delusions or hallucinations'],1.0
+962,Esophageal achalasia swallowing disease,['Chest pain'],0.0
+963,"Ear infection, outer otitis externa","['Ear pressure', 'Pain in the ear', 'Vertigo (Room spinning)', 'Ear swelling', 'Headache', 'Skin sores']",1.38
+964,Stomach cancer gastric cancer,"['Weight loss, unexplained', 'Vomiting coffee ground material', 'Blood in vomit', 'Stomach and abdominal pain', 'Upper abdominal pain']",0.0
+965,Blood vessel injury,[],3.0
+966,Breast abscess collection of pus in the breast,"['Pain or soreness of breast', 'Nipple discharge']",0.75
+967,Mastitis breast infection inflammation,"['Pain or soreness of breast', 'Fever', 'Rash', 'Skin sores', 'Chest pain', 'Nipple discharge']",
+968,Urethritis infection of urethra,['Frequent urination (Frequency)'],1.0
+969,Nasal septum deviation,[],1.0
+970,Aplastic anemia bone marrow failure,"['Bleeding tendency', 'Bleeding gums', 'Nasal bleeding']",1.0
+971,Herpes simplex infection viral infection,"['Skin itching', 'Blister (Pocket of fluid)', 'Rash', 'Skin sores']",0.67
+972,Cerebral aneurysm brain artery dilation,"['Headache', 'Seizure', 'Visual problems', 'Confusion', 'Headache and weakness', 'Confusion and headache']",1.58
+973,Concussion,"['Seizure', 'Vertigo (Room spinning)', 'Loss of balance', 'Dizziness', 'Fainting', 'Headache', 'Tremors', 'Confusion and headache']",1.29
+974,Personality disorder unhealthy patterns of thinking and behavior,"['Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Insomnia (Trouble sleeping)']",0.17
+975,Sleep apnea chronic sleep disruption,"['Snoring', 'Shortness of breath', 'Tired']",0.8
+976,Small bowel cancer small intestine,"['Weight loss, unexplained']",1.0
+977,Bipolar disorder manic depressive disorder,"['Anxiety (Nervousness)', 'Depressed', 'Delusions or hallucinations', 'Insomnia (Trouble sleeping)', 'Learning difficulties', 'Change in behavior', 'Headache', 'Substance abuse (Drug abuse)']",0.7
+978,Dislocated lens eye disorder,[],0.7
+979,Dry eye syndrome eye disorder,[],0.7
+980,Endophthalmitis eye disorder,[],0.7
+981,"Myasthenia gravis autoimmune disease of the nerves, muscles","['Speech problem', 'Swallowing problem (Dysphagia)', 'General weakness']",1.2
+982,Drug withdrawal syndrome,"['Tired', 'Vomiting', 'Stomach and abdominal pain', 'Seizure', 'Confusion']",1.14
+983,Schizoaffective disorder features of schizophrenia and mood disorder,"['Learning difficulties', 'Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Delusions or hallucinations', 'Insomnia (Trouble sleeping)', 'Substance abuse (Drug abuse)']",0.2
+984,Degenerative disc disease,[],0.2
+985,Epidermal cyst,[],1.0
+986,Heat rash,"['Itchy rash (Pruritic rash)', 'Hand redness', 'Foot redness', 'Arm redness', 'Rash', 'Skin sores']",
+987,Sebaceous cyst sac under the skin,"['Arm ache or pain', 'Pain in the ear', 'Skin itching', 'Rash', 'Skin sores']",0.25
+988,Esophageal foreign body,"['Swallowing problem (Dysphagia)', 'Vomiting', 'Chest pain']",0.75
+989,Lymphedema lymphatic obstruction,"['Leg ache or pain', 'Skin sores']",0.0
+990,Cancer tumor,"['Fever of unknown origin', 'Swelling of both legs', 'Lethargy (Sluggishness)', 'Tired', 'Weight loss, unexplained', 'Failure to thrive', 'Jaw pain', 'Abdominal swelling (Stomach swelling)', 'Armpit pain', 'Leg numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Hand numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)', 'Facial droop (weakness)']",0.36
+991,Ewing's sarcoma cancer,"['Weight loss, unexplained', 'Arm ache or pain', 'Leg ache or pain', 'Fever of unknown origin', 'Tired']",0.0
+992,Missed abortion,[],0.0
+993,"Diabetic ketoacidosis DKA, a complication of poorly controlled diabetes","['Change in behavior', 'Vomiting', 'Fainting', 'Stomach and abdominal pain', 'Confusion']",2.0
+994,Fecal incontinence loss of bowel control,[],2.0
+995,Altered mental status confusion,['Change in behavior'],2.0
+996,Dissecting aortic aneurysm tearing and dilation of the aorta,"['Chest pressure', 'Upper abdominal pain', 'Chest pain']",1.25
+997,Vasculitis inflammation of the arteries,"['Leg ache or pain', 'Swelling of both legs', 'Arm swelling', 'Rash']",0.0
+998,Pancreatic cancer tumor,"['Jaundice (Yellowing skin)', 'Hot flashes', 'Increased facial hair', 'Abdominal swelling (Stomach swelling)', 'Stomach and abdominal pain']",0.17
+999,Blood loss,"['Dizziness', 'Fainting', 'Change in behavior']",2.25
+1000,Retroperitoneal hemorrhage flank bleeding,"['Flank pain', 'Kidney pain (Flank pain)']",1.5
+1001,Cervical spine stenosis narrowing of spinal canal,"['Neck ache or pain', 'Numbness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Arm ache or pain']",0.62
+1002,Parotitis salivary gland inflammation,"['Facial pain', 'Jaw pain', 'Ear pressure']",
+1003,"Fallen arches flat feet, pes planus",[],0.0
+1004,Bunion of big toe hallux valgus,[],1.0
+1005,Flat feet pes planus,[],1.0
+1006,Bacterial infection,['Fever of unknown origin'],1.5
+1007,Leptospirosis bacterial infection,['Fever in the returning traveler'],1.0
+1008,Tularemia bacterial infection,[],1.0
+1009,Phimosis,[],0.0
+1010,"Emphysema COPD, lung disease","['Shortness of breath', 'Chest pain']",0.33
+1011,Alcoholism,"['Alcohol abuse', 'Jaundice (Yellowing skin)', 'Impotence', 'Arm numbness (paresthesias)', 'Hand numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Lower abdominal pain', 'Anxiety (Nervousness)', 'Blood in vomit', 'Chest pressure', 'Change in behavior', 'Depressed', 'Dizziness', 'Fainting', 'Delusions or hallucinations', 'Headache', 'Insomnia (Trouble sleeping)', 'Substance abuse (Drug abuse)', 'Vomiting', 'Tremors', 'Stomach and abdominal pain']",0.38
+1012,Anorectal abscess (perirectal) abscess,"['Skin sores', 'Low back ache or pain']",
+1013,Rectal prolapse rectal protrusion,[],0.33
+1014,Allergic rhinitis (allergic reaction in the nose),"['Nasal bleeding', 'Nasal congestion', 'Cough', 'Pain in the ear', 'Headache', 'Sore throat', 'Throat pain']",0.89
+1015,Multiple sclerosis MS,"['Dizziness', 'Incontinence (leaking urine)', 'Numbness', 'Seizure', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Visual problems', 'General weakness', 'Tired', 'Tremors', 'Urinary retention (Inability to urinate)', 'Loss of balance', 'Muscle spasm', 'Hand numbness (paresthesias)', 'Impotence', 'Visual flashing lights', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Face numbness (paresthesias)', 'Back ache or pain', 'Change in behavior', 'Leg ache or pain']",0.52
+1016,"Ear infection, middle ear otitis media","['Chills', 'Dizziness', 'Ear pressure', 'Pain in the ear', 'Fever', 'Headache', 'Vertigo (Room spinning)', 'Inconsolable baby', 'Loss of balance', 'Facial droop (weakness)', 'Sore throat', 'Throat pain']",1.69
+1017,Subarachnoid hemorrhage brain bleeding,"['Headache and weakness', 'Confusion and headache']",2.29
+1018,Horner's syndrome disruption of facial nerve function,[],2.29
+1019,Aseptic joint effusion fluid in a joint Effusion of joint,['Leg ache or pain'],0.6
+1020,Streptococcus infection strep throat bacteria,"['Sore throat', 'Throat pain']",2.0
+1021,Benign positional vertigo sensation of spinning,"['Vertigo (Room spinning)', 'Dizziness']",1.5
+1022,Meniere's disease dizziness and vertigo,"['Vertigo (Room spinning)', 'Ringing in ears (Tinnitus)', 'Loss of balance', 'Dizziness', 'Ear pressure']",0.6
+1023,Polycythemia vera increased number of red blood cells,[],0.0
+1024,Enlarged lymph nodes lymphadenopathy,"['Arm ache or pain', 'Pain in the ear', 'Neck ache or pain', 'Sore throat', 'Throat pain', 'Skin sores']",0.29
+1025,Tendonitis tendon inflammation,"['Arm ache or pain', 'Leg ache or pain']",1.08
+1026,Tenosynovitis tendon sheath inflammation,"['Hand redness', 'Foot redness', 'Arm ache or pain']",0.22
+1027,Synovitis inflammation of joint lining,"['Arm ache or pain', 'Leg ache or pain', 'Low back ache or pain']",0.29
+1028,"Disseminated intravascular coagulation DIC, abnormality of blood clotting",['Bleeding tendency'],1.0
+1029,Goiter enlarged thyroid,"['Neck swelling', 'Swallowing problem (Dysphagia)', 'Neck ache or pain']",0.67
+1030,Intestinal ischemia decreased intestinal blood flow,['Abdominal swelling (Stomach swelling)'],1.33
+1031,Trigeminal neuralgia facial nerve pain,"['Facial pain', 'Jaw pain', 'Face numbness (paresthesias)', 'Headache']",0.75
+1032,Reiter syndrome type of joint inflammation,"['Mouth pain', 'Mouth ulcers']",0.0
+1033,Ringworm of the scalp tinea capitis,"['Itchy rash (Pruritic rash)', 'Rash']",0.67
+1034,Hepatic encephalopathy confusion from liver failure,"['Change in behavior', 'Delusions or hallucinations', 'Vomiting', 'Confusion']",1.0
+1035,Toenail fungus Onychomycosis,[],1.0
+1036,Foreign body in the eye,['Eye pain (Irritation)'],0.0
+1037,Panic disorder,"['Anxiety (Nervousness)', 'Dizziness', 'Hot flashes', 'Change in behavior', 'Depressed', 'Shortness of breath', 'Tremors', 'Chest pain']",
+1038,Prostatitis prostate inflammation,"['Frequent urination (Frequency)', 'Urinary retention (Inability to urinate)']",0.67
+1039,Jaundice yellow skin color,['Rash'],2.0
+1040,Diverticulosis weakening of the large intestine wall,"['Lower abdominal pain', 'Stomach and abdominal pain', 'Upper abdominal pain']",0.5
+1041,Hydrocele fluid collection near the testicle,[],1.5
+1042,Pharyngitis throat infection,"['Chills', 'Ear pressure', 'Pain in the ear', 'Fever', 'Sore throat', 'Swallowing problem (Dysphagia)', 'Throat pain', 'Cough', 'Headache', 'Shortness of breath', 'Vomiting', 'Nasal congestion']",
+1043,Rhabdomyolysis severe muscle breakdown,"['Muscle pain', 'General weakness', 'Leg ache or pain']",1.5
+1044,Muscle spasm charley horse,"['Arm ache or pain', 'Muscle pain', 'Muscle spasm', 'Back ache or pain', 'Leg ache or pain', 'Neck ache or pain', 'Tremors', 'Chest pain', 'Low back ache or pain']",0.79
+1045,Cerebrospinal fluid rhinorrhea leakage of brain fluid from the nose,['Nasal congestion'],1.0
+1046,Carpal tunnel syndrome wrist nerve compression,"['Numbness', 'Hand numbness (paresthesias)', 'Arm ache or pain', 'Pain or soreness of breast']",0.67
+1047,"Gastroesophageal reflux GERD, heartburn","['Upper abdominal pain', 'Chest pressure', 'Cough', 'Swallowing problem (Dysphagia)', 'Cough', 'Chest pain', 'Stomach and abdominal pain', 'Lower abdominal pain', 'Blood in vomit', 'Sore throat', 'Vomiting', 'Throat pain']",0.94
+1048,Hyperparathyroidism elevated parathyroid hormone levels,"['Skin itching', 'Low back ache or pain']",0.5
+1049,Methemoglobinemia blood disorder,[],1.0
+1050,"Lower leg fracture tibia, fibula",[],1.0
+1051,Cavity tooth caries,"['Jaw pain', 'Pain in the ear', 'Headache']",
+1052,Bell's palsy facial muscle weakness,"['Ear pressure', 'Pain in the ear', 'Facial pain', 'Facial droop (weakness)', 'Headache']",0.57
+1053,Hepatitis liver inflammation,"['Fever in the returning traveler', 'Tired', 'Jaundice (Yellowing skin)', 'Skin itching']",1.14
+1054,Facial nerve paralysis,['Facial droop (weakness)'],2.0
+1055,Mitral stenosis tight heart valve,"['Shortness of breath', 'Heart pulsations and palpitations', 'Fainting', 'Chest pain']",0.0
+1056,"Delirium tremens DTs, severe alcohol withdrawal",['Alcohol abuse'],2.0
+1057,Intestinal volvulus twisting of intestine,"['Blood in vomit', 'Abdominal swelling (Stomach swelling)', 'Stomach and abdominal pain']",1.4
+1058,Volvulus twisted intestine,[],1.0
+1059,"Zenker's diverticulum pharyngeal pouch, weakening of the esophageal wall",['Swallowing problem (Dysphagia)'],0.0
+1060,Schizophrenia chronic impaired reality perception,"['Delusions or hallucinations', 'Learning difficulties', 'Alcohol abuse', 'Anxiety (Nervousness)', 'Change in behavior', 'Depressed', 'Insomnia (Trouble sleeping)', 'Tremors']",1.36
+1061,Rash,[],1.36
+1062,Femoral artery aneurysm dilation of leg artery,[],1.0
+1063,Mallory Weiss syndrome esophageal tear,"['Blood in vomit', 'Vomiting coffee ground material', 'Stomach and abdominal pain']",0.83
+1064,Colic prolonged infant crying episodes,['Inconsolable baby'],2.0
+1065,Macular degeneration chronic eye disease,['Visual problems'],1.0
+1066,Acoustic neuroma (ear nerve tumor),"['Ringing in ears (Tinnitus)', 'Dizziness', 'Pain in the ear']",0.0
+1067,Multiple myeloma blood cancer,['Low back ache or pain'],0.0
+1068,Frozen shoulder (adhesive capsulitis of shoulder),"['Shoulder ache or pain', 'Arm ache or pain', 'Neck ache or pain']",0.25
+1069,Psoriasis scaly skin disease,"['Rash', 'Foot itching', 'Arm itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Skin itching', 'Skin sores']",0.82
+1070,Psoriatic arthritis joint pain and stiffness,[],0.0
+1071,Conjunctivitis pink eye,"['Eye pain (Irritation)', 'Visual problems', 'Eye redness', 'Eye swelling', 'Fever']",1.33
+1072,Bleeding tendency bleeding disorder,['Nasal bleeding'],2.0
+1073,"Wegener's granulomatosis granulomatosis with polyangiitis, blood vessel disease","['Nasal bleeding', 'Hemoptysis (Coughing blood)']",0.0
+1074,"Polymyalgia rheumatica PMR, muscle and joint disorder","['General weakness', 'Muscle pain', 'Facial pain']",0.29
+1075,Von Willebrand's disease,['Bleeding tendency'],1.0
+1076,Langerhans cell histiocytosis Histiocytosis X,"['Arm ache or pain', 'Leg ache or pain', 'Shortness of breath', 'Rash', 'Cough']",0.0
+1077,Fibrocystic breasts breast lumpiness,"['Pain or soreness of breast', 'Nipple discharge']",1.33
+1078,Costochondritis chest wall inflammation,"['Chest pressure', 'Upper abdominal pain', 'Back ache or pain', 'Pain or soreness of breast']",0.83
+1079,Major depressive disorder severe depression,"['Depressed', 'Alcohol abuse', 'Anxiety (Nervousness)', 'Change in behavior', 'Dizziness', 'Delusions or hallucinations', 'Headache', 'Insomnia (Trouble sleeping)']",1.1
+1080,Neurogenic bladder bladder paralysis,['Incontinence (leaking urine)'],0.5
+1081,Ovarian cancer female organ cancer,"['Abdominal swelling (Stomach swelling)', 'Increased facial hair']",0.33
+1082,Stress,"['Anxiety (Nervousness)', 'Tired', 'Impotence', 'Amenorrhea (No menstruation)', 'Infertility (Female)', 'Chest pressure', 'Change in behavior', 'Depressed', 'Dizziness', 'Headache', 'Insomnia (Trouble sleeping)', 'Obesity', 'Shortness of breath', 'Substance abuse (Drug abuse)', 'Chest pain']",
+1083,Interstitial cystitis bladder inflammation,['Frequent urination (Frequency)'],0.4
+1084,Onchocerciasis river blindness,['Fever in the returning traveler'],1.0
+1085,Puerperal psychosis loss of contact with reality after birth,[],0.0
+1086,Subdural hematoma bleeding on brain,"['Change in behavior', 'Seizure', 'Unsteady gait (Trouble walking)', 'Inconsolable baby', 'Headache', 'Loss of balance', 'Speech problem', 'Confusion', 'Headache and weakness', 'Confusion and headache']",2.0
+1087,Uterine prolapse uterine vaginal protrusion,[],0.0
+1088,Night blindness nyctalopia,['Visual problems'],0.0
+1089,Cervicitis inflammation of the lower uterus,"['Vaginal bleeding', 'Lower abdominal pain', 'Stomach and abdominal pain']",0.5
+1090,Endometritis inflammation of the uterus,['Lower abdominal pain'],0.5
+1091,Chronic lymphocytic leukemia CLL,[],0.5
+1092,"Polycystic ovarian syndrome PCOS, female hormonal disorder","['Obesity', 'Vaginal bleeding', 'Amenorrhea (No menstruation)', 'Infertility (Female)', 'Increased facial hair']",1.25
+1093,Empyema collection of pus in chest,['Chest pain'],1.5
+1094,Necrotizing fasciitis life-threatening infection,"['Muscle pain', 'Swelling of both legs', 'Skin swelling', 'Leg ache or pain', 'Shoulder ache or pain', 'Arm swelling', 'Hand redness', 'Foot redness', 'Arm redness']",1.0
+1095,Colon cancer large intestine tumor,['Abdominal swelling (Stomach swelling)'],1.6
+1096,Hemorrhoid enlarged rectal veins,[],1.25
+1097,Inguinal hernia groin hernia,"['Lower abdominal pain', 'Abdominal swelling (Stomach swelling)', 'Upper abdominal pain', 'Stomach and abdominal pain']",1.5
+1098,Spondylolisthesis slipped back bone,"['Back ache or pain', 'Leg numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Hand numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Low back ache or pain']",0.29
+1099,Humerus fracture broken upper arm,"['Shoulder ache or pain', 'Arm ache or pain']",0.33
+1100,Ventral hernia bulging of the abdominal wall,"['Lower abdominal pain', 'Upper abdominal pain', 'Stomach and abdominal pain']",1.33
+1101,Tachycardia fast heart rate,[],1.33
+1102,Endocarditis heart valve infection,"['Shortness of breath', 'Fever', 'Weight loss, unexplained', 'Rash', 'Chest pain']",1.57
+1103,Q fever flu-like bacterial illness,"['Fever', 'Weight loss, unexplained', 'Shortness of breath', 'Jaundice (Yellowing skin)']",1.0
+1104,Valvular heart disease abnormal heart valves,"['Fainting', 'Shortness of breath', 'Chest pain']",0.33
+1105,"Loffler's syndrome pulmonary eosinophilia, lung inflammation","['Cough', 'Fever', 'Shortness of breath']",0.0
+1106,Bronchiectasis bronchial tube inflammatory damage,"['Cough', 'Shortness of breath', 'Hemoptysis (Coughing blood)']",1.14
+1107,Wilsons disease copper accumulation in tissues,"['Loss of balance', 'Jaundice (Yellowing skin)']",0.75
+1108,Anorexia (eating disorder),"['Lethargy (Sluggishness)', 'Tired', 'Failure to thrive', 'Amenorrhea (No menstruation)', 'Infertility (Female)']",1.25
+1109,Umbilical hernia belly button hernia,"['Abdominal swelling (Stomach swelling)', 'Stomach and abdominal pain', 'Upper abdominal pain', 'Lower abdominal pain']",0.25
+1110,Diffuse esophageal spasm painful contractions of the esophagus,['Swallowing problem (Dysphagia)'],1.0
+1111,Esophageal rupture tear in esophagus,['Chest pain'],1.0
+1112,Esophageal spasm painful muscle contraction,['Chest pain'],0.5
+1113,Chondromalacia cartilage damage,[],0.0
+1114,Cholecystitis inflammation of the gallbladder,"['Upper abdominal pain', 'Fever', 'Flank pain', 'Jaundice (Yellowing skin)', 'Lower abdominal pain', 'Back ache or pain', 'Kidney pain (Flank pain)', 'Vomiting', 'Chest pain', 'Stomach and abdominal pain']",1.45
+1115,Influenza seasonal flu,"['Chills', 'Fever', 'Muscle pain', 'Tired', 'Sore throat', 'Cough', 'Nasal congestion', 'Headache', 'Shortness of breath', 'Vomiting', 'Throat pain', 'Chest pain']",1.05
+1116,Flu influenza,[],1.05
+1117,Cholangitis inflammation of the bile ducts,"['Jaundice (Yellowing skin)', 'Vomiting']",1.0
+1118,Sclerosing cholangitis progressive bile duct disease,['Jaundice (Yellowing skin)'],1.0
+1119,Increased pressure in the skull raised intracranial pressure,"['Visual problems', 'Confusion and headache']",1.0
+1120,Shock severe low blood pressure,['Confusion'],1.0
+1121,Pseudotumor cerebri increased pressure in the skull,"['Headache', 'Double vision (Diplopia)', 'Visual problems', 'Dizziness', 'Confusion', 'Confusion and headache']",1.44
+1122,Encephalopathy,[],1.44
+1123,Bladder cancer,"['Frequent urination (Frequency)', 'Blood in urine (Hematuria)', 'Urinary retention (Inability to urinate)']",0.33
+1124,"Bladder stone, urinary","['Frequent urination (Frequency)', 'Blood in urine (Hematuria)', 'Low back ache or pain']",0.17
+1125,Diabetes insipidus excessive water loss from the kidneys,[],2.0
+1126,Rectal cancer tumor,[],1.0
+1127,Schistosomiasis parasite infection,"['Fever in the returning traveler', 'Swollen lymph nodes (Large lymph nodes)', 'Itchy rash (Pruritic rash)']",0.0
+1128,Detached retina retinal detachment,"['Visual problems', 'Visual flashing lights', 'Eye floaters']",2.33
+1129,Diabetic retinopathy diabetic eye disease,['Visual problems'],0.0
+1130,Yaws,"['Rash', 'Skin sores', 'Swollen lymph nodes (Large lymph nodes)']",0.0
+1131,Pseudomonas infection,[],0.0
+1132,Klebsiella infection,[],0.0
+1133,Sciatica lower back nerve irritation,"['Back ache or pain', 'Leg ache or pain', 'Foot numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Low back ache or pain']",0.78
+1134,Atrioventricular node conduction block heart block,"['Fainting', 'Low heart rate']",2.0
+1135,Shingles herpes zoster,"['Chest pressure', 'Facial pain', 'Skin itching', 'Painful rash', 'Jaw pain', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Arm redness', 'Hand itching', 'Armpit pain', 'Skin sores', 'Face numbness (paresthesias)', 'Upper abdominal pain', 'Back ache or pain', 'Pain or soreness of breast', 'Flank pain', 'Kidney pain (Flank pain)', 'Neck ache or pain', 'Rash', 'Chest pain']",0.47
+1136,"Bladder infection cystitis, UTI, urinary tract infection","['Lower abdominal pain', 'Back ache or pain', 'Chills', 'Fever', 'Flank pain', 'Frequent urination (Frequency)', 'Incontinence (leaking urine)', 'Inconsolable baby', 'Blood in urine (Hematuria)', 'Low back ache or pain', 'Upper abdominal pain', 'Pain or soreness of breast', 'Kidney pain (Flank pain)', 'Vomiting', 'Stomach and abdominal pain']",1.26
+1137,Hearing loss,"['Ringing in ears (Tinnitus)', 'Pain in the ear']",0.33
+1138,Sinusitis sinus infection,"['Chills', 'Eye pain (Irritation)', 'Facial pain', 'Fever', 'Sinus pain and pressure', 'Headache', 'Cough', 'Jaw pain', 'Nasal bleeding', 'Nasal congestion', 'Snoring', 'Dizziness', 'Ear pressure', 'Pain in the ear', 'Shortness of breath', 'Sore throat', 'Throat pain']",1.29
+1139,Waldenström macroglobulinemia blood cell disease,['Bleeding tendency'],0.0
+1140,Alcohol ethanol abuse,"['Lethargy (Sluggishness)', 'Vertigo (Room spinning)', 'Weight loss, unexplained', 'Snoring', 'Confusion']",2.11
+1141,Cataracts clouding of the eye lens,['Visual problems'],1.0
+1142,Nose bleed epistaxis,"['Blood in vomit', 'Nasal bleeding']",2.0
+1143,Mucocutaneous leishmaniasis parasitic infection,[],2.0
+1144,"Oral candidiasis thrush, oral yeast","['Mouth pain', 'Painful gums', 'Swollen gums', 'Sore throat', 'Throat pain']",0.33
+1145,Tinea fungal skin infection,"['Skin itching', 'Arm itching', 'Hand redness', 'Foot redness', 'Hand itching', 'Arm redness', 'Rash', 'Skin sores']",
+1146,Rabies deadly viral illness transmitted by animals,['Confusion and headache'],1.0
+1147,Diabetic nephropathy diabetes and kidney disease,[],0.0
+1148,Pyomyositis muscle infection,['Leg ache or pain'],1.5
+1149,Pernicious anemia vitamin deficiency blood disorder,[],1.0
+1150,Scarlet fever post strep inflammation,"['Chills', 'Sore throat', 'Throat pain']",1.8
+1151,"Vestibular neuronitis labyrinthitis, vertigo","['Vertigo (Room spinning)', 'Dizziness', 'Pain in the ear']",0.67
+1152,"Viral hemorrhagic fevers Ebola, Lassa",['Fever in the returning traveler'],1.0
+1153,Yellow fever viral hemorrhagic fever,"['Fever in the returning traveler', 'Vomiting coffee ground material']",1.67
+1154,"Fifth disease erythema infectiosum, viral illness",['Rash'],1.0
+1155,Erysipelas bacterial skin infection,"['Facial pain', 'Rash', 'Painful rash']",1.4
+1156,Rubella German measles,['Eye redness'],0.5
+1157,Tetanus lockjaw,"['Swallowing problem (Dysphagia)', 'Jaw pain', 'Muscle spasm']",1.0
+1158,Ebola virus hemorrhagic fever,[],1.0
+1159,Carotid artery dissection neck artery tear,"['Neck ache or pain', 'Unsteady gait (Trouble walking)', 'Headache and weakness']",1.0
+1160,Elbow dislocation,[],1.0
+1161,Cholera intestinal bacterial infection,['Fever in the returning traveler'],1.0
+1162,Labyrinthitis dizziness and vertigo,"['Vomiting', 'Loss of balance', 'Dizziness', 'Ear pressure', 'Pain in the ear']",
+1163,Vibrio parahaemolyticus infection bacterial infection from shellfish,['Fever in the returning traveler'],1.0
+1164,Motion sickness,['Vertigo (Room spinning)'],2.0
+1165,"Decompression sickness bends, caisson's disease","['Headache', 'Numbness', 'Dizziness', 'Confusion']",1.0
+1166,Esophageal stricture narrowing of the esophagus,"['Swallowing problem (Dysphagia)', 'Upper abdominal pain']",0.33
+1167,Basilar artery migraine headache,"['Unsteady gait (Trouble walking)', 'Vertigo (Room spinning)', 'Loss of balance', 'Double vision (Diplopia)']",0.75
+1168,Headache,[],2.0
+1169,"Irritable bowel syndrome IBS, chronic intestinal pain and cramping","['Upper abdominal pain', 'Abdominal swelling (Stomach swelling)', 'Lower abdominal pain', 'Stomach and abdominal pain']",1.0
+1170,Ascites fluid in the abdomen,"['Abdominal swelling (Stomach swelling)', 'Shortness of breath']",1.25
+1171,Low back pain lumbago,[],1.25
+1172,Cough syncope fainting while coughing,[],1.25
+1173,Urethral stricture,"['Blood in urine (Hematuria)', 'Abdominal swelling (Stomach swelling)', 'Stomach and abdominal pain']",0.0
+1174,Incisional hernia,[],0.0
+1175,Chronic venous insufficiency weakened leg veins,"['Swelling of both legs', 'Leg ache or pain', 'Obesity', 'Rash', 'Skin sores']",0.57
+1176,Gastric ulcer stomach ulcer,"['Upper abdominal pain', 'Vomiting coffee ground material', 'Stomach and abdominal pain', 'Alcohol abuse']",1.71
+1177,Cervical spondylosis neck arthritis,"['Headache', 'Neck ache or pain', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Arm ache or pain']",0.5
+1178,Dementia decline in mental ability,"['Change in behavior', 'Confusion']",0.8
+1179,Neutropenia,"['Fever', 'Mouth pain', 'Cough', 'Pain in the ear']",0.0
+1180,"Upper respiratory tract infection URI, common cold","['Chills', 'Fever', 'Headache', 'Sore throat', 'Throat pain', 'Nasal congestion', 'Snoring', 'Chest pain', 'Chest pressure', 'Cough', 'Dizziness', 'Pain in the ear', 'Shortness of breath', 'Stomach and abdominal pain']",1.32
+1181,Croup upper airway inflammation,[],1.8
+1182,Pulmonary hypertension high blood pressure in the lungs,['Chest pain'],0.0
+1183,Hypoglycemia low blood sugar,"['Anxiety (Nervousness)', 'Change in behavior', 'Seizure', 'General weakness', 'Tremors', 'Fainting', 'Speech problem', 'Loss of balance', 'Dizziness', 'Confusion']",2.64
+1184,Pneumoconiosis lung disease,[],0.0
+1185,"Dysthymia depression, dysthymic disorder","['Anxiety (Nervousness)', 'Chest pressure', 'Change in behavior', 'Depressed', 'Insomnia (Trouble sleeping)']",0.17
+1186,Smoking tobacco use disorder,"['Infertility (Female)', 'Cough']",1.0
+1187,Kidney stone nephrolithiasis,"['Upper abdominal pain', 'Flank pain', 'Frequent urination (Frequency)', 'Kidney pain (Flank pain)', 'Lower abdominal pain', 'Blood in urine (Hematuria)', 'Back ache or pain', 'Low back ache or pain', 'Incontinence (leaking urine)', 'Vomiting', 'Stomach and abdominal pain']",0.8
+1188,Depression excessive sadness,"['Anxiety (Nervousness)', 'Depressed', 'Insomnia (Trouble sleeping)', 'Lethargy (Sluggishness)', 'Tired', 'Weight loss, unexplained', 'Failure to thrive', 'Learning difficulties', 'Ringing in ears (Tinnitus)', 'Impotence', 'Amenorrhea (No menstruation)', 'Alcohol abuse', 'Change in behavior', 'Delusions or hallucinations', 'Headache', 'Obesity', 'Substance abuse (Drug abuse)']",1.86
+1189,Primary affective disorder depression,[],2.0
+1190,Endometriosis uterine tissue outside the uterus,"['Infertility (Female)', 'Lower abdominal pain', 'Low back ache or pain', 'Stomach and abdominal pain', 'Upper abdominal pain', 'Vomiting']",0.43
+1191,Peritonitis abdominal cavity inflammation,['Chills'],1.0
+1192,Abdominal adhesions scar tissue,"['Vomiting', 'Stomach and abdominal pain']",0.5
+1193,Anthrax,[],0.5
+1194,Fetal alcohol syndrome,['Learning difficulties'],1.0
+1195,Cardiac arrest heart stops,['Fainting'],1.0
+1196,Pyelonephritis kidney infection,"['Back ache or pain', 'Flank pain', 'Frequent urination (Frequency)', 'Kidney pain (Flank pain)', 'Blood in urine (Hematuria)', 'Low back ache or pain', 'Upper abdominal pain', 'Lower abdominal pain', 'Chills', 'Fever', 'Incontinence (leaking urine)', 'Vomiting', 'Stomach and abdominal pain']",1.87
+1197,Hydronephrosis,"['Flank pain', 'Stomach and abdominal pain', 'Vomiting', 'Frequent urination (Frequency)', 'Fever']",0.0
+1198,Mittelschmerz ovulation pain,[],2.0
+1199,Premenstrual syndrome PMS,"['Lower abdominal pain', 'Back ache or pain', 'Change in behavior', 'Dizziness', 'Headache', 'Obesity']",
+1200,Primary dysmenorrhea painful menstruation,[],1.0
+1201,Secondary dysmenorrhea painful menstruation,[],
+1202,Stress incontinence unintentional urination with cough or sneeze,['Incontinence (leaking urine)'],1.0
+1203,Premenstrual dysphoric disorder PMDD,[],1.0
+1204,Low platelets thrombocytopenia,"['Bleeding tendency', 'Bleeding gums']",2.5
+1205,Thrombocytopenia low platelet count,"['Nasal bleeding', 'Vomiting coffee ground material', 'Blood in vomit']",1.0
+1206,Renal artery stenosis kidney artery narrowing,[],0.0
+1207,Foot sprain,['Bleeding tendency'],1.33
+1208,Gout uric acid crystals in the joint causing inflammation,"['Arm ache or pain', 'Leg ache or pain', 'Swelling of both legs']",0.42
+1209,Post nasal drip,"['Cough', 'Nasal congestion']",0.67
+1210,Febrile seizure convulsion in child with a fever,['Seizure'],1.5
+1211,"Plague bubonic plague, bacteria yersinia infection",['Fever in the returning traveler'],1.0
+1212,Bone metastases cancer spread to bone,"['Back ache or pain', 'Low back ache or pain']",1.0
+1213,Thoracic spondylosis spine arthritis,[],1.0
+1214,Narcolepsy uncontrollable sleeping,"['Insomnia (Trouble sleeping)', 'Lethargy (Sluggishness)']",0.67
+1215,Acidosis (excessive acid in the body),['Vomiting'],1.0
+1216,Osteochondritis dissecans joint disorder,[],0.0
+1217,Vertigo spinning sensation,"['Dizziness', 'Vomiting']",0.0
+1218,Postural hypotension low blood pressure after standing,"['Fainting', 'Dizziness']",0.5
+1219,"Pancreas inflammation pancreatitis, chronic","['Steatorrhea (Excess fat in stool)', 'Upper abdominal pain', 'Lower abdominal pain', 'Back ache or pain']",1.17
+1220,Gangrene death of body tissue,['Numbness'],1.0
+1221,Constipation,"['Upper abdominal pain', 'Urinary retention (Inability to urinate)', 'Abdominal swelling (Stomach swelling)', 'Lower abdominal pain', 'Stomach and abdominal pain', 'Incontinence (leaking urine)', 'Low back ache or pain']",0.91
+1222,Thoracic spine stenosis,[],0.91
+1223,Rheumatoid arthritis type of chronic joint inflammation,"['Arm ache or pain', 'Leg ache or pain', 'Swelling of both legs', 'Back ache or pain']",0.33
+1224,Bowel obstruction intestinal blockage,"['Upper abdominal pain', 'Abdominal swelling (Stomach swelling)']",1.0
+1225,Arrhythmia abnormal heart rhythm,"['Dizziness', 'Fainting', 'Low heart rate', 'Chest pain', 'Anxiety (Nervousness)', 'Chest pressure', 'Shortness of breath']",1.88
+1226,Cardiac arrhythmia abnormal heart rate,"['Heart pulsations and palpitations', 'Vertigo (Room spinning)']",3.0
+1227,Heart arrhythmia abnormal heart rhythm,[],3.0
+1228,Abdominal aortic aneurysm (enlarged major blood vessel),"['Back ache or pain', 'Flank pain', 'Abdominal swelling (Stomach swelling)', 'Kidney pain (Flank pain)', 'Low back ache or pain']",1.0
+1229,Glaucoma elevated eye pressure,"['Eye pain (Irritation)', 'Headache', 'Visual problems', 'Eye redness', 'Blurry vision']",1.4
+1230,Sepsis serious blood infection,"['Inconsolable baby', 'Dizziness', 'Fainting', 'Fever', 'Shortness of breath', 'Confusion']",1.54
+1231,Chronic liver disease,['Lethargy (Sluggishness)'],0.33
+1232,Asthma,"['Shortness of breath', 'Chest pain', 'Back ache or pain', 'Chest pressure', 'Cough']",1.4
+1233,Bronchial asthma,[],2.0
+1234,Biliary colic gallbladder pain,[],2.0
+1235,Aspiration pneumonia lung inflammation or infection,['Shortness of breath'],1.0
+1236,"Renal failure, acute sudden kidney failure","['Bleeding tendency', 'Lethargy (Sluggishness)', 'Tired', 'Swelling of both legs', 'Muscle spasm', 'Abdominal swelling (Stomach swelling)', 'Dizziness', 'Skin itching', 'Confusion']",1.15
+1237,Folliculitis hair follicle infection,"['Pustule (Collection of pus)', 'Itchy rash (Pruritic rash)', 'Skin swelling', 'Ear swelling', 'Hand redness', 'Foot redness', 'Arm redness']",2.0
+1238,Anxiety,['Heart pulsations and palpitations'],1.25
+1239,Anxiety disorder generalized anxiety disorder GAD,"['Learning difficulties', 'Chest pain', 'Stomach and abdominal pain', 'Anxiety (Nervousness)', 'Chest pressure', 'Change in behavior', 'Depressed', 'Dizziness', 'Fainting', 'Delusions or hallucinations', 'Headache', 'Insomnia (Trouble sleeping)', 'Obesity', 'Shortness of breath', 'Substance abuse (Drug abuse)', 'Vomiting', 'Tremors']",0.35
+1240,Asperger's syndrome autism spectrum disorder,[],2.0
+1241,Hyperthermia extreme heat exposure,['Confusion'],2.0
+1242,Febrile fever illness,"['Muscle pain', 'Tremors', 'Hot flashes']",2.0
+1243,Fever elevated temperature,"['Tired', 'Inconsolable baby']",1.67
+1244,Cardiomegaly enlarged heart,"['Tired', 'Shortness of breath', 'Heart pulsations and palpitations']",1.0
+1245,Parkinson's disease movement disorder,"['Unsteady gait (Trouble walking)', 'Speech problem', 'Tremors', 'Choking']",0.75
+1246,Renal vein thrombosis kidney vein clot,"['Kidney pain (Flank pain)', 'Blood in urine (Hematuria)', 'Flank pain']",1.0
+1247,Atrial flutter irregular heart rate,"['Heart pulsations and palpitations', 'Fainting', 'Dizziness', 'Chest pain']",1.25
+1248,Ulcerative colitis large intestine inflammation,"['Flank pain', 'Weight loss, unexplained', 'Lower abdominal pain', 'Steatorrhea (Excess fat in stool)', 'Kidney pain (Flank pain)', 'Vomiting', 'Stomach and abdominal pain']",0.67
+1249,Alzheimer's disease dementia,"['Change in behavior', 'Confusion']",1.0
+1250,Hypotension low blood pressure,"['Dizziness', 'Fainting', 'Confusion']",2.67
+1251,Low blood pressure hypotension,['Vertigo (Room spinning)'],2.5
+1252,Hyperemesis gravidarum severe vomiting in pregnancy,"['Stomach and abdominal pain', 'Vomiting']",
+1253,Iron deficiency anemia low red blood cell count,['Dizziness'],1.0
+1254,Intussusception telescoping intestine,"['Blood in vomit', 'Inconsolable baby', 'Stomach and abdominal pain']",2.14
+1255,Paralytic Ileus intestinal paralysis,['Abdominal swelling (Stomach swelling)'],
+1256,"Cystic fibrosis inherited disease of lungs, digestive system",['Steatorrhea (Excess fat in stool)'],0.5
+1257,Osteoporosis extremely thin bone,"['Back ache or pain', 'Low back ache or pain']",0.5
+1258,Hyperkalemia elevated potassium level,['General weakness'],2.0
+1259,"Chronic obstructive pulmonary disease COPD, emphysema","['Cough', 'Shortness of breath', 'Chest pain', 'Dizziness']",0.86
+1260,Cardiomyopathy weakened heart,"['Tired', 'Dizziness', 'Shortness of breath', 'Chest pain']",1.0
+1261,Confusion (altered mental status),[],1.0
+1262,Psychosis,[],1.0
+1263,Pickwickian syndrome severe obesity,['Snoring'],0.0
+1264,Peripheral vascular disease blocked blood vessels,"['Skin sores', 'Arm numbness (paresthesias)', 'Hand numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Arm ache or pain', 'Leg ache or pain']",0.55
+1265,"Gastrointestinal bleeding stomach, intestine bleeding","['Fainting', 'Vomiting coffee ground material', 'Stomach and abdominal pain', 'Blood in vomit', 'Vomiting', 'Chest pain']",1.75
+1266,Aortic regurgitation leaking heart valve,"['Shortness of breath', 'Fainting', 'Chest pain']",0.0
+1267,Kaposi Sarcoma type of cancer,['Blood in vomit'],0.0
+1268,Prostate cancer male anatomy cancer,"['Frequent urination (Frequency)', 'Blood in urine (Hematuria)', 'Urinary retention (Inability to urinate)']",0.67
+1269,Swimmer's itch cercarial dermatitis,"['Skin itching', 'Itchy rash (Pruritic rash)', 'Arm itching', 'Foot itching', 'Hand redness', 'Foot redness', 'Foot redness', 'Arm redness', 'Hand itching']",0.36
+1270,Reyes syndrome rare liver and brain swelling,"['Confusion', 'Confusion and headache']",1.8
+1271,High cholesterol hypercholesteremia,[],1.8
+1272,Phenylketonuria PKU,"['Seizure', 'Learning difficulties']",0.0
+1273,Bronchitis bronchial tube infection,"['Cough', 'Hemoptysis (Coughing blood)', 'Shortness of breath', 'Chest pain', 'Upper abdominal pain', 'Back ache or pain', 'Chest pressure', 'Fever', 'Sore throat', 'Throat pain', 'Stomach and abdominal pain']",
+1274,"Transient ischemic attack TIA, reversible stroke","['Dizziness', 'Fainting', 'Speech problem', 'Unsteady gait (Trouble walking)', 'Visual problems', 'Visual flashing lights', 'Loss of balance', 'Facial droop (weakness)']",1.8
+1275,Barrett's esophagus esophagus inflammation,['Swallowing problem (Dysphagia)'],1.0
+1276,Esophagitis esophageal inflammation,"['Chest pressure', 'Swallowing problem (Dysphagia)', 'Vomiting coffee ground material', 'Chest pain', 'Upper abdominal pain', 'Blood in vomit', 'Cough', 'Neck ache or pain', 'Sore throat', 'Vomiting', 'Throat pain']",
+1277,Pneumothorax collapse of lung,"['Chest pressure', 'Shortness of breath', 'Chest pain']",1.67
+1278,Interstitial lung disease chronic scarring of the lung,[],0.0
+1279,Atelectasis,[],0.0
+1280,Urine retention inability to urinate,"['Lower abdominal pain', 'Abdominal swelling (Stomach swelling)', 'Low back ache or pain']",0.75
+1281,Mitral valve prolapse abnormal heart valve,"['Chest pressure', 'Chest pain', 'Shortness of breath']",0.25
+1282,Hernia,"['Upper abdominal pain', 'Lower abdominal pain']",0.33
+1283,Hiatal hernia stomach pushes through diaphragm,"['Upper abdominal pain', 'Chest pressure', 'Stomach and abdominal pain', 'Blood in vomit', 'Chest pain']",1.0
+1284,Seizure abnormal brain electrical activity,"['Change in behavior', 'Fainting', 'Visual flashing lights', 'Dizziness', 'Headache', 'Tremors', 'Confusion', 'Seizure']",2.1
+1285,Pleural effusion abnormal chest fluid,"['Shortness of breath', 'Chest pain']",1.2
+1286,"E. coli infection Escherichia coli, bacterial infection",['Fever in the returning traveler'],3.0
+1287,Vasovagal syncope fainting,"['Fainting', 'Chest pressure', 'Dizziness']",0.67
+1288,Ehlers-Danlos syndrome,[],0.67
+1289,Preeclampsia toxemia of pregnancy,[],1.0
+1290,Hypothyroidism low thyroid hormone,"['Change in behavior', 'Hypothermia (Low temperature)', 'Obesity', 'Tired', 'Depressed', 'Failure to thrive', 'Swelling of both legs', 'Impotence', 'Amenorrhea (No menstruation)', 'Low heart rate', 'Confusion']",0.85
+1291,Bradycardia slow heart rate,"['Dizziness', 'Fainting', 'Shortness of breath', 'Chest pain']",1.5
+1292,Anemia (low red blood cell count),"['Change in behavior', 'Lethargy (Sluggishness)', 'Tired', 'Failure to thrive', 'Dizziness', 'Fainting', 'Shortness of breath', 'Confusion']",1.0
+1293,Prinzmetal angina heart artery spasm,"['Chest pressure', 'Chest pain']",0.0
+1294,Pancytopenia,"['Tired', 'Shortness of breath', 'Fainting', 'Dizziness']",1.0
+1295,Hyponatremia low blood sodium,"['Change in behavior', 'Seizure', 'Tired', 'Confusion']",2.25
+1296,Addison's disease adrenal insufficiency,"['Fainting', 'Muscle pain', 'Low back ache or pain']",0.67
+1297,Dressler syndrome heart sac inflammation following heart attack or heart surgery,"['Chest pressure', 'Fever', 'Chest pain']",1.2
+1298,Unstable angina pre heart attack chest pain,"['Chest pressure', 'Upper abdominal pain', 'Arm ache or pain', 'Back ache or pain', 'Shortness of breath']",1.29
+1299,Pneumonia lung infection,"['Chest pressure', 'Chills', 'Cough', 'Fever', 'Shortness of breath', 'Hemoptysis (Coughing blood)', 'Chest pain', 'Upper abdominal pain', 'Back ache or pain', 'Pain or soreness of breast', 'Dizziness', 'Flank pain', 'Kidney pain (Flank pain)', 'Low back ache or pain']",2.35
+1300,Dengue fever tropical mosquito borne illness,"['Bleeding tendency', 'Fever in the returning traveler', 'Swollen lymph nodes (Large lymph nodes)']",1.4
+1301,Myelodysplastic syndrome bone marrow failure,"['Bleeding tendency', 'Bleeding gums']",1.5
+1302,Smallpox Variola virus infection,"['Fever in the returning traveler', 'Pustule (Collection of pus)']",1.0
+1303,Chikungunya viral illness from mosquitoes,['Fever in the returning traveler'],2.0
+1304,Dehydration,"['Change in behavior', 'Dizziness', 'Lethargy (Sluggishness)', 'Fainting', 'Failure to thrive', 'Confusion']",2.79
+1305,Hypokalemia low blood potassium,"['Tired', 'Muscle spasm']",1.67
+1306,West Nile virus infection mosquito-transmitted illness,"['Fever in the returning traveler', 'Numbness', 'Seizure', 'Tired', 'General weakness', 'Hand numbness (paresthesias)', 'Arm numbness (paresthesias)', 'Leg numbness (paresthesias)', 'Foot numbness (paresthesias)', 'Headache and weakness', 'Confusion and headache']",1.56
+1307,Atrial fibrillation irregular heart rate,"['Dizziness', 'Heart pulsations and palpitations', 'Arm ache or pain', 'Fainting', 'Shortness of breath', 'Chest pain']",1.33
+1308,Hypersensitivity pneumonitis allergic lung disease,[],0.0
+1309,Congestive heart failure CHF,"['Cough', 'Lethargy (Sluggishness)', 'Shortness of breath', 'Tired', 'Swelling of both legs', 'Abdominal swelling (Stomach swelling)', 'Low heart rate', 'Chest pain', 'Chest pressure', 'Confusion']",1.5
+1310,"Coronary artery disease CAD, heart disease","['Chest pressure', 'Chest pain', 'Dizziness', 'Shortness of breath']",1.33
+1311,Essential hypertension high blood pressure,"['Chest pain', 'Chest pressure', 'Headache']",0.25
+1312,Premature ejaculation,e,0.25
